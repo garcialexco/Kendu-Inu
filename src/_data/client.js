@@ -1,12 +1,20 @@
 module.exports = {
-    "name": "Kendu Inu",
-    "email": "KenduInu@proton.me",
+    "name": "Code Stitch Web Designs",
+    "email": "help@codestitch.app",
+    "phoneForTel": "555-779-4407",
+    "phoneFormatted": "(555) 779-4407",
+    "address": {
+        "lineOne": "First Address Line",
+        "lineTwo": "Second Address Line",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80206",
+        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+    },
     "socials": {
-        "telegram": "https://t.me/KenduInu/",
-        "twitter": "https://x.com/kenduinu/",
-        "reddit": "https://www.reddit.com/r/KenduInu_Ecosystem/",
-        "youtube": "https://www.youtube.com/@KenduInuArmy/",
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.kenduinu.com"
+    "domain": "https://www.example.com"
 };
