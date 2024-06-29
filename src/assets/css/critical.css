@@ -150,7 +150,7 @@
 /* Desktop Parallax - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #hero-1856 .cs-background {
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png");
+    background: url("/assets/images/kendu_villiage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
