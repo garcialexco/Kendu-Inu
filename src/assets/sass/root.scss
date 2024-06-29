@@ -340,7 +340,6 @@ html {
         }
 
         .cs-active {
-            font-size: 50rem;
             .cs-line1 {
                 top: 50%;
                 transform: translate(-50%, -50%) rotate(225deg);
@@ -356,6 +355,8 @@ html {
                 bottom: 100%;
                 opacity: 0;
             }
+            
+            font-size: 50px;
         }
 
         .cs-box {
@@ -496,7 +497,7 @@ html {
 
         .cs-li-link {
             /* 16px - 24px */
-            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-size: 25px;
             line-height: 1.2em;
             text-decoration: none;
             margin: 0;
