@@ -279,6 +279,9 @@ html {
     justify-content: center;
     align-items: center;
   }
+  #cs-navigation .cs-active {
+    font-size: 50rem;
+  }
   #cs-navigation .cs-active .cs-line1 {
     top: 50%;
     transform: translate(-50%, -50%) rotate(225deg);
