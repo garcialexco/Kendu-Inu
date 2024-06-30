@@ -58,7 +58,6 @@
     width: auto;
     padding: 0 1.875rem;
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
@@ -469,9 +468,6 @@ html .cs-social-icon {
   body.scroll #cs-navigation:after {
     height: 100%;
   }
-  .cs-contact-group-mobile {
-    display: none;
-  }
   #cs-navigation {
     width: 100%;
     padding: 0;
@@ -480,6 +476,9 @@ html .cs-social-icon {
     border: 1px solid #1d1c1c;
     position: fixed;
     z-index: 10000;
+  }
+  #cs-navigation .cs-contact-group-mobile {
+    display: none;
   }
   #cs-navigation:after {
     /* on scroll overlay */
@@ -590,7 +589,7 @@ html .cs-social-icon {
   }
   #cs-navigation .cs-li-link {
     /* 14px - 16px */
-    font-size: clamp(1rem, 0.6vw, 1rem);
+    font-size: 1.25em;
     line-height: 1.5em;
     text-decoration: none;
     margin: 0;
@@ -671,6 +670,9 @@ html .cs-social-icon {
   }
   .cs-contact-group-mobile {
     display: none;
+  }
+  .cs-li-link {
+    font-size: 0.07em;
   }
 }
 /*-- -------------------------- -->

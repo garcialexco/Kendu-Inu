@@ -69,7 +69,6 @@
         width: auto;
         padding: 0 calc(30 / 16 * 1rem);
         text-decoration: none;
-        text-transform: uppercase;
         font-size: calc(16 / 16 * 1rem);
         line-height: calc(50 / 16 * 1em);
         font-weight: bold;
@@ -556,6 +555,7 @@ html {
 <--- -------------------------- -*/
 
 /* Small Desktop - 1024px */
+
 @media only screen and (min-width: 64rem) {
     body {
         &.scroll {
@@ -567,10 +567,6 @@ html {
         }
     }
 
-    .cs-contact-group-mobile {
-        display: none;
-    }
-
     #cs-navigation {
         width: 100%;
         padding: 0;
@@ -580,7 +576,9 @@ html {
         position: fixed;
         z-index: 10000;
 
-        
+        .cs-contact-group-mobile {
+            display: none;
+        }
 
         &:after {
             /* on scroll overlay */
@@ -706,7 +704,7 @@ html {
 
         .cs-li-link {
             /* 14px - 16px */
-            font-size: clamp(1rem, 0.6vw, 1rem);
+            font-size: 1.25em;
             line-height: 1.5em;
             text-decoration: none;
             margin: 0;
@@ -799,6 +797,10 @@ html {
 
     .cs-contact-group-mobile {
         display: none;
+    }
+    
+    .cs-li-link {
+        font-size: 0.07em;
     }
 }
                                 
