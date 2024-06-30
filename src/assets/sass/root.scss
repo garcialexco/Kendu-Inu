@@ -277,7 +277,7 @@ html {
         width: 100%;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        border-bottom: 1px solid #484848;
+        border-bottom: 1px solid #272727;
         position: fixed;
         z-index: 10000;
 
@@ -305,7 +305,7 @@ html {
             content: "";
             width: 0%;
             height: 100%;
-            background: #1a1a1a;
+            background: #000000;
             opacity: 0.8;
             position: absolute;
             display: block;
@@ -342,7 +342,7 @@ html {
 
         .cs-logo {
             width: calc(147 / 16 * 1rem);
-            height: auto;
+            height: 5em;
             margin: 0 auto 0 0;
             padding: 0;
             /* prevents padding and border from affecting height and width */
@@ -364,7 +364,7 @@ html {
             width: calc(56 / 16 * 1rem);
             height: calc(56 / 16 * 1rem);
             margin: 0 0 0 auto;
-            background-color: #484848;
+            background-color: #CE0909;
             border: none;
             display: flex;
             justify-content: center;
@@ -445,7 +445,7 @@ html {
             height: auto;
             padding-bottom: calc(48 / 16 * 1rem);
             opacity: 0;
-            background-color: #1a1a1a;
+            background-color: #1d1c1c;
             box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
             overflow: hidden;
             position: absolute;

@@ -6,7 +6,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #sbs-1815 {
+    #buy-kendu {
         padding: var(--sectionPadding);
         /* 100px - 200px */
         padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
@@ -228,7 +228,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #sbs-1815 {
+    #buy-kendu {
         .cs-container {
             max-width: calc(1280/16 * 1rem);
             flex-direction: row;
@@ -254,7 +254,7 @@
 
 /* Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-    #sbs-1815 {
+    #buy-kendu {
         .cs-image-group {
             font-size: inherit;
         }
@@ -267,19 +267,19 @@
 
 /* Large Desktop - 2000px */
 @media only screen and (min-width: 125rem) {
-    #sbs-1815 {
+    #buy-kendu {
         /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
         padding-bottom: 9vw;
     }
 }
 
 /*-- -------------------------- -->
-<---          Services          -->
+<---         Exchanges          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-1900 {
+    #exchanges {
         padding: var(--sectionPadding);
         /* 200px - 300px - leaving extra space for the navigation */
         padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
@@ -539,7 +539,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #services-1900 {
+    #exchanges {
         .cs-card-group {
             margin: 0;
         }
@@ -562,7 +562,7 @@
 
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
-    #services-1900 {
+    #exchanges {
         .cs-video-wrapper {
             height: 80%;
         }
@@ -587,12 +587,12 @@
                                   
 
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---       About Kendu          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #sbs-1816 {
+    #about-kendu {
         padding: var(--sectionPadding);
         /* 100px - 200px */
         padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
@@ -814,7 +814,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #sbs-1816 {
+    #about-kendu {
         .cs-container {
             max-width: calc(1280/16 * 1rem);
             flex-direction: row;
@@ -840,7 +840,7 @@
 
 /* Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-    #sbs-1816 {
+    #about-kendu {
         .cs-image-group {
             font-size: inherit;
         }
@@ -853,7 +853,7 @@
 
 /* Large Desktop - 2000px */
 @media only screen and (min-width: 125rem) {
-    #sbs-1816 {
+    #about-kendu {
         /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
         padding-bottom: 9vw;
     }
@@ -865,7 +865,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #faq-1776 {
+    #faq {
         padding: var(--sectionPadding);
         background-color: #222;
         position: relative;
@@ -1084,7 +1084,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #faq-1776 {
+    #faq {
         .cs-gallery {
             max-width: calc(1720/16 * 1rem);
         }
@@ -1097,7 +1097,7 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #faq-1776 {
+    #faq {
         .cs-container {
             max-width: calc(1280/16 * 1rem);
             flex-direction: row;

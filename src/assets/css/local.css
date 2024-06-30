@@ -4,7 +4,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbs-1815 {
+  #buy-kendu {
     padding: var(--sectionPadding);
     /* 100px - 200px */
     padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
@@ -14,7 +14,7 @@
     position: relative;
     z-index: 1;
   }
-  #sbs-1815 .cs-container {
+  #buy-kendu .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 34.375rem;
@@ -25,7 +25,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #sbs-1815 .cs-content {
+  #buy-kendu .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -37,17 +37,17 @@
     position: relative;
     z-index: 3;
   }
-  #sbs-1815 .cs-title, #sbs-1815 .cs-text {
+  #buy-kendu .cs-title, #buy-kendu .cs-text {
     color: var(--bodyTextColorWhite);
   }
-  #sbs-1815 .cs-text {
+  #buy-kendu .cs-text {
     margin-bottom: 1rem;
     opacity: 0.8;
   }
-  #sbs-1815 .cs-text:last-of-type {
+  #buy-kendu .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-1815 .cs-ul {
+  #buy-kendu .cs-ul {
     width: 100%;
     max-width: 39.375rem;
     margin: 0 0 2rem;
@@ -57,7 +57,7 @@
     row-gap: 1rem;
     column-gap: 0.75rem;
   }
-  #sbs-1815 .cs-li {
+  #buy-kendu .cs-li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -69,7 +69,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 2.5vw, 1.25rem);
   }
-  #sbs-1815 .cs-li-picture {
+  #buy-kendu .cs-li-picture {
     /* 60px - 80px */
     width: 3rem;
     height: 3rem;
@@ -83,7 +83,7 @@
     position: relative;
     z-index: 1;
   }
-  #sbs-1815 .cs-li-picture:before {
+  #buy-kendu .cs-li-picture:before {
     /* background color */
     content: "";
     width: 100%;
@@ -95,12 +95,12 @@
     left: 0;
     z-index: -1;
   }
-  #sbs-1815 .cs-li-icon {
+  #buy-kendu .cs-li-icon {
     width: 1.5rem;
     height: auto;
     display: block;
   }
-  #sbs-1815 .cs-h3 {
+  #buy-kendu .cs-h3 {
     /* 13px - 16px */
     font-size: clamp(0.8125rem, 2vw, 1rem);
     line-height: 1.2em;
@@ -112,7 +112,7 @@
     color: var(--bodyTextColorWhite);
     opacity: 0.8;
   }
-  #sbs-1815 .cs-li-text {
+  #buy-kendu .cs-li-text {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
@@ -120,7 +120,7 @@
     margin: 0;
     color: var(--bodyTextColorWhite);
   }
-  #sbs-1815 .cs-button-solid {
+  #buy-kendu .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -139,7 +139,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #sbs-1815 .cs-button-solid:before {
+  #buy-kendu .cs-button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -152,10 +152,10 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #sbs-1815 .cs-button-solid:hover:before {
+  #buy-kendu .cs-button-solid:hover:before {
     width: 100%;
   }
-  #sbs-1815 .cs-image-group {
+  #buy-kendu .cs-image-group {
     /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
     font-size: min(2vw, 0.7rem);
     /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
@@ -164,19 +164,19 @@
     position: relative;
     z-index: 1;
   }
-  #sbs-1815 .cs-picture {
+  #buy-kendu .cs-picture {
     width: 100%;
     height: 100%;
     display: block;
     position: absolute;
     object-fit: cover;
   }
-  #sbs-1815 .cs-picture img {
+  #buy-kendu .cs-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  #sbs-1815 .cs-mask {
+  #buy-kendu .cs-mask {
     width: 101%;
     height: 101%;
     object-fit: cover;
@@ -186,7 +186,7 @@
     z-index: 1;
     transform: translate(-50%, -50%);
   }
-  #sbs-1815 .cs-graphic {
+  #buy-kendu .cs-graphic {
     width: 100%;
     min-width: 75rem;
     height: auto;
@@ -197,52 +197,52 @@
     z-index: 1;
     transform: translateX(-50%);
   }
-  #sbs-1815 .cs-dark {
+  #buy-kendu .cs-dark {
     display: none;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #sbs-1815 .cs-container {
+  #buy-kendu .cs-container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  #sbs-1815 .cs-image-group {
+  #buy-kendu .cs-image-group {
     /* set to inherit at Large Desktop */
     font-size: min(1vw, 1rem);
     flex: none;
   }
-  #sbs-1815 .cs-image-group:before {
+  #buy-kendu .cs-image-group:before {
     display: block;
   }
-  #sbs-1815 .cs-content {
+  #buy-kendu .cs-content {
     width: 51%;
   }
 }
 /* Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #sbs-1815 .cs-image-group {
+  #buy-kendu .cs-image-group {
     font-size: inherit;
   }
-  #sbs-1815 .cs-li {
+  #buy-kendu .cs-li {
     flex-direction: row;
   }
 }
 /* Large Desktop - 2000px */
 @media only screen and (min-width: 125rem) {
-  #sbs-1815 {
+  #buy-kendu {
     /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
     padding-bottom: 9vw;
   }
 }
 /*-- -------------------------- -->
-<---          Services          -->
+<---         Exchanges          -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-1900 {
+  #exchanges {
     padding: var(--sectionPadding);
     /* 200px - 300px - leaving extra space for the navigation */
     padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
@@ -250,7 +250,7 @@
     overflow-x: clip;
     position: relative;
   }
-  #services-1900 .cs-container {
+  #exchanges .cs-container {
     width: 100%;
     max-width: 107.5rem;
     margin: auto;
@@ -261,7 +261,7 @@
     /* 100px - 229px */
     gap: clamp(6.25rem, 16vw, 14.3125rem);
   }
-  #services-1900 .cs-content {
+  #exchanges .cs-content {
     width: 100%;
     max-width: 80rem;
     pointer-events: none;
@@ -270,11 +270,11 @@
     align-items: center;
     z-index: 1;
   }
-  #services-1900 .cs-title {
+  #exchanges .cs-title {
     max-width: 10ch;
     color: var(--bodyTextColorWhite);
   }
-  #services-1900 .cs-play {
+  #exchanges .cs-play {
     /* 80px - 120px */
     width: clamp(5rem, 14vw, 7.5rem);
     height: clamp(5rem, 14vw, 7.5rem);
@@ -289,15 +289,15 @@
     transition: opacity 0.3s, transform 0.3s;
     backdrop-filter: blur(8px);
   }
-  #services-1900 .cs-play.cs-hide {
+  #exchanges .cs-play.cs-hide {
     opacity: 0;
     transform: scale(0);
   }
-  #services-1900 .cs-icon {
+  #exchanges .cs-icon {
     width: 1.25rem;
     height: auto;
   }
-  #services-1900 .cs-card-group {
+  #exchanges .cs-card-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -306,7 +306,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 2.5vw, 1.25rem);
   }
-  #services-1900 .cs-item {
+  #exchanges .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -328,14 +328,14 @@
     position: relative;
     z-index: 1;
   }
-  #services-1900 .cs-item:hover .cs-item-background img {
+  #exchanges .cs-item:hover .cs-item-background img {
     opacity: 0.4;
     transform: scale(1.3);
   }
-  #services-1900 .cs-item:hover .cs-h3 {
+  #exchanges .cs-item:hover .cs-h3 {
     color: var(--primary);
   }
-  #services-1900 .cs-item:before {
+  #exchanges .cs-item:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -350,14 +350,14 @@
     left: 0;
     z-index: 10;
   }
-  #services-1900 .cs-link {
+  #exchanges .cs-link {
     text-decoration: none;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: flex-end;
   }
-  #services-1900 .cs-h3 {
+  #exchanges .cs-h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     font-weight: bold;
@@ -369,7 +369,7 @@
     color: var(--bodyTextColorWhite);
     transition: color 0.3s;
   }
-  #services-1900 .cs-item-text {
+  #exchanges .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -378,7 +378,7 @@
     padding: 0;
     color: var(--bodyTextColorWhite);
   }
-  #services-1900 .cs-item-background {
+  #exchanges .cs-item-background {
     width: 100%;
     height: 100%;
     display: block;
@@ -387,7 +387,7 @@
     left: 0;
     z-index: -1;
   }
-  #services-1900 .cs-item-background:before {
+  #exchanges .cs-item-background:before {
     /* background color overlay */
     content: "";
     width: 100%;
@@ -400,7 +400,7 @@
     left: 0;
     z-index: 1;
   }
-  #services-1900 .cs-item-background:after {
+  #exchanges .cs-item-background:after {
     /* background color overlay */
     content: "";
     width: 100%;
@@ -414,7 +414,7 @@
     left: 0;
     z-index: 2;
   }
-  #services-1900 .cs-item-background img {
+  #exchanges .cs-item-background img {
     width: 100%;
     height: 100%;
     /* Makes img tag act as a background image */
@@ -424,7 +424,7 @@
     left: 0;
     transition: transform 0.6s, opacity 0.3s;
   }
-  #services-1900 .cs-video-wrapper {
+  #exchanges .cs-video-wrapper {
     width: 100%;
     /* changes to 90% at tablet, then back to 100% at desktop */
     height: 32%;
@@ -434,11 +434,11 @@
     top: 0;
     left: 0;
   }
-  #services-1900 .cs-video-wrapper:hover {
+  #exchanges .cs-video-wrapper:hover {
     cursor: pointer;
   }
-  #services-1900 .cs-video-wrapper video,
-  #services-1900 .cs-video-wrapper .cs-picture {
+  #exchanges .cs-video-wrapper video,
+  #exchanges .cs-video-wrapper .cs-picture {
     width: 100%;
     height: 100%;
     /* makes image act as a background image */
@@ -447,8 +447,8 @@
     top: 0;
     left: 0;
   }
-  #services-1900 .cs-video-wrapper video img,
-  #services-1900 .cs-video-wrapper .cs-picture img {
+  #exchanges .cs-video-wrapper video img,
+  #exchanges .cs-video-wrapper .cs-picture img {
     width: 100%;
     height: 100%;
     /* makes image act as a background image */
@@ -457,7 +457,7 @@
     top: 0;
     left: 0;
   }
-  #services-1900 .cs-graphic {
+  #exchanges .cs-graphic {
     width: 100%;
     min-width: 80rem;
     height: auto;
@@ -468,50 +468,50 @@
     z-index: 0;
     transform: translateX(-50%);
   }
-  #services-1900 .cs-dark {
+  #exchanges .cs-dark {
     display: none;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #services-1900 .cs-card-group {
+  #exchanges .cs-card-group {
     margin: 0;
   }
-  #services-1900 .cs-item {
+  #exchanges .cs-item {
     grid-column: span 4;
   }
-  #services-1900 .cs-item:nth-of-type(4), #services-1900 .cs-item:nth-of-type(5) {
+  #exchanges .cs-item:nth-of-type(4), #exchanges .cs-item:nth-of-type(5) {
     grid-column: span 6;
   }
-  #services-1900 .cs-video-wrapper {
+  #exchanges .cs-video-wrapper {
     /* changes back to 100% at desktop */
     height: 60%;
   }
 }
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
-  #services-1900 .cs-video-wrapper {
+  #exchanges .cs-video-wrapper {
     height: 80%;
   }
-  #services-1900 .cs-card-group {
+  #exchanges .cs-card-group {
     grid-template-columns: repeat(5, 1fr);
   }
-  #services-1900 .cs-item {
+  #exchanges .cs-item {
     grid-column: span 1;
   }
-  #services-1900 .cs-item:nth-of-type(4), #services-1900 .cs-item:nth-of-type(5) {
+  #exchanges .cs-item:nth-of-type(4), #exchanges .cs-item:nth-of-type(5) {
     grid-column: span 1;
   }
-  #services-1900 .cs-box {
+  #exchanges .cs-box {
     bottom: 3rem;
   }
 }
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---       About Kendu          -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbs-1816 {
+  #about-kendu {
     padding: var(--sectionPadding);
     /* 100px - 200px */
     padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
@@ -521,7 +521,7 @@
     position: relative;
     z-index: 1;
   }
-  #sbs-1816 .cs-container {
+  #about-kendu .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 34.375rem;
@@ -532,7 +532,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #sbs-1816 .cs-content {
+  #about-kendu .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -544,17 +544,17 @@
     position: relative;
     z-index: 3;
   }
-  #sbs-1816 .cs-title, #sbs-1816 .cs-text {
+  #about-kendu .cs-title, #about-kendu .cs-text {
     color: var(--bodyTextColorWhite);
   }
-  #sbs-1816 .cs-text {
+  #about-kendu .cs-text {
     margin-bottom: 1rem;
     opacity: 0.8;
   }
-  #sbs-1816 .cs-text:last-of-type {
+  #about-kendu .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-1816 .cs-ul {
+  #about-kendu .cs-ul {
     width: 100%;
     max-width: 39.375rem;
     margin: 0 0 2rem;
@@ -564,7 +564,7 @@
     row-gap: 1rem;
     column-gap: 0.75rem;
   }
-  #sbs-1816 .cs-li {
+  #about-kendu .cs-li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -576,7 +576,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 2.5vw, 1.25rem);
   }
-  #sbs-1816 .cs-li-picture {
+  #about-kendu .cs-li-picture {
     /* 60px - 80px */
     width: 3rem;
     height: 3rem;
@@ -590,7 +590,7 @@
     position: relative;
     z-index: 1;
   }
-  #sbs-1816 .cs-li-picture:before {
+  #about-kendu .cs-li-picture:before {
     /* background color */
     content: "";
     width: 100%;
@@ -602,12 +602,12 @@
     left: 0;
     z-index: -1;
   }
-  #sbs-1816 .cs-li-icon {
+  #about-kendu .cs-li-icon {
     width: 1.5rem;
     height: auto;
     display: block;
   }
-  #sbs-1816 .cs-h3 {
+  #about-kendu .cs-h3 {
     /* 13px - 16px */
     font-size: clamp(0.8125rem, 2vw, 1rem);
     line-height: 1.2em;
@@ -619,7 +619,7 @@
     color: var(--bodyTextColorWhite);
     opacity: 0.8;
   }
-  #sbs-1816 .cs-li-text {
+  #about-kendu .cs-li-text {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
@@ -627,7 +627,7 @@
     margin: 0;
     color: var(--bodyTextColorWhite);
   }
-  #sbs-1816 .cs-button-solid {
+  #about-kendu .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -646,7 +646,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #sbs-1816 .cs-button-solid:before {
+  #about-kendu .cs-button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -659,10 +659,10 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #sbs-1816 .cs-button-solid:hover:before {
+  #about-kendu .cs-button-solid:hover:before {
     width: 100%;
   }
-  #sbs-1816 .cs-image-group {
+  #about-kendu .cs-image-group {
     /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
     font-size: min(2vw, 0.7rem);
     /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
@@ -671,19 +671,19 @@
     position: relative;
     z-index: 1;
   }
-  #sbs-1816 .cs-picture {
+  #about-kendu .cs-picture {
     width: 100%;
     height: 100%;
     display: block;
     position: absolute;
     object-fit: cover;
   }
-  #sbs-1816 .cs-picture img {
+  #about-kendu .cs-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  #sbs-1816 .cs-mask {
+  #about-kendu .cs-mask {
     width: 101%;
     height: 101%;
     object-fit: cover;
@@ -693,7 +693,7 @@
     z-index: 1;
     transform: translate(-50%, -50%);
   }
-  #sbs-1816 .cs-graphic {
+  #about-kendu .cs-graphic {
     width: 100%;
     min-width: 75rem;
     height: auto;
@@ -704,42 +704,42 @@
     z-index: 1;
     transform: translateX(-50%);
   }
-  #sbs-1816 .cs-dark {
+  #about-kendu .cs-dark {
     display: none;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #sbs-1816 .cs-container {
+  #about-kendu .cs-container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  #sbs-1816 .cs-image-group {
+  #about-kendu .cs-image-group {
     /* set to inherit at Large Desktop */
     font-size: min(1vw, 1rem);
     flex: none;
   }
-  #sbs-1816 .cs-image-group:before {
+  #about-kendu .cs-image-group:before {
     display: block;
   }
-  #sbs-1816 .cs-content {
+  #about-kendu .cs-content {
     width: 51%;
   }
 }
 /* Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #sbs-1816 .cs-image-group {
+  #about-kendu .cs-image-group {
     font-size: inherit;
   }
-  #sbs-1816 .cs-li {
+  #about-kendu .cs-li {
     flex-direction: row;
   }
 }
 /* Large Desktop - 2000px */
 @media only screen and (min-width: 125rem) {
-  #sbs-1816 {
+  #about-kendu {
     /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
     padding-bottom: 9vw;
   }
@@ -749,12 +749,12 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #faq-1776 {
+  #faq {
     padding: var(--sectionPadding);
     background-color: #222;
     position: relative;
   }
-  #faq-1776 .cs-container {
+  #faq .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 36.5rem;
@@ -765,7 +765,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #faq-1776 .cs-content {
+  #faq .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -774,12 +774,12 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #faq-1776 .cs-title {
+  #faq .cs-title {
     max-width: 15ch;
     margin: 0 0 2rem;
     color: var(--bodyTextColorWhite);
   }
-  #faq-1776 .cs-button-solid {
+  #faq .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;
     /* 46px - 56px */
@@ -797,7 +797,7 @@
     position: relative;
     z-index: 1;
   }
-  #faq-1776 .cs-button-solid:before {
+  #faq .cs-button-solid:before {
     content: "";
     width: 0%;
     height: 100%;
@@ -810,10 +810,10 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #faq-1776 .cs-button-solid:hover:before {
+  #faq .cs-button-solid:hover:before {
     width: 100%;
   }
-  #faq-1776 .cs-faq-group {
+  #faq .cs-faq-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -823,33 +823,33 @@
     align-items: center;
     gap: 0.75rem;
   }
-  #faq-1776 .cs-faq-item {
+  #faq .cs-faq-item {
     list-style: none;
     width: 100%;
     /* clips all corners of the button that overlap the rounded border */
     overflow: hidden;
     transition: border-bottom 0.3s;
   }
-  #faq-1776 .cs-faq-item.active .cs-button {
+  #faq .cs-faq-item.active .cs-button {
     background-color: var(--primary);
     color: var(--bodyTextColorWhite);
   }
-  #faq-1776 .cs-faq-item.active .cs-button:before {
+  #faq .cs-faq-item.active .cs-button:before {
     background-color: var(--bodyTextColorWhite);
     transform: rotate(315deg);
   }
-  #faq-1776 .cs-faq-item.active .cs-button:after {
+  #faq .cs-faq-item.active .cs-button:after {
     background-color: var(--bodyTextColorWhite);
     transform: rotate(-315deg);
   }
-  #faq-1776 .cs-faq-item.active .cs-item-text {
+  #faq .cs-faq-item.active .cs-item-text {
     height: auto;
     /* 16px - 24px */
     padding: 1rem clamp(1rem, 2vw, 1.5rem);
     opacity: 1;
     border: 1px solid #767676;
   }
-  #faq-1776 .cs-button {
+  #faq .cs-button {
     /* 16px - 20px */
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     font-weight: bold;
@@ -865,10 +865,10 @@
     position: relative;
     transition: background-color 0.3s, color 0.3s;
   }
-  #faq-1776 .cs-button:hover {
+  #faq .cs-button:hover {
     cursor: pointer;
   }
-  #faq-1776 .cs-button:before {
+  #faq .cs-button:before {
     /* left line */
     content: "";
     width: 0.5rem;
@@ -884,7 +884,7 @@
     /* animate the transform from the left side of the x axis, and the center of the y */
     transform-origin: left center;
   }
-  #faq-1776 .cs-button:after {
+  #faq .cs-button:after {
     /* right line */
     content: "";
     width: 0.5rem;
@@ -900,7 +900,7 @@
     /* animate the transform from the right side of the x axis, and the center of the y */
     transform-origin: right center;
   }
-  #faq-1776 .cs-item-text {
+  #faq .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -912,7 +912,7 @@
     opacity: 0;
     transition: opacity 0.3s, padding-bottom 0.3s;
   }
-  #faq-1776 .cs-gallery {
+  #faq .cs-gallery {
     width: 100%;
     /* changes to 1720 at tablet */
     max-width: 36.5rem;
@@ -923,7 +923,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 1.5vw, 1.25rem);
   }
-  #faq-1776 .cs-picture {
+  #faq .cs-picture {
     /* 210px - 400px */
     min-height: clamp(13.125rem, 27vw, 25rem);
     display: block;
@@ -931,7 +931,7 @@
     grid-row: span 1;
     position: relative;
   }
-  #faq-1776 .cs-picture img {
+  #faq .cs-picture img {
     width: 100%;
     height: 100%;
     /* makes it act like a background image */
@@ -943,35 +943,35 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #faq-1776 .cs-gallery {
+  #faq .cs-gallery {
     max-width: 107.5rem;
   }
-  #faq-1776 .cs-picture {
+  #faq .cs-picture {
     grid-column: span 1;
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #faq-1776 .cs-container {
+  #faq .cs-container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
   }
-  #faq-1776 .cs-content {
+  #faq .cs-content {
     text-align: left;
     width: 40%;
     align-items: flex-start;
     /* prevents flexbox from squishing it */
     flex: none;
   }
-  #faq-1776 .cs-gallery {
+  #faq .cs-gallery {
     grid-template-columns: repeat(5, 1fr);
   }
-  #faq-1776 .cs-picture {
+  #faq .cs-picture {
     grid-column: span 1;
   }
-  #faq-1776 .cs-picture:nth-of-type(4), #faq-1776 .cs-picture:nth-of-type(5) {
+  #faq .cs-picture:nth-of-type(4), #faq .cs-picture:nth-of-type(5) {
     grid-column: span 1;
   }
 }
