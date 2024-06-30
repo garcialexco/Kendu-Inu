@@ -10,11 +10,88 @@
         padding: var(--sectionPadding);
         /* 100px - 200px */
         padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
-        background-color: #222;
+        background-color: #272727;
         /* clips anything overflowing */
         overflow: hidden;
         position: relative;
         z-index: 1;
+
+        .cs-wrapper {
+            display: flex;
+            flex-direction: column;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            margin-top: 3em;
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-topper {
+            color: var(--secondary);
+        }
+
+        .cs-title {
+            margin: 0;
+        }
+
+        .cs-card-group {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            align-items: stretch;
+            grid-auto-flow: row;
+            /* 24px - 32px */
+            gap: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            padding-bottom: calc(32/16 * 1rem);
+            border-bottom: #DED1BD 1px solid;
+            display: flex;
+            align-items: flex-start;
+            /* 16px - 24px */
+            gap: clamp(1rem, 2vw, 1.5rem);
+            position: relative;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+
+        .cs-number {
+            /* 49px - 72px */
+            font-size: clamp(3.0625rem, 6vw, 4.5rem);
+            font-weight: 900;
+            line-height: calc(19/16 * 1em);
+            color: #ffffff;
+            display: block;
+        }
+
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+            font-weight: 700;
+            line-height: calc(18/16 * 1em);
+            margin: 0 0 calc(12/16 * 1rem) 0;
+            color: var(--headerColor);
+        }
+
+        .cs-item-text {
+            font-size: calc(16/16 * 1rem);
+            line-height: calc(24/16 * 1em);
+            text-align: left;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
         
         .cs-container {
             width: 100%;
@@ -181,6 +258,7 @@
             height: calc(608/16 * 1em);
             position: relative;
             z-index: 1;
+            display: none;
         }
 
         .cs-picture {
