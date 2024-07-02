@@ -7,6 +7,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #buy-kendu {
+        margin-top: -0.1em;
         padding: var(--sectionPadding);
         /* 100px - 200px */
         padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
@@ -22,6 +23,7 @@
             /* 48px - 64px */
             gap: clamp(3rem, 6vw, 4rem);
             margin-top: 3em;
+            width: 80%;
         }
 
         .cs-content {
@@ -36,10 +38,21 @@
 
         .cs-topper {
             color: var(--secondary);
+            font-size: 1.25rem;
+            text-shadow:
+                -1px -1px 0 #000,
+                0   -1px 0 #000,
+                1px -1px 0 #000,
+                1px  0   0 #000,
+                1px  1px 0 #000,
+                0    1px 0 #000,
+                -1px  1px 0 #000,
+                -1px  0   0 #000;
         }
 
         .cs-title {
             margin: 0;
+            font-size: 3.25rem;
         }
 
         .cs-card-group {
@@ -55,7 +68,7 @@
         .cs-item {
             list-style: none;
             padding-bottom: calc(32/16 * 1rem);
-            border-bottom: #DED1BD 1px solid;
+            border-bottom: #dcdcdc 1px solid;
             display: flex;
             align-items: flex-start;
             /* 16px - 24px */
@@ -78,19 +91,20 @@
 
         .cs-h3 {
             /* 20px - 25px */
-            font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+            font-size: clamp(1.5rem, 2.5vw, 1.5625rem);
             font-weight: 700;
             line-height: calc(18/16 * 1em);
             margin: 0 0 calc(12/16 * 1rem) 0;
-            color: var(--headerColor);
+            color: #ffffff !important;
         }
 
         .cs-item-text {
-            font-size: calc(16/16 * 1rem);
+            font-size: calc(12/16 * 1rem);
             line-height: calc(24/16 * 1em);
             text-align: left;
             margin: 0;
             color: var(--bodyTextColor);
+            font-family: "Orienta", sans-serif;
         }
         
         .cs-container {
@@ -188,19 +202,6 @@
             display: block;
         }
 
-        .cs-h3 {
-            /* 13px - 16px */
-            font-size: clamp(.8125rem, 2vw, 1rem);
-            line-height: 1.2em;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: .1em;
-            text-align: left;
-            margin: 0 0 calc(12/16 * 1rem) 0;
-            color: var(--bodyTextColorWhite);
-            opacity: .8;
-        }
-
         .cs-li-text {
             font-size: calc(20/16 * 1rem);
             font-weight: 700;
@@ -254,8 +255,8 @@
             /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
             font-size:min(2vw, .70rem);
             /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
-            width: calc(643/16 * 1em);
-            height: calc(608/16 * 1em);
+            width: calc(943/16 * 1em);
+            height: calc(908/16 * 1em);
             position: relative;
             z-index: 1;
             display: none;
@@ -318,14 +319,35 @@
             /* set to inherit at Large Desktop */
             font-size:min(1vw, 1rem);
             flex: none;
+            display: block;
+            z-index: -1;
+            position: absolute;
+            margin-left: -3em;
 
             &:before {
                 display: block;
             }
         }
 
+        .floozApp {
+            margin-left: 10%;
+        }
+
+        .cs-card-group {
+            width: 80%;
+        }
+
         .cs-content {
             width: 51%;
+        }
+
+        .cs-wrapper {
+            margin-top: 0;
+            width: 80%;
+        }
+
+        .cs-title {
+            width: 7em;
         }
     }
 }
@@ -335,11 +357,15 @@
     #buy-kendu {
         .cs-image-group {
             font-size: inherit;
+            width: calc(743/16 * 1em);
+            height: calc(708/16 * 1em);
         }
 
         .cs-li {
             flex-direction: row;
         }
+
+
     }
 }
 
@@ -348,6 +374,10 @@
     #buy-kendu {
         /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
         padding-bottom: 9vw;
+
+        .floozApp {
+            margin-right: 10em;
+        }
     }
 }
 

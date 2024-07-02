@@ -40,6 +40,7 @@
   }
   #hero-1856 .cs-topper {
     font-size: 1rem;
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   }
   #hero-1856 .cs-title,
   #hero-1856 .cs-text {
@@ -124,7 +125,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: #000;
+    background: rgba(0, 0, 0, 0);
     /* prevents the cursor from interacting with it */
     pointer-events: none;
     opacity: 0.4;
