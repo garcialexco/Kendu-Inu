@@ -448,67 +448,62 @@
             height: auto;
         }
 
-        .cs-card-group {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            /* 16px - 20px */
-            gap: clamp(1rem, 2.5vw, 1.25rem);
-        }
-
-        .cs-item {
-            text-align: left;
-            list-style: none;
-            width: 100%;
-            /* 160px - 320px */
-            height: clamp(10rem, 32vw, 20rem);
-            margin: 0;
-            /* prevents padding and border from affecting height and width */
-            box-sizing: border-box;
-            padding: 0;
-            background-color: #000;
-            /* clips background image corners */
+        .carousel {
             overflow: hidden;
-            box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            grid-column: span 12;
-            position: relative;
+            width: 100%;
             z-index: 1;
-
-            &:hover {
-                .cs-item-background {
-                    img {
-                        opacity: 0.4;
-                        transform: scale(1.3);
-                    }
-                }
-
-                .cs-h3 {
-                    color: var(--primary);
-                }
+          }
+          
+          .carousel-track {
+            display: flex;
+            gap: var(--gap-width);
+            animation: scroll var(--scroll-duration) linear infinite;
+          }
+          
+          .slide {
+            background: var(--slide-bg-color);
+            flex: 0 0 var(--slide-width);
+            height: var(--slide-height);
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          
+          .overlay {
+            position: absolute;
+            bottom: 0;
+            background: var(--overlay-bg-color);
+            color: var(--overlay-text-color);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: var(--overlay-transition);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .slide:hover .overlay {
+            opacity: 0;
+          }
+          
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
             }
-
-            &:before {
-                content: "";
-                width: 100%;
-                height: 100%;
-                /* prevents border from affecting height and width */
-                box-sizing: border-box;
-                /* prevents the mouse from interacting with it so when you hover hover the other elements inside the card it doesn't block your mouse from hovering over them */
-                pointer-events: none;
-                opacity: 1;
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 10;
+            100% {
+              transform: translateX(calc(-1 * var(--total-width)));
             }
-        }
+          }
+          
+          .carousel:hover .carousel-track {
+            animation-play-state: paused;
+          }
 
         .cs-link {
             text-decoration: none;

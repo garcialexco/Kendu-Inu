@@ -12,6 +12,14 @@
     --headerColor: #ffffff;
     --bodyTextColor: #f7f7f7;
     --bodyTextColorWhite: #f7f7f7;
+    --gap-width: 100px;
+    --slide-width: 200px;
+    --slide-height: 200px;
+    --slide-bg-color: rgba(18, 92, 251, 0.52);
+    --overlay-bg-color: rgba(0, 0, 0, 0.5);
+    --overlay-text-color: #fff;
+    --overlay-transition: opacity 0.3s ease;
+    --border-radius: 20px;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
