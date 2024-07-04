@@ -674,6 +674,10 @@
             grid-template-columns: repeat(5, 1fr);
         }
 
+        .carousel {
+            width: 100%;
+        }
+
         .cs-item {
             grid-column: span 1;
             &:nth-of-type(4),

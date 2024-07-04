@@ -576,6 +576,9 @@
   #exchanges .cs-card-group {
     grid-template-columns: repeat(5, 1fr);
   }
+  #exchanges .carousel {
+    width: 100%;
+  }
   #exchanges .cs-item {
     grid-column: span 1;
   }
