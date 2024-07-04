@@ -270,6 +270,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3em;
   }
   #buy-kendu .cs-image-group {
     /* set to inherit at Large Desktop */
@@ -310,6 +311,9 @@
   #buy-kendu .cs-li {
     flex-direction: row;
   }
+  #buy-kendu .cs-container {
+    margin-bottom: 8em;
+  }
 }
 /* Large Desktop - 2000px */
 @media only screen and (min-width: 125rem) {
@@ -347,7 +351,6 @@
   }
   #exchanges .cs-content {
     width: 100%;
-    max-width: 80rem;
     pointer-events: none;
     display: flex;
     justify-content: space-between;
@@ -383,10 +386,11 @@
   }
   #exchanges .carousel {
     overflow: hidden;
-    width: 100%;
+    width: 110%;
     z-index: 1;
   }
   #exchanges .carousel-track {
+    width: 100%;
     display: flex;
     gap: var(--gap-width);
     animation: scroll var(--scroll-duration) linear infinite;
@@ -577,7 +581,7 @@
     grid-template-columns: repeat(5, 1fr);
   }
   #exchanges .carousel {
-    width: 100%;
+    width: 160%;
   }
   #exchanges .cs-item {
     grid-column: span 1;

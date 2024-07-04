@@ -313,6 +313,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 3em;
         }
 
         .cs-image-group {
@@ -365,7 +366,9 @@
             flex-direction: row;
         }
 
-
+        .cs-container {
+            margin-bottom: 8em;
+        }
     }
 }
 
@@ -409,7 +412,6 @@
 
         .cs-content {
             width: 100%;
-            max-width: calc(1280/16 * 1rem);
             pointer-events: none;
             display: flex;
             justify-content: space-between;
@@ -450,11 +452,12 @@
 
         .carousel {
             overflow: hidden;
-            width: 100%;
+            width: 110%;
             z-index: 1;
           }
           
           .carousel-track {
+            width: 100%;
             display: flex;
             gap: var(--gap-width);
             animation: scroll var(--scroll-duration) linear infinite;
@@ -675,7 +678,7 @@
         }
 
         .carousel {
-            width: 100%;
+            width: 160%;
         }
 
         .cs-item {

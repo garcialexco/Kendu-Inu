@@ -65,6 +65,16 @@ document.addEventListener('DOMContentLoaded', () => {
     { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png', description: 'Body Builder', link: '#' },
     { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png', description: 'Yoga', link: '#' },
     { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png', description: 'Cycling', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-1.png', description: 'Aerobic', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png', description: 'Training', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png', description: 'Body Builder', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png', description: 'Yoga', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png', description: 'Cycling', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-1.png', description: 'Aerobic', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png', description: 'Training', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png', description: 'Body Builder', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png', description: 'Yoga', link: '#' },
+    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png', description: 'Cycling', link: '#' },
   ];
 
   const carouselTrack = document.querySelector('.carousel-track');
