@@ -449,9 +449,9 @@
             width: 100%;
             pointer-events: none;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            z-index: 1;
+            z-index: 2;
         }
 
         .cs-title {
@@ -470,6 +470,7 @@
         }
 
         .cs-topper {
+            text-align: center;
             text-shadow:
                 -1px -1px 0 #000,
                 0   -1px 0 #000,
@@ -699,6 +700,18 @@
         .cs-video-wrapper {
             /* changes back to 100% at desktop */
             height: 60%;
+        }
+
+        .cs-content {
+            width: 80%;
+        }
+
+        .cs-topper {
+            font-size: 1.25rem;
+        }
+
+        .cs-title {
+            font-size: 3rem;
         }
     }
 }
