@@ -251,10 +251,9 @@
   #buy-kendu .cs-graphic {
     width: 100%;
     min-width: 75rem;
-    height: auto;
     object-fit: cover;
     position: absolute;
-    bottom: 0;
+    bottom: -5%;
     left: 50%;
     z-index: 1;
     transform: translateX(-50%);
@@ -270,7 +269,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3em;
+    margin-bottom: 6em;
   }
   #buy-kendu .cs-image-group {
     /* set to inherit at Large Desktop */
@@ -300,6 +299,9 @@
   #buy-kendu .cs-title {
     width: 7em;
   }
+  #buy-kendu .cs-graphic {
+    bottom: -5em;
+  }
 }
 /* Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
@@ -314,6 +316,19 @@
   #buy-kendu .cs-container {
     margin-bottom: 8em;
   }
+  #buy-kendu .cs-wrapper {
+    padding-left: 8em;
+  }
+  #buy-kendu .cs-graphic {
+    bottom: -5em;
+    width: 115%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #buy-kendu .cs-graphic {
+    bottom: -7em;
+  }
 }
 /* Large Desktop - 2000px */
 @media only screen and (min-width: 125rem) {
@@ -323,6 +338,14 @@
   }
   #buy-kendu .floozApp {
     margin-right: 10em;
+  }
+  #buy-kendu .cs-graphic {
+    bottom: -9em;
+  }
+}
+@media only screen and (min-width: 2200px) {
+  #buy-kendu .cs-graphic {
+    bottom: -11em;
   }
 }
 /*-- -------------------------- -->
@@ -358,27 +381,13 @@
     z-index: 1;
   }
   #exchanges .cs-title {
-    max-width: 10ch;
+    max-width: 20ch;
+    font-size: 1.5rem;
     color: var(--bodyTextColorWhite);
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   }
-  #exchanges .cs-play {
-    /* 80px - 120px */
-    width: clamp(5rem, 14vw, 7.5rem);
-    height: clamp(5rem, 14vw, 7.5rem);
-    background-color: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9;
-    transition: opacity 0.3s, transform 0.3s;
-    backdrop-filter: blur(8px);
-  }
-  #exchanges .cs-play.cs-hide {
-    opacity: 0;
-    transform: scale(0);
+  #exchanges .cs-topper {
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   }
   #exchanges .cs-icon {
     width: 1.25rem;

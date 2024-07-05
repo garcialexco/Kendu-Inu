@@ -290,10 +290,10 @@
         .cs-graphic {
             width: 100%;
             min-width: calc(1200/16 * 1rem);
-            height: auto;
+            
             object-fit: cover;
             position: absolute;
-            bottom: 0;
+            bottom: -5%;
             left: 50%;
             z-index: 1;
             transform: translateX(-50%);
@@ -313,7 +313,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 3em;
+            margin-bottom: 6em;
         }
 
         .cs-image-group {
@@ -350,6 +350,10 @@
         .cs-title {
             width: 7em;
         }
+
+        .cs-graphic {
+            bottom: -5em;
+        }
     }
 }
 
@@ -369,6 +373,24 @@
         .cs-container {
             margin-bottom: 8em;
         }
+
+        .cs-wrapper {
+            padding-left: 8em;
+        }
+
+        .cs-graphic {
+            bottom: -5em;
+            width: 115%;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #buy-kendu {
+        .cs-graphic {
+            bottom: -7em;
+        }
     }
 }
 
@@ -380,6 +402,18 @@
 
         .floozApp {
             margin-right: 10em;
+        }
+
+        .cs-graphic {
+            bottom: -9em;
+        }
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    #buy-kendu {
+        .cs-graphic {
+            bottom: -11em;
         }
     }
 }
@@ -398,6 +432,7 @@
         overflow-x: clip;
         position: relative;
 
+
         .cs-container {
             width: 100%;
             max-width: calc(1720/16 * 1rem);
@@ -410,7 +445,7 @@
             gap: clamp(6.25rem, 16vw, 14.3125rem);
         }
 
-        .cs-content {
+            .cs-content {
             width: 100%;
             pointer-events: none;
             display: flex;
@@ -420,29 +455,30 @@
         }
 
         .cs-title {
-            max-width: 10ch;
+            max-width: 20ch;
+            font-size: 1.5rem;
             color: var(--bodyTextColorWhite);
+            text-shadow:
+                -1px -1px 0 #000,
+                0   -1px 0 #000,
+                1px -1px 0 #000,
+                1px  0   0 #000,
+                1px  1px 0 #000,
+                0    1px 0 #000,
+                -1px  1px 0 #000,
+                -1px  0   0 #000;
         }
 
-        .cs-play {
-            /* 80px - 120px */
-            width: clamp(5rem, 14vw, 7.5rem);
-            height: clamp(5rem, 14vw, 7.5rem);
-            background-color: rgba(255, 255, 255, 0.2);
-            cursor: pointer;
-            border: none;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9;
-            transition: opacity 0.3s, transform 0.3s;
-            backdrop-filter: blur(8px);
-
-            &.cs-hide {
-                opacity: 0;
-                transform: scale(0);
-            }
+        .cs-topper {
+            text-shadow:
+                -1px -1px 0 #000,
+                0   -1px 0 #000,
+                1px -1px 0 #000,
+                1px  0   0 #000,
+                1px  1px 0 #000,
+                0    1px 0 #000,
+                -1px  1px 0 #000,
+                -1px  0   0 #000;
         }
 
         .cs-icon {
@@ -597,7 +633,7 @@
             display: block;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 0;            
 
             &:hover {
                 cursor: pointer;
@@ -612,6 +648,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+
 
                 img {
                     width: 100%;
