@@ -25,7 +25,7 @@
   }
   #buy-kendu .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -35,6 +35,7 @@
   #buy-kendu .cs-topper {
     color: var(--secondary);
     font-size: 1.25rem;
+    text-align: center;
     text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   }
   #buy-kendu .cs-title {
@@ -55,7 +56,7 @@
     padding-bottom: 2rem;
     border-bottom: #dcdcdc 1px solid;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     /* 16px - 24px */
     gap: clamp(1rem, 2vw, 1.5rem);
     position: relative;
@@ -357,7 +358,7 @@
     padding: var(--sectionPadding);
     /* 200px - 300px - leaving extra space for the navigation */
     padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
-    background-color: #222;
+    background-color: #272727;
     overflow-x: clip;
     position: relative;
     margin-top: -0.2em;
@@ -646,7 +647,7 @@
     padding: var(--sectionPadding);
     /* 100px - 200px */
     padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
-    background-color: #222;
+    background-color: #272727;
     /* clips anything overflowing */
     overflow: hidden;
     position: relative;
@@ -822,7 +823,7 @@
     left: 50%;
     top: 50%;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotateY(180deg);
   }
   #about-kendu .cs-graphic {
     width: 100%;
