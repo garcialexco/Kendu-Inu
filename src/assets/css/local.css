@@ -25,12 +25,12 @@
   }
   #buy-kendu .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center !important;
   }
   #buy-kendu .cs-topper {
     color: var(--secondary);
@@ -41,6 +41,7 @@
   #buy-kendu .cs-title {
     margin: 0;
     font-size: 3.25rem;
+    text-align: center;
   }
   #buy-kendu .cs-card-group {
     margin: 0;
@@ -270,7 +271,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 6em;
+    margin-bottom: 3em;
   }
   #buy-kendu .cs-image-group {
     /* set to inherit at Large Desktop */
@@ -292,6 +293,8 @@
   }
   #buy-kendu .cs-content {
     width: 51%;
+    align-items: flex-start !important;
+    text-align: left;
   }
   #buy-kendu .cs-wrapper {
     margin-top: 0;
@@ -299,9 +302,13 @@
   }
   #buy-kendu .cs-title {
     width: 7em;
+    text-align: left;
   }
   #buy-kendu .cs-graphic {
     bottom: -5em;
+  }
+  #buy-kendu .cs-topper {
+    align-items: left;
   }
 }
 /* Desktop - 1300px */
@@ -362,7 +369,7 @@
     overflow-x: clip;
     position: relative;
     margin-top: -0.2em;
-    z-index: 1;
+    z-index: 2;
     height: 55em;
   }
   #exchanges .cs-container {
@@ -582,6 +589,7 @@
     left: 50%;
     z-index: 0;
     transform: translateX(-50%);
+    overflow: visible;
   }
   #exchanges .cs-dark {
     display: none;
@@ -632,12 +640,6 @@
     bottom: 3rem;
   }
 }
-/* Desktop - 1600px */
-@media only screen and (min-width: 100rem) {
-  #exchanges .cs-image-wrapper {
-    height: 1em;
-  }
-}
 /*-- -------------------------- -->
 <---       About Kendu          -->
 <--- -------------------------- -*/
@@ -646,12 +648,13 @@
   #about-kendu {
     padding: var(--sectionPadding);
     /* 100px - 200px */
-    padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
     background-color: #272727;
     /* clips anything overflowing */
-    overflow: hidden;
+    overflow: visible;
     position: relative;
-    z-index: 0;
+    z-index: 1;
+    margin-top: -0.1em;
+    padding-bottom: 0;
   }
   #about-kendu .cs-container {
     width: 100%;
@@ -666,22 +669,30 @@
   }
   #about-kendu .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 33.875rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     z-index: 3;
+  }
+  #about-kendu .cs-topper {
+    font-size: 1.25rem;
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   }
   #about-kendu .cs-title, #about-kendu .cs-text {
     color: var(--bodyTextColorWhite);
   }
+  #about-kendu .cs-title {
+    font-size: 2.5rem;
+  }
   #about-kendu .cs-text {
     margin-bottom: 1rem;
-    opacity: 0.8;
+    font-family: "Orienta", sans-serif;
+    font-size: 0.75em;
   }
   #about-kendu .cs-text:last-of-type {
     margin-bottom: 2rem;
@@ -695,14 +706,15 @@
     grid-template-columns: repeat(12, 1fr);
     row-gap: 1rem;
     column-gap: 0.75rem;
+    align-items: center;
   }
   #about-kendu .cs-li {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     grid-column: span 4;
     /* 16px - 20px */
@@ -746,18 +758,18 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    text-align: left;
+    text-align: center;
     margin: 0 0 0.75rem 0;
     color: var(--bodyTextColorWhite);
     opacity: 0.8;
   }
   #about-kendu .cs-li-text {
     font-size: 1.25rem;
-    font-weight: 700;
     line-height: 1.2em;
     text-align: left;
     margin: 0;
     color: var(--bodyTextColorWhite);
+    font-family: "Orienta", sans-serif;
   }
   #about-kendu .cs-button-solid {
     font-size: 1rem;
@@ -771,7 +783,6 @@
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
-    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -831,7 +842,7 @@
     height: auto;
     object-fit: cover;
     position: absolute;
-    bottom: 0;
+    bottom: -8em;
     left: 50%;
     z-index: 1;
     transform: translateX(-50%);
@@ -858,6 +869,17 @@
   }
   #about-kendu .cs-content {
     width: 51%;
+    text-align: left;
+    align-items: flex-start;
+  }
+  #about-kendu .cs-h3 {
+    text-align: left;
+  }
+  #about-kendu .cs-li {
+    align-items: flex-start;
+  }
+  #about-kendu .cs-text {
+    font-size: 0.8rem;
   }
 }
 /* Desktop - 1300px */
@@ -883,8 +905,9 @@
 @media only screen and (min-width: 0rem) {
   #faq {
     padding: var(--sectionPadding);
-    background-color: #222;
+    background-color: #1d1c1c;
     position: relative;
+    padding-top: 10em;
   }
   #faq .cs-container {
     width: 100%;
@@ -906,8 +929,12 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
+  #faq .cs-topper {
+    font-size: 1em;
+  }
   #faq .cs-title {
     max-width: 15ch;
+    font-size: 2.5em;
     margin: 0 0 2rem;
     color: var(--bodyTextColorWhite);
   }

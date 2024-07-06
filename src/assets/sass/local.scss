@@ -28,12 +28,12 @@
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: center;
+            text-align: left;
             width: 100%;
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
+            align-items: center !important;
         }
 
         .cs-topper {
@@ -54,6 +54,7 @@
         .cs-title {
             margin: 0;
             font-size: 3.25rem;
+            text-align: center;
         }
 
         .cs-card-group {
@@ -314,7 +315,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 6em;
+            margin-bottom: 3em;
         }
 
         .cs-image-group {
@@ -341,6 +342,8 @@
 
         .cs-content {
             width: 51%;
+            align-items: flex-start !important;
+            text-align: left;
         }
 
         .cs-wrapper {
@@ -350,10 +353,15 @@
 
         .cs-title {
             width: 7em;
+            text-align: left;
         }
 
         .cs-graphic {
             bottom: -5em;
+        }
+
+        .cs-topper {
+            align-items: left;
         }
     }
 }
@@ -433,7 +441,7 @@
         overflow-x: clip;
         position: relative;
         margin-top: -0.2em;
-        z-index: 1;
+        z-index: 2;
         height: 55em;
 
         .cs-container {
@@ -694,6 +702,7 @@
             left: 50%;
             z-index: 0;
             transform: translateX(-50%);
+            overflow: visible;
         }
 
         .cs-dark {
@@ -765,16 +774,6 @@
     }
 }
 
-/* Desktop - 1600px */
-@media only screen and (min-width: 100rem) {
-    #exchanges {
-        .cs-image-wrapper {
-            height: 1em;
-        }
-    }
-}
-                           
-
 /*-- -------------------------- -->
 <---       About Kendu          -->
 <--- -------------------------- -*/
@@ -784,12 +783,13 @@
     #about-kendu {
         padding: var(--sectionPadding);
         /* 100px - 200px */
-        padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
         background-color: #272727;
         /* clips anything overflowing */
-        overflow: hidden;
+        overflow: visible;
         position: relative;
-        z-index: 0;
+        z-index: 1;
+        margin-top: -0.1em;
+        padding-bottom: 0;
         
         .cs-container {
             width: 100%;
@@ -805,24 +805,42 @@
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: left;
+            text-align: center;
             width: 100%;
             max-width: calc(542/16 * 1rem);
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
+            align-items: center;
             position: relative;
             z-index: 3;
+        }
+
+        .cs-topper {
+            font-size: 1.25rem;
+            text-shadow:
+                -1px -1px 0 #000,
+                0   -1px 0 #000,
+                1px -1px 0 #000,
+                1px  0   0 #000,
+                1px  1px 0 #000,
+                0    1px 0 #000,
+                -1px  1px 0 #000,
+                -1px  0   0 #000;
         }
 
         .cs-title, .cs-text {
             color: var(--bodyTextColorWhite);
         }
 
+        .cs-title {
+            font-size: 2.5rem;
+        }
+
         .cs-text {
             margin-bottom: calc(16/16 * 1rem);
-            opacity: .8;
+            font-family: 'Orienta', sans-serif;
+            font-size: .75em;
             &:last-of-type {
                 margin-bottom: calc(32/16 * 1rem);
             }
@@ -837,6 +855,7 @@
             grid-template-columns: repeat(12, 1fr);
             row-gap: calc(16/16 * 1rem);
             column-gap: calc(12/16 * 1rem);
+            align-items: center;
         }
 
         .cs-li {
@@ -844,8 +863,8 @@
             margin: 0;
             padding: 0;
             display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
             grid-column: span 4;
             /* 16px - 20px */
@@ -893,7 +912,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: .1em;
-            text-align: left;
+            text-align: center;
             margin: 0 0 calc(12/16 * 1rem) 0;
             color: var(--bodyTextColorWhite);
             opacity: .8;
@@ -901,11 +920,11 @@
 
         .cs-li-text {
             font-size: calc(20/16 * 1rem);
-            font-weight: 700;
             line-height: 1.2em;
             text-align: left;
             margin: 0;
             color: var(--bodyTextColorWhite);
+            font-family: 'Orienta', sans-serif;
         }
 
         .cs-button-solid {
@@ -920,7 +939,6 @@
             min-width: calc(150/16 * 1rem);
             padding: 0 calc(24/16 * 1rem);
             background-color: var(--primary);
-            border-radius: calc(4/16 * 1rem);
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -990,7 +1008,8 @@
             height: auto;
             object-fit: cover;
             position: absolute;
-            bottom: 0;
+            bottom: -8em;
+
             left: 50%;
             z-index: 1;
             transform: translateX(-50%);
@@ -1024,6 +1043,20 @@
 
         .cs-content {
             width: 51%;
+            text-align: left;
+            align-items: flex-start;
+        }
+
+        .cs-h3 {
+            text-align: left;
+        }
+
+        .cs-li {
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            font-size: 0.8rem;
         }
     }
 }
@@ -1057,8 +1090,9 @@
 @media only screen and (min-width: 0rem) {
     #faq {
         padding: var(--sectionPadding);
-        background-color: #222;
+        background-color: #1d1c1c;
         position: relative;
+        padding-top: 10em;
 
         .cs-container {
             width: 100%;
@@ -1082,8 +1116,13 @@
             align-items: center;
         }
 
+        .cs-topper {
+            font-size: 1em;
+        }
+
         .cs-title {
             max-width: 15ch;
+            font-size: 2.5em;
             margin: 0 0 calc(32/16 * 1rem);
             color: var(--bodyTextColorWhite);
         }
