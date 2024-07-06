@@ -258,7 +258,7 @@
             width: calc(943/16 * 1em);
             height: calc(908/16 * 1em);
             position: relative;
-            z-index: 1;
+            z-index: 2;
             display: none;
         }
 
@@ -431,7 +431,9 @@
         background-color: #222;
         overflow-x: clip;
         position: relative;
-
+        margin-top: -0.2em;
+        z-index: 1;
+        height: 55em;
 
         .cs-container {
             width: 100%;
@@ -452,11 +454,14 @@
             justify-content: center;
             align-items: center;
             z-index: 2;
+            margin-bottom: -4em;
+            margin-top: 4em;
         }
 
         .cs-title {
             max-width: 20ch;
-            font-size: 1.5rem;
+            font-size: 2.5rem;
+            text-align: center;
             color: var(--bodyTextColorWhite);
             text-shadow:
                 -1px -1px 0 #000,
@@ -471,6 +476,7 @@
 
         .cs-topper {
             text-align: center;
+            font-size: 1.05rem;
             text-shadow:
                 -1px -1px 0 #000,
                 0   -1px 0 #000,
@@ -490,7 +496,9 @@
         .carousel {
             overflow: hidden;
             width: 110%;
-            z-index: 1;
+            z-index: 2;
+            position: absolute;
+            bottom: 3em;
           }
           
           .carousel-track {
@@ -626,10 +634,10 @@
             }
         }
 
-        .cs-video-wrapper {
+        .cs-image-wrapper {
             width: 100%;
             /* changes to 90% at tablet, then back to 100% at desktop */
-            height: 32%;
+            height: 80%;
             min-height: calc(520/16 * 1rem);
             display: block;
             position: absolute;
@@ -675,6 +683,18 @@
             transform: translateX(-50%);
         }
 
+        .cs-cex-graphic {
+            width: 120%;
+            min-width: calc(1280/16 * 1rem);
+            height: 20em;
+            object-fit: cover;
+            position: absolute;
+            top: 35.75em;
+            left: 50%;
+            z-index: 0;
+            transform: translateX(-50%);
+        }
+
         .cs-dark {
             display: none;
         }
@@ -697,17 +717,19 @@
             }
         }
 
-        .cs-video-wrapper {
+        .cs-image-wrapper {
             /* changes back to 100% at desktop */
-            height: 60%;
+            height: 80%;
         }
 
         .cs-content {
             width: 80%;
+            justify-content: left;
         }
 
         .cs-topper {
             font-size: 1.25rem;
+            text-align: left;
         }
 
         .cs-title {
@@ -718,10 +740,7 @@
 
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
-    #exchanges {
-        .cs-video-wrapper {
-            height: 80%;
-        }
+    #exchanges { 
 
         .cs-card-group {
             grid-template-columns: repeat(5, 1fr);
@@ -744,7 +763,16 @@
         }
     }
 }
-                                  
+
+/* Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
+    #exchanges {
+        .cs-image-wrapper {
+            height: 1em;
+        }
+    }
+}
+                           
 
 /*-- -------------------------- -->
 <---       About Kendu          -->
@@ -760,7 +788,7 @@
         /* clips anything overflowing */
         overflow: hidden;
         position: relative;
-        z-index: 1;
+        z-index: 0;
         
         .cs-container {
             width: 100%;

@@ -223,7 +223,7 @@
     width: 58.9375em;
     height: 56.75em;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     display: none;
   }
   #buy-kendu .cs-picture {
@@ -360,6 +360,9 @@
     background-color: #222;
     overflow-x: clip;
     position: relative;
+    margin-top: -0.2em;
+    z-index: 1;
+    height: 55em;
   }
   #exchanges .cs-container {
     width: 100%;
@@ -379,15 +382,19 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+    margin-bottom: -4em;
+    margin-top: 4em;
   }
   #exchanges .cs-title {
     max-width: 20ch;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    text-align: center;
     color: var(--bodyTextColorWhite);
     text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   }
   #exchanges .cs-topper {
     text-align: center;
+    font-size: 1.05rem;
     text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   }
   #exchanges .cs-icon {
@@ -397,7 +404,9 @@
   #exchanges .carousel {
     overflow: hidden;
     width: 110%;
-    z-index: 1;
+    z-index: 2;
+    position: absolute;
+    bottom: 3em;
   }
   #exchanges .carousel-track {
     width: 100%;
@@ -518,21 +527,21 @@
     left: 0;
     transition: transform 0.6s, opacity 0.3s;
   }
-  #exchanges .cs-video-wrapper {
+  #exchanges .cs-image-wrapper {
     width: 100%;
     /* changes to 90% at tablet, then back to 100% at desktop */
-    height: 32%;
+    height: 80%;
     min-height: 32.5rem;
     display: block;
     position: absolute;
     top: 0;
     left: 0;
   }
-  #exchanges .cs-video-wrapper:hover {
+  #exchanges .cs-image-wrapper:hover {
     cursor: pointer;
   }
-  #exchanges .cs-video-wrapper video,
-  #exchanges .cs-video-wrapper .cs-picture {
+  #exchanges .cs-image-wrapper video,
+  #exchanges .cs-image-wrapper .cs-picture {
     width: 100%;
     height: 100%;
     /* makes image act as a background image */
@@ -541,8 +550,8 @@
     top: 0;
     left: 0;
   }
-  #exchanges .cs-video-wrapper video img,
-  #exchanges .cs-video-wrapper .cs-picture img {
+  #exchanges .cs-image-wrapper video img,
+  #exchanges .cs-image-wrapper .cs-picture img {
     width: 100%;
     height: 100%;
     /* makes image act as a background image */
@@ -562,6 +571,17 @@
     z-index: 0;
     transform: translateX(-50%);
   }
+  #exchanges .cs-cex-graphic {
+    width: 120%;
+    min-width: 80rem;
+    height: 20em;
+    object-fit: cover;
+    position: absolute;
+    top: 35.75em;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+  }
   #exchanges .cs-dark {
     display: none;
   }
@@ -577,15 +597,17 @@
   #exchanges .cs-item:nth-of-type(4), #exchanges .cs-item:nth-of-type(5) {
     grid-column: span 6;
   }
-  #exchanges .cs-video-wrapper {
+  #exchanges .cs-image-wrapper {
     /* changes back to 100% at desktop */
-    height: 60%;
+    height: 80%;
   }
   #exchanges .cs-content {
     width: 80%;
+    justify-content: left;
   }
   #exchanges .cs-topper {
     font-size: 1.25rem;
+    text-align: left;
   }
   #exchanges .cs-title {
     font-size: 3rem;
@@ -593,9 +615,6 @@
 }
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
-  #exchanges .cs-video-wrapper {
-    height: 80%;
-  }
   #exchanges .cs-card-group {
     grid-template-columns: repeat(5, 1fr);
   }
@@ -612,6 +631,12 @@
     bottom: 3rem;
   }
 }
+/* Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
+  #exchanges .cs-image-wrapper {
+    height: 1em;
+  }
+}
 /*-- -------------------------- -->
 <---       About Kendu          -->
 <--- -------------------------- -*/
@@ -625,7 +650,7 @@
     /* clips anything overflowing */
     overflow: hidden;
     position: relative;
-    z-index: 1;
+    z-index: 0;
   }
   #about-kendu .cs-container {
     width: 100%;
