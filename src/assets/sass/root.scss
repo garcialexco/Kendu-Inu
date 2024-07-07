@@ -928,6 +928,7 @@ html {
         padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
         background-color: #1a1a1a;
         position: relative;
+        z-index: -2;
 
         .cs-container {
             width: 100%;
