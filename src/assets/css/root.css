@@ -777,18 +777,23 @@ html .cs-social-icon {
     padding: var(--sectionPadding);
     /* 30px - 50px */
     padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
-    background-color: #1a1a1a;
+    padding-top: 7em;
+    background-color: #272727;
     position: relative;
     z-index: -2;
+    overflow: hidden;
+    font-family: "Teko", sans-serif;
   }
   #cs-footer-1781 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
+    margin-top: 2em;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    text-align: center;
     column-gap: 4.25rem;
   }
   #cs-footer-1781 .cs-logo-group {
@@ -801,24 +806,27 @@ html .cs-social-icon {
   #cs-footer-1781 .cs-logomark {
     width: auto;
     height: 6.25rem;
-    opacity: 0.12;
   }
   #cs-footer-1781 .cs-title {
     /* 31px - 39px */
-    font-size: clamp(1.9375rem, 7vw, 3.0625rem);
+    font-size: 3rem;
     max-width: 23ch;
-    margin: 3rem 0 0.5rem;
     color: var(--bodyTextColorWhite);
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  #cs-footer-1781 .cs-topper {
+    font-size: 1em;
   }
   #cs-footer-1781 .cs-outline {
     /* 31px - 39px */
-    font-size: clamp(1.9375rem, 1vw, 2.4375rem);
+    font-size: 4em;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 1.2em;
-    color: #1a1a1a;
-    /* text outline styles */
-    -webkit-text-stroke: 1px var(--primary);
+    color: #272727;
+    text-shadow: -1px -1px 0 #CE0909, 0 -1px 0 #CE0909, 1px -1px 0 #CE0909, 1px 0 0 #CE0909, 1px 1px 0 #CE0909, 0 1px 0 #CE0909, -1px 1px 0 #CE0909, -1px 0 0 #CE0909;
   }
   #cs-footer-1781 .cs-header {
     font-size: 1.5625rem;
@@ -833,14 +841,20 @@ html .cs-social-icon {
     width: 13.5625rem;
     height: auto;
   }
+  #cs-footer-1781 .cs-logo-title .cs-title {
+    font-size: 5em;
+    margin: 0.25em 0;
+  }
   #cs-footer-1781 .cs-text {
     max-width: 25.75rem;
-    margin: 1rem 0 0;
+    margin: 0 auto;
     color: var(--bodyTextColorWhite);
-    opacity: 0.8;
+    font-size: 0.9em;
+    font-family: "Orienta", sans-serif;
   }
   #cs-footer-1781 .cs-ul-wrapper {
     margin: 0 0 3.75rem;
+    width: 80%;
   }
   #cs-footer-1781 .cs-ul {
     margin: 0;
@@ -857,21 +871,25 @@ html .cs-social-icon {
   #cs-footer-1781 .cs-li {
     list-style: none;
   }
-  #cs-footer-1781 .cs-contact {
-    font-size: 1.25rem;
-    font-weight: 700;
+  #cs-footer-1781 .cs-contact, #cs-footer-1781 .cs-contract {
+    font-size: 1rem;
     line-height: 1.2em;
     text-decoration: none;
     color: var(--bodyTextColorWhite);
+    font-family: "Orienta", sans-serif;
+  }
+  #cs-footer-1781 .cs-contract {
+    font-size: 0.9rem;
+    word-wrap: break-word;
   }
   #cs-footer-1781 .cs-link {
     /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-size: 1.25rem;
     line-height: 1.5em;
     text-align: left;
     text-decoration: none;
     color: var(--bodyTextColorWhite);
-    opacity: 0.8;
+    opacity: 0.9;
     display: inline-flex;
     align-items: flex-start;
     gap: 0.5rem;
@@ -885,11 +903,13 @@ html .cs-social-icon {
     max-width: 80rem; /* 28px - 40px */
     margin: 0 auto;
     padding-top: clamp(1.75rem, 3vw, 2.5rem);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0.75rem;
+  }
+  #cs-footer-1781 .cs-copy {
+    margin-right: 35em !important;
   }
   #cs-footer-1781 .cs-credit,
   #cs-footer-1781 .cs-bottom-link,
@@ -940,23 +960,57 @@ html .cs-social-icon {
     opacity: 1;
     display: block;
   }
+  #cs-footer-1781 .cs-graphic {
+    width: 130%;
+    min-width: 75rem;
+    height: 30%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -16%;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #cs-footer-1781 .cs-container {
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    flex-flow: row;
   }
   #cs-footer-1781 .cs-logo-group {
-    width: fit-content;
-    margin: 0;
-    margin-right: auto;
+    width: 200%;
+    margin: 0 auto;
+  }
+  #cs-footer-1781 .cs-logo-title {
+    position: absolute;
+    width: 21em;
+    top: -20%;
+    left: 117%;
   }
   #cs-footer-1781 .cs-ul-wrapper {
     margin: 0;
+    margin-top: 8em;
+    text-align: left;
+  }
+  #cs-footer-1781 .cs-wrapper-text {
+    width: 35%;
   }
   #cs-footer-1781 .cs-bottom {
     /* 60px - 80px */
     margin-top: clamp(3.75rem, 6vw, 5rem);
+  }
+  #cs-footer-1781 .cs-graphic {
+    bottom: -7%;
+  }
+}
+@media only screen and (min-width: 125rem) {
+  #cs-footer-1781 {
+    padding-top: 10em;
+    padding-bottom: 5em;
+  }
+  #cs-footer-1781 .cs-logo-title {
+    left: 110%;
   }
 }
 

@@ -926,18 +926,23 @@ html {
         padding: var(--sectionPadding);
         /* 30px - 50px */
         padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
-        background-color: #1a1a1a;
+        padding-top: 7em;
+        background-color: #272727;
         position: relative;
         z-index: -2;
+        overflow: hidden;
+        font-family: 'Teko', sans-serif;
 
         .cs-container {
             width: 100%;
             max-width: calc(1280/16 * 1rem);
             margin: auto;
+            margin-top: 2em;
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
+            text-align: center;
             column-gap: calc(68/16 * 1rem);
         }
 
@@ -952,26 +957,38 @@ html {
         .cs-logomark {
             width: auto;
             height: calc(100/16 * 1rem);
-            opacity: 0.12;
         }
 
         .cs-title {
             /* 31px - 39px */
-            font-size: clamp(1.9375rem, 7vw, 3.0625rem);
+            font-size: 3rem;
             max-width: 23ch;
-            margin: calc(48/16 * 1rem) 0 calc(8/16 * 1rem);
             color: var(--bodyTextColorWhite);
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-top: 1em;
+        }
+
+        .cs-topper {
+            font-size: 1em;
         }
 
         .cs-outline {
             /* 31px - 39px */
-            font-size: clamp(1.9375rem, 1vw, 2.4375rem);
+            font-size: 4em;
             text-transform: uppercase;
             font-weight: 900;
             line-height: 1.2em;
-            color: #1a1a1a;
-            /* text outline styles */
-            -webkit-text-stroke: 1px var(--primary);
+            color: #272727;
+            text-shadow:
+            -1px -1px 0 #CE0909,
+            0   -1px 0 #CE0909,
+            1px -1px 0 #CE0909,
+            1px  0   0 #CE0909,
+            1px  1px 0 #CE0909,
+            0    1px 0 #CE0909,
+            -1px  1px 0 #CE0909,
+            -1px  0   0 #CE0909;
         }
 
         .cs-header {
@@ -989,15 +1006,22 @@ html {
             height: auto;
         }
 
+        .cs-logo-title .cs-title {
+            font-size: 5em;
+            margin: 0.25em 0;
+        }
+
         .cs-text {
             max-width: calc(412/16 * 1rem);
-            margin: calc(16/16 * 1rem) 0 0;
+            margin: 0 auto;
             color: var(--bodyTextColorWhite);
-            opacity: .8;
+            font-size: 0.9em;
+            font-family: 'Orienta', sans-serif;
         }
 
         .cs-ul-wrapper {
             margin: 0 0 calc(60/16 * 1rem);
+            width: 80%;
         }
 
         .cs-ul {
@@ -1018,22 +1042,28 @@ html {
             list-style: none;
         }
 
-        .cs-contact {
-            font-size: calc(20/16 * 1rem);
-            font-weight: 700;
+        .cs-contact, .cs-contract {
+            font-size: 1rem;
             line-height: 1.2em;
             text-decoration: none;
             color: var(--bodyTextColorWhite);
+            font-family: 'Orienta', sans-serif;
         }
+
+        .cs-contract {
+            font-size: 0.9rem;
+            word-wrap: break-word;
+        }
+
 
         .cs-link {
             /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            font-size: 1.25rem;
             line-height: 1.5em;
             text-align: left;
             text-decoration: none;
             color: var(--bodyTextColorWhite);
-            opacity: .8;
+            opacity: .9;
             display: inline-flex;
             align-items: flex-start;
             gap: calc(8/16 * 1rem);
@@ -1049,11 +1079,14 @@ html {
             max-width: calc(1280/16 * 1rem); /* 28px - 40px */
             margin: 0 auto;
             padding-top: clamp(1.75rem, 3vw, 2.5rem);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
             gap: calc(12/16 * 1rem);
+        }
+
+        .cs-copy {
+            margin-right: 35em !important;
         }
 
         .cs-credit,
@@ -1113,6 +1146,18 @@ html {
                 }
             }
         }
+
+        .cs-graphic {
+            width: 130%;
+            min-width: calc(1200/16 * 1rem);
+            height: 30%;
+            object-fit: cover;
+            position: absolute;
+            bottom: -16%;
+            left: 50%;
+            z-index: -1;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -1120,22 +1165,49 @@ html {
 @media only screen and (min-width: 64rem) {
     #cs-footer-1781 {
         .cs-container {
-            justify-content: flex-end;
+            justify-content: space-evenly;
+            flex-flow: row;
         }
 
         .cs-logo-group {
-            width: fit-content;
-            margin: 0;
-            margin-right: auto;
+            width: 200%;
+            margin: 0 auto;
+        }
+
+        .cs-logo-title {
+            position: absolute;
+            width: 21em;
+            top: -20%;
+            left: 117%;
         }
 
         .cs-ul-wrapper {
             margin: 0;
+            margin-top: 8em;
+            text-align: left;
+        }
+
+        .cs-wrapper-text {
+            width: 35%;
         }
 
         .cs-bottom {
             /* 60px - 80px */
             margin-top: clamp(3.75rem, 6vw, 5rem);
+        }
+
+        .cs-graphic {
+            bottom: -7%;
+        }
+    }
+}
+
+@media only screen and (min-width: 125rem) {
+    #cs-footer-1781 {
+        padding-top: 10em;
+        padding-bottom: 5em;
+        .cs-logo-title {
+            left: 110%;
         }
     }
 }
