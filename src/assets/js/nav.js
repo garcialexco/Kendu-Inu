@@ -60,21 +60,21 @@ for (const item of faqItems) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const slidesData = [
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-1.png', description: 'Aerobic', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png', description: 'Training', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png', description: 'Body Builder', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png', description: 'Yoga', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png', description: 'Cycling', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-1.png', description: 'Aerobic', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png', description: 'Training', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png', description: 'Body Builder', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png', description: 'Yoga', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png', description: 'Cycling', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-1.png', description: 'Aerobic', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png', description: 'Training', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png', description: 'Body Builder', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png', description: 'Yoga', link: '#' },
-    { src: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png', description: 'Cycling', link: '#' },
+    { src: '/assets/svgs/CEX-icons/uniswap-logo.svg', description: 'Aerobic', link: '#' },
+    { src: '/assets/svgs/CEX-icons/lbank-logo.svg', description: 'Training', link: '#' },
+    { src: '/assets/svgs/CEX-icons/bitmart-logo.svg', description: 'Body Builder', link: '#' },
+    { src: '/assets/svgs/CEX-icons/poloniex-logo.svg', description: 'Yoga', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
+    { src: 'https://placehold.co/200', description: 'Text', link: '#' },
   ];
 
   const carouselTrack = document.querySelector('.carousel-track');

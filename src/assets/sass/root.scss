@@ -18,7 +18,6 @@
         --gap-width: 100px;
         --slide-width: 200px;
         --slide-height: 200px;
-        --slide-bg-color: rgba(18, 92, 251, 0.52);
         --overlay-bg-color: rgba(0, 0, 0, 0.5);
         --overlay-text-color: #fff;
         --overlay-transition: opacity 0.3s ease;
@@ -1085,10 +1084,6 @@ html {
             gap: calc(12/16 * 1rem);
         }
 
-        .cs-copy {
-            margin-right: 35em !important;
-        }
-
         .cs-credit,
         .cs-bottom-link,
         .cs-credit-link {
@@ -1161,6 +1156,24 @@ html {
     }
 }
 
+/* Mobile - 425px */
+@media only screen and (min-width: 26.5625rem) {
+    #cs-footer-1781 {
+        .cs-copy {
+            margin-right: 2em !important;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 26.5625rem) {
+    #cs-footer-1781 {
+        .cs-copy {
+            margin-right: 25em !important;
+        }
+    }
+}
+
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #cs-footer-1781 {
@@ -1179,6 +1192,10 @@ html {
             width: 21em;
             top: -20%;
             left: 117%;
+        }
+
+        .cs-copy {
+            margin-right: 35em !important;
         }
 
         .cs-ul-wrapper {
@@ -1202,6 +1219,7 @@ html {
     }
 }
 
+/* Bigger Desktop - 2000px */
 @media only screen and (min-width: 125rem) {
     #cs-footer-1781 {
         padding-top: 10em;

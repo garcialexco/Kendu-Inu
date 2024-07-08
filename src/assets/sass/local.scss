@@ -394,7 +394,8 @@
     }
 }
 
-@media only screen and (min-width: 1600px) {
+/* Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
     #buy-kendu {
         .cs-graphic {
             bottom: -7em;
@@ -418,7 +419,8 @@
     }
 }
 
-@media only screen and (min-width: 2200px) {
+/* XL Desktop - 2200px */
+@media only screen and (min-width: 137.5rem) {
     #buy-kendu {
         .cs-graphic {
             bottom: -11em;
@@ -514,14 +516,14 @@
             display: flex;
             gap: var(--gap-width);
             animation: scroll var(--scroll-duration) linear infinite;
+            overflow: visible;
           }
           
           .slide {
-            background: var(--slide-bg-color);
             flex: 0 0 var(--slide-width);
             height: var(--slide-height);
             position: relative;
-            overflow: hidden;
+            overflow: visible;
           }
           
           .slide img {
@@ -542,6 +544,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: auto;
           }
           
           .slide:hover .overlay {

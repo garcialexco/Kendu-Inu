@@ -333,7 +333,8 @@
     height: auto;
   }
 }
-@media only screen and (min-width: 1600px) {
+/* Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
   #buy-kendu .cs-graphic {
     bottom: -7em;
   }
@@ -351,7 +352,8 @@
     bottom: -9em;
   }
 }
-@media only screen and (min-width: 2200px) {
+/* XL Desktop - 2200px */
+@media only screen and (min-width: 137.5rem) {
   #buy-kendu .cs-graphic {
     bottom: -11em;
   }
@@ -421,13 +423,13 @@
     display: flex;
     gap: var(--gap-width);
     animation: scroll var(--scroll-duration) linear infinite;
+    overflow: visible;
   }
   #exchanges .slide {
-    background: var(--slide-bg-color);
     flex: 0 0 var(--slide-width);
     height: var(--slide-height);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
   }
   #exchanges .slide img {
     width: 100%;
@@ -446,6 +448,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: auto;
   }
   #exchanges .slide:hover .overlay {
     opacity: 0;
