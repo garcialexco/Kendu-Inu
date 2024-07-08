@@ -175,7 +175,6 @@
             width: calc(48/16 * 1rem);
             height: calc(48/16 * 1rem);
             margin: 0;
-            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -225,7 +224,6 @@
             min-width: calc(150/16 * 1rem);
             padding: 0 calc(24/16 * 1rem);
             background-color: var(--primary);
-            border-radius: calc(4/16 * 1rem);
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -242,7 +240,6 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                border-radius: calc(4/16 * 1rem);
                 transition: width .3s;
             }
 
@@ -521,7 +518,7 @@
           
           .slide {
             flex: 0 0 var(--slide-width);
-            height: var(--slide-height);
+            height: 12.5rem;
             position: relative;
             overflow: visible;
           }
@@ -747,6 +744,10 @@
         .cs-title {
             font-size: 3rem;
         }
+
+        .slide {
+            height: var(--slide-height);
+          }
     }
 }
 
@@ -878,7 +879,6 @@
             width: calc(48/16 * 1rem);
             height: calc(48/16 * 1rem);
             margin: 0;
-            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -957,7 +957,6 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                border-radius: calc(4/16 * 1rem);
                 transition: width .3s;
             }
 
@@ -1144,6 +1143,10 @@
             color: var(--bodyTextColorWhite);
         }
 
+        .cs-button-text {
+            font-family: 'Teko', sans-serif;
+        }
+
         .cs-button-solid {
             font-size: calc(16/16 * 1rem);
             font-weight: 700;
@@ -1168,7 +1171,6 @@
                 height: 100%;
                 background: #000;
                 opacity: 1;
-                border-radius: calc(4/16 * 1rem);
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -1223,6 +1225,7 @@
                     padding: calc(16/16 * 1rem) clamp(1rem, 2vw, 1.5rem);
                     opacity: 1;
                     border: 1px solid #767676;
+                    font-family: 'Orienta', sans-serif;
                 }
             }
         }

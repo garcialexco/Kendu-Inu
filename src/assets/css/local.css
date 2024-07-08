@@ -149,7 +149,6 @@
     width: 3rem;
     height: 3rem;
     margin: 0;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,7 +194,6 @@
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
-    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -212,7 +210,6 @@
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 0.25rem;
     transition: width 0.3s;
   }
   #buy-kendu .cs-button-solid:hover:before {
@@ -427,7 +424,7 @@
   }
   #exchanges .slide {
     flex: 0 0 var(--slide-width);
-    height: var(--slide-height);
+    height: 12.5rem;
     position: relative;
     overflow: visible;
   }
@@ -624,6 +621,9 @@
   #exchanges .cs-title {
     font-size: 3rem;
   }
+  #exchanges .slide {
+    height: var(--slide-height);
+  }
 }
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
@@ -728,7 +728,6 @@
     width: 3rem;
     height: 3rem;
     margin: 0;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -802,7 +801,6 @@
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 0.25rem;
     transition: width 0.3s;
   }
   #about-kendu .cs-button-solid:hover:before {
@@ -953,6 +951,9 @@
     margin: 0 0 2rem;
     color: var(--bodyTextColorWhite);
   }
+  #faq .cs-button-text {
+    font-family: "Teko", sans-serif;
+  }
   #faq .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;
@@ -977,7 +978,6 @@
     height: 100%;
     background: #000;
     opacity: 1;
-    border-radius: 0.25rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -1022,6 +1022,7 @@
     padding: 1rem clamp(1rem, 2vw, 1.5rem);
     opacity: 1;
     border: 1px solid #767676;
+    font-family: "Orienta", sans-serif;
   }
   #faq .cs-button {
     /* 16px - 20px */
