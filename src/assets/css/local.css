@@ -257,9 +257,6 @@
     z-index: -1;
     transform: translateX(-50%);
   }
-  #buy-kendu .cs-dark {
-    display: none;
-  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -284,6 +281,7 @@
   }
   #buy-kendu .floozApp {
     margin-left: 10%;
+    width: 600px;
   }
   #buy-kendu .cs-card-group {
     width: 80%;
@@ -344,6 +342,7 @@
   }
   #buy-kendu .floozApp {
     margin-right: 10em;
+    width: 700px;
   }
   #buy-kendu .cs-graphic {
     bottom: -9em;

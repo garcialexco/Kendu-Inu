@@ -296,10 +296,6 @@
             z-index: -1 ;
             transform: translateX(-50%);
         }
-
-        .cs-dark {
-            display: none;
-        }
     }
 }
 
@@ -330,6 +326,7 @@
 
         .floozApp {
             margin-left: 10%;
+            width: 600px;
         }
 
         .cs-card-group {
@@ -408,6 +405,7 @@
 
         .floozApp {
             margin-right: 10em;
+            width: 700px;
         }
 
         .cs-graphic {
