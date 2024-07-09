@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const linkElement = document.createElement('a');
     linkElement.href = link;
+    linkElement.target = '_blank'
 
     const imgElement = document.createElement('img');
     imgElement.src = src;

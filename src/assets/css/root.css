@@ -779,7 +779,7 @@ html .cs-social-icon {
     padding-top: 7em;
     background-color: #272727;
     position: relative;
-    z-index: -2;
+    z-index: 0;
     overflow: hidden;
     font-family: "Teko", sans-serif;
   }
