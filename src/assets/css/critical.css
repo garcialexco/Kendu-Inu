@@ -93,10 +93,10 @@
     filter: brightness(60%);
     position: absolute;
     top: 50%;
-    right: -26rem;
+    right: auto;
     left: auto;
     z-index: -1;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(3%);
   }
   #hero-1856 .cs-graphic {
     width: 100%;
@@ -177,31 +177,6 @@
   }
 }
 /* Hero shape settings */
-@media only screen and (min-width: 25rem) {
-  #hero-1856 .cs-content-graphic {
-    right: -25em;
-  }
-}
-@media only screen and (min-width: 28.125rem) {
-  #hero-1856 .cs-content-graphic {
-    right: -25em;
-  }
-}
-@media only screen and (min-width: 32.187rem) {
-  #hero-1856 .cs-content-graphic {
-    right: -21em;
-  }
-}
-@media only screen and (min-width: 37.5rem) {
-  #hero-1856 .cs-content-graphic {
-    right: -13em;
-  }
-}
-@media only screen and (min-width: 43.75rem) {
-  #hero-1856 .cs-content-graphic {
-    right: -13em;
-  }
-}
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero-1856 .cs-background::before {
@@ -245,9 +220,6 @@
   #hero-1856 {
     /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get closer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
     padding-bottom: 14vw;
-  }
-  #hero-1856 .cs-container {
-    margin-left: 40em;
   }
   #hero-1856 .cs-video-wrapper {
     height: 100%;
