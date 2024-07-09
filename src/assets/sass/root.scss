@@ -33,6 +33,10 @@
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
     .cs-topper {
         display: block;
@@ -701,7 +705,7 @@ html {
             transition: background-color 0.3s;
 
             &:hover {
-                background-color: #1d1c1c;
+                background-color: #560101;
 
                 .cs-social-icon {
                     opacity: 1;

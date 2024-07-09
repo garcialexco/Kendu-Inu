@@ -27,6 +27,9 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   .cs-topper {
     display: block;
     margin-bottom: 0.25rem;
@@ -582,7 +585,7 @@ html .cs-social-icon {
     transition: background-color 0.3s;
   }
   #cs-navigation .cs-social-link:hover {
-    background-color: #1d1c1c;
+    background-color: #560101;
   }
   #cs-navigation .cs-social-link:hover .cs-social-icon {
     opacity: 1;
