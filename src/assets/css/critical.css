@@ -182,8 +182,10 @@
   #hero-1856 .cs-background::before {
     content: none;
   }
+  #hero-1856 .cs-container {
+    transform: translateX(10%);
+  }
   #hero-1856 .cs-content-graphic {
-    right: -15em;
     height: 165%;
     margin-top: 0;
   }

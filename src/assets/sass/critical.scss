@@ -221,8 +221,11 @@
             }
         }
 
+        .cs-container {
+            transform: translateX(10%)
+        }
+
         .cs-content-graphic {
-            right: -15em;
             height: 165%;
             margin-top: 0;
         }
