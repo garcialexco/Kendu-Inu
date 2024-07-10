@@ -161,4 +161,10 @@ document.addEventListener("DOMContentLoaded", function() {
         target.classList.add('fade-in');
         observer.observe(target2);
     }
+
+    const target3 = document.querySelector('#faqSection');
+    if (target3) {
+        target.classList.add('fade-in');
+        observer.observe(target3);
+    }
 });
