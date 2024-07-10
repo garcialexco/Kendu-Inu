@@ -437,7 +437,7 @@
         overflow-x: clip;
         position: relative;
         margin-top: -0.2em;
-        z-index: 2;
+        z-index: 3;
         height: 55em;
 
         .cs-container {
@@ -501,7 +501,7 @@
         .carousel {
             overflow: visible;
             width: 110%;
-            z-index: 2;
+            z-index: 4;
             position: absolute;
             bottom: 3em;
           }
@@ -702,7 +702,7 @@
             position: absolute;
             top: 35.75em;
             left: 50%;
-            z-index: 0;
+            z-index: 3;
             transform: translateX(-50%);
             overflow: visible;
         }
