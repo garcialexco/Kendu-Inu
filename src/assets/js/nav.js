@@ -127,3 +127,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
   populateCarouselTrack(slidesData);
 });
+
+//JS for on scroll animations 
+
+//Flooz app
+
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once it's visible
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the element is in view
+    });
+
+    const target = document.querySelector('#howToBuy');
+    if (target) {
+        target.classList.add('fade-in');
+        observer.observe(target);
+    }
+
+    const target1 = document.querySelector('.floozApp');
+    if (target1) {
+        target.classList.add('fade-in');
+        observer.observe(target1);
+    }
+
+    const target2 = document.querySelector('#about');
+    if (target2) {
+        target.classList.add('fade-in');
+        observer.observe(target2);
+    }
+});

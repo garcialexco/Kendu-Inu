@@ -836,7 +836,6 @@
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
             position: relative;
-            z-index: 3;
         }
 
         .cs-topper {
@@ -994,7 +993,6 @@
             width: calc(643/16 * 1em);
             height: calc(608/16 * 1em);
             position: relative;
-            z-index: 1;
         }
 
         .cs-picture {
@@ -1019,7 +1017,6 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            z-index: 1;
             transform: translate(-50%, -50%) rotateY(180deg);
         }
 
@@ -1032,12 +1029,8 @@
             bottom: -5em;
 
             left: 50%;
-            z-index: 1;
+            z-index: -1;
             transform: translateX(-50%);
-        }
-
-        .cs-dark {
-            display: none;
         }
     }
 }
@@ -1422,3 +1415,22 @@
     }
 }
 
+/* Keyframes for on scroll fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    animation: fadeIn 1s forwards;
+}
