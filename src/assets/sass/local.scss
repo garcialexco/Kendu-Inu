@@ -429,6 +429,13 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+
+    :root {
+        --slide-width: 120px;
+        --slide-height: 120px;
+        --gap-width: 80px;
+    }
+
     #exchanges {
         padding: var(--sectionPadding);
         /* 200px - 300px - leaving extra space for the navigation */
@@ -503,7 +510,7 @@
             width: 110%;
             z-index: 4;
             position: absolute;
-            bottom: 3em;
+            bottom: 5.5em;
           }
           
           .carousel-track {
@@ -516,7 +523,6 @@
           
           .slide {
             flex: 0 0 var(--slide-width);
-            height: 12.5rem;
             position: relative;
             overflow: visible;
           }
@@ -525,6 +531,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            overflow: visible;
           }
           
           .overlay {
@@ -539,7 +546,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: auto;
+            overflow: hidden;
           }
 
           .slide:hover {
@@ -715,6 +722,12 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+    :root {
+        --slide-width: 180px;
+        --slide-height: 180px;
+        --gap-width: 70px;
+    }
+
     #exchanges {
         .cs-card-group {
             margin: 0;
@@ -751,6 +764,10 @@
         .slide {
             height: var(--slide-height);
           }
+
+        .carousel {
+            bottom: 3.5em;
+        }
     }
 }
 
