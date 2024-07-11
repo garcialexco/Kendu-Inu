@@ -27,6 +27,7 @@
   }
   html {
     scroll-behavior: smooth;
+    background-color: #272727;
   }
   .cs-topper {
     display: block;
