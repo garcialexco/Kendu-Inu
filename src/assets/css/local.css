@@ -272,7 +272,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
   }
   #buy-kendu .cs-image-group {
     /* set to inherit at Large Desktop */
@@ -324,7 +324,7 @@
     flex-direction: row;
   }
   #buy-kendu .cs-container {
-    margin-bottom: 1em;
+    margin-bottom: 8em;
   }
   #buy-kendu .cs-wrapper {
     padding-left: 8em;
@@ -771,7 +771,7 @@
     z-index: -1;
   }
   #about-kendu .cs-li-icon {
-    width: 1.75rem;
+    width: 1.5rem;
     height: auto;
     display: block;
   }
@@ -1106,7 +1106,7 @@
     overflow: hidden;
     color: var(--bodyTextColorWhite);
     opacity: 0;
-    transition: opacity 0.3s, padding-bottom 0.3s;
+    transition: height 0.3s ease, opacity 0.3s;
   }
   #faq .cs-gallery {
     width: 100%;

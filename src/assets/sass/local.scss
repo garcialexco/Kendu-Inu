@@ -316,7 +316,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1em;
+            margin-bottom: 3em;
         }
 
         .cs-image-group {
@@ -382,7 +382,7 @@
         }
 
         .cs-container {
-            margin-bottom: 1em;
+            margin-bottom: 8em;
         }
 
         .cs-wrapper {
@@ -930,7 +930,7 @@
         }
 
         .cs-li-icon {
-            width: calc(28/16 * 1rem);
+            width: calc(24/16 * 1rem);
             height: auto;
             display: block;
         }
@@ -1322,8 +1322,7 @@
             overflow: hidden;
             color: var(--bodyTextColorWhite);
             opacity: 0;
-            transition: opacity 0.3s, padding-bottom 0.3s;
-            
+            transition: height 0.3s ease, opacity 0.3s;
         }
 
         .cs-gallery {
