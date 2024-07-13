@@ -316,7 +316,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 3em;
+            margin-bottom: 2em;
         }
 
         .cs-image-group {
@@ -379,10 +379,6 @@
 
         .cs-li {
             flex-direction: row;
-        }
-
-        .cs-container {
-            margin-bottom: 8em;
         }
 
         .cs-wrapper {
@@ -1110,10 +1106,6 @@
     #about-kendu {
         /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
         padding-bottom: 9vw;
-
-        .cs-container {
-            margin-bottom: -8%;
-        }
 
         .cs-graphic {
             bottom: -15%;
