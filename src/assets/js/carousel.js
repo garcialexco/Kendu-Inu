@@ -1,8 +1,9 @@
+// JS for carousel
 document.addEventListener('DOMContentLoaded', () => {
     const slidesData = [
         { src: '/assets/svgs/CEX-icons/uniswap-logo.svg', link: 'https://app.uniswap.org/swap?outputCurrency=0xaa95f26e30001251fb905d264aa7b00ee9df6c18&inputCurrency=ETH' },
         { src: '/assets/svgs/CEX-icons/lbank-logo.svg', link: 'https://www.lbank.com/trade/kendu_usdt' },
-        { src: '/assets/svgs/CEX-icons/bitmart-logo.svg', link: 'https://www.bitmart.com/trade/en-US?symbol=KENDU_USDT&layout=basic&%3Fr=Ppnxq3&type=null' },
+        { src: '/assets/svgs/CEX-icons/bitmart-logo.svg', description: 'bitmart logo', link: 'https://www.bitmart.com/trade/en-US?symbol=KENDU_USDT&layout=basic&%3Fr=Ppnxq3&type=null' },
         { src: '/assets/svgs/CEX-icons/poloniex-logo.svg', link: 'https://poloniex.com/trade/KENDU_USDT/?type=spot' },
         { src: '/assets/svgs/CEX-icons/azbit-logo.svg', link: 'https://azbit.com/exchange/KENDU_USDT' },
         { src: '/assets/svgs/CEX-icons/fameex-logo.svg', link: 'https://www.fameex.com/en-US/grid/kendu-usdt' },
@@ -64,26 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         carouselTrack.style.setProperty('--scroll-duration', `${scrollDuration}s`);
     };
-
-    // Touch event handlers
-    let startX;
-    let scrollLeft;
-
-    carouselTrack.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].pageX - carouselTrack.offsetLeft;
-        scrollLeft = carouselTrack.scrollLeft;
-        carouselTrack.style.scrollBehavior = 'auto'; // Disable smooth scrolling for touch
-    });
-
-    carouselTrack.addEventListener('touchmove', (e) => {
-        const x = e.touches[0].pageX - carouselTrack.offsetLeft;
-        const walk = (x - startX) * 2; // Scroll-fast
-        carouselTrack.scrollLeft = scrollLeft - walk;
-    });
-
-    carouselTrack.addEventListener('touchend', () => {
-        carouselTrack.style.scrollBehavior = 'smooth'; // Re-enable smooth scrolling after touch
-    });
 
     populateCarouselTrack(slidesData);
 });

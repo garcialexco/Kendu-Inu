@@ -146,11 +146,10 @@ eleventyNavigation:
 
     <section id="exchanges">
         <div class="cs-image-wrapper">
-            <!--Compress your video and upload it to a CDN like Digital Oceans Spaces so the video file doesn't cause load time issues. You can also remove the video tag and uncomment the picture tag to use a image instead of a video. Don't forget to remove the cs-play button!-->
             <picture class="cs-picture">
                 <source media="(max-width: 600px)" srcset="/assets/images/CEX-mobile.webp">
                 <source media="(min-width: 601px)" srcset="/assets/images/CEX.webp">
-                <img loading="lazy" lt="where to buy kendu section image" decoding="async" src="/assets/images/CEX.webp" width="630" height="877">
+                <img loading="lazy" alt="where to buy kendu section image" decoding="async" src="/assets/images/CEX.webp" width="630" height="877">
             </picture>
         </div>
         <div class="cs-container">
@@ -164,7 +163,29 @@ eleventyNavigation:
                 <div class="cs-card-group carousel-track"></div>
             </div>
         </div>
-        <!--Make sure to download this svg and change the fill color in a code editor to match the color of the section above this stitch-->
+        <div class="wrapper-dropdown" id="dropdown">
+            <span class="selected-display" id="destination">Select a Listing</span>
+            <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <ul class="dropdown">
+                <li class="item"><a href="https://app.uniswap.org/swap?outputCurrency=0xaa95f26e30001251fb905d264aa7b00ee9df6c18&inputCurrency=ETH" target="_blank">Uniswap</a></li>
+                <li class="item"><a href="https://www.lbank.com/trade/kendu_usdt" target="_blank">LBank</a></li>
+                <li class="item"><a href="https://www.bitmart.com/trade/en-US?symbol=KENDU_USDT&layout=basic&%3Fr=Ppnxq3&type=null" target="_blank">BitMart</a></li>
+                <li class="item"><a href="https://poloniex.com/trade/KENDU_USDT/?type=spot" target="_blank">Poloniex</a></li>
+                <li class="item"><a href="https://azbit.com/exchange/KENDU_USDT" target="_blank">Azbit</a></li>
+                <li class="item"><a href="https://www.fameex.com/en-US/grid/kendu-usdt" target="_blank">FameEx</a></li>
+                <li class="item"><a href="https://www.biconomy.com/exchange/KENDU_USDT" target="_blank">Biconomy</a></li>
+                <li class="item"><a href="https://big.one/en/trade/KENDU-USDT" target="_blank">BigOne</a></li>
+                <li class="item"><a href="https://www.citex.io/spot/#/index/kendu_usdt" target="_blank">CiteX</a></li>
+                <li class="item"><a href="https://www.coinex.com/en/exchange/kendu-usdt" target="_blank">CoinEx</a></li>
+                <li class="item"><a href="https://m.bilaxy.com/swap/ethereum/0xaa95f26e30001251fb905d264Aa7b00eE9dF6C18" target="_blank">Bilaxy</a></li>
+                <li class="item"><a href="https://bingx.com/ku-ku/spot/KENDUUSDT/" target="_blank">BingX</a></li>
+                <li class="item"><a href="https://www.grovex.io/en_US/trade/KENDU_USDT" target="_blank">GroveX</a></li>
+                <li class="item"><a href="https://www.probit.com/app/exchange/KENDU-USDT" target="_blank">Probit</a></li>
+                <li class="item"><a href="https://www.superex.com/trade/KENDU_USDT" target="_blank">SuperEx</a></li>
+            </ul>
+        </div>
         <img class="cs-cex-graphic cs-light" src="/assets/svgs/cex-splash.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async">
         <img class="cs-graphic cs-light" src="/assets/svgs/cex-top-shape.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async">
     </section>                       
@@ -351,3 +372,5 @@ eleventyNavigation:
     </section>
 
 {% endblock %}
+
+<!-- There are two dropdowns to show multi-menu support -->
