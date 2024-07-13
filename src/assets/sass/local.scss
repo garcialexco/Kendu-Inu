@@ -438,7 +438,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-
+    
     :root {
         --slide-width: 120px;
         --slide-height: 120px;
@@ -661,9 +661,11 @@
             margin: 0;
             padding: 0;
 
+            scrollbar-width: thin;
+
             border: solid 1px #272727;
 
-            max-height: 200px;
+            max-height: 300px;
             overflow-y: auto;
           
             list-style: none;

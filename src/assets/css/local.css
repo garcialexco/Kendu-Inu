@@ -541,8 +541,9 @@
     left: 0;
     margin: 0;
     padding: 0;
+    scrollbar-width: thin;
     border: solid 1px #272727;
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto;
     list-style: none;
     z-index: 99;

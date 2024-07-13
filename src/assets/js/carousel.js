@@ -1,21 +1,21 @@
 // JS for carousel
 document.addEventListener('DOMContentLoaded', () => {
     const slidesData = [
-        { src: '/assets/svgs/CEX-icons/uniswap-logo.svg', link: 'https://app.uniswap.org/swap?outputCurrency=0xaa95f26e30001251fb905d264aa7b00ee9df6c18&inputCurrency=ETH' },
-        { src: '/assets/svgs/CEX-icons/lbank-logo.svg', link: 'https://www.lbank.com/trade/kendu_usdt' },
+        { src: '/assets/svgs/CEX-icons/uniswap-logo.svg', description: 'uniswap logo', link: 'https://app.uniswap.org/swap?outputCurrency=0xaa95f26e30001251fb905d264aa7b00ee9df6c18&inputCurrency=ETH' },
+        { src: '/assets/svgs/CEX-icons/lbank-logo.svg', description: 'lbank logo', link: 'https://www.lbank.com/trade/kendu_usdt' },
         { src: '/assets/svgs/CEX-icons/bitmart-logo.svg', description: 'bitmart logo', link: 'https://www.bitmart.com/trade/en-US?symbol=KENDU_USDT&layout=basic&%3Fr=Ppnxq3&type=null' },
-        { src: '/assets/svgs/CEX-icons/poloniex-logo.svg', link: 'https://poloniex.com/trade/KENDU_USDT/?type=spot' },
-        { src: '/assets/svgs/CEX-icons/azbit-logo.svg', link: 'https://azbit.com/exchange/KENDU_USDT' },
-        { src: '/assets/svgs/CEX-icons/fameex-logo.svg', link: 'https://www.fameex.com/en-US/grid/kendu-usdt' },
-        { src: '/assets/svgs/CEX-icons/biconomy-logo.svg', link: 'https://www.biconomy.com/exchange/KENDU_USDT' },
-        { src: '/assets/svgs/CEX-icons/bigone-logo.svg', link: 'https://big.one/en/trade/KENDU-USDT' },
-        { src: '/assets/svgs/CEX-icons/citex-logo.svg', link: 'https://www.citex.io/spot/#/index/kendu_usdt' },
-        { src: '/assets/svgs/CEX-icons/coinex-logo.svg', link: 'https://www.coinex.com/en/exchange/kendu-usdt' },
-        { src: '/assets/svgs/CEX-icons/bilaxy-logo.svg', link: 'https://m.bilaxy.com/swap/ethereum/0xaa95f26e30001251fb905d264Aa7b00eE9dF6C18' },
-        { src: '/assets/svgs/CEX-icons/bingx-logo.svg', link: 'https://bingx.com/ku-ku/spot/KENDUUSDT/' },
-        { src: '/assets/svgs/CEX-icons/grovex-logo.svg', link: 'https://www.grovex.io/en_US/trade/KENDU_USDT' },
-        { src: '/assets/svgs/CEX-icons/probit-logo.svg', link: 'https://www.probit.com/app/exchange/KENDU-USDT' },
-        { src: '/assets/svgs/CEX-icons/superex-logo.svg', link: 'https://www.superex.com/trade/KENDU_USDT' },
+        { src: '/assets/svgs/CEX-icons/poloniex-logo.svg', description: 'poloniex logo', link: 'https://poloniex.com/trade/KENDU_USDT/?type=spot' },
+        { src: '/assets/svgs/CEX-icons/azbit-logo.svg', description: 'azbit logo', link: 'https://azbit.com/exchange/KENDU_USDT' },
+        { src: '/assets/svgs/CEX-icons/fameex-logo.svg', description: 'fame ex logo', link: 'https://www.fameex.com/en-US/grid/kendu-usdt' },
+        { src: '/assets/svgs/CEX-icons/biconomy-logo.svg', description: 'biconomy logo', link: 'https://www.biconomy.com/exchange/KENDU_USDT' },
+        { src: '/assets/svgs/CEX-icons/bigone-logo.svg', description: 'big one logo', link: 'https://big.one/en/trade/KENDU-USDT' },
+        { src: '/assets/svgs/CEX-icons/citex-logo.svg', description: 'citex logo', link: 'https://www.citex.io/spot/#/index/kendu_usdt' },
+        { src: '/assets/svgs/CEX-icons/coinex-logo.svg', description: 'coinex logo', link: 'https://www.coinex.com/en/exchange/kendu-usdt' },
+        { src: '/assets/svgs/CEX-icons/bilaxy-logo.svg', description: 'bilaxy logo', link: 'https://m.bilaxy.com/swap/ethereum/0xaa95f26e30001251fb905d264Aa7b00eE9dF6C18' },
+        { src: '/assets/svgs/CEX-icons/bingx-logo.svg', description: 'bing x logo', link: 'https://bingx.com/ku-ku/spot/KENDUUSDT/' },
+        { src: '/assets/svgs/CEX-icons/grovex-logo.svg', description: 'grove x logo', link: 'https://www.grovex.io/en_US/trade/KENDU_USDT' },
+        { src: '/assets/svgs/CEX-icons/probit-logo.svg', description: 'probit logo', link: 'https://www.probit.com/app/exchange/KENDU-USDT' },
+        { src: '/assets/svgs/CEX-icons/superex-logo.svg', description: 'super ex logo', link: 'https://www.superex.com/trade/KENDU_USDT' },
     ];
 
     const carouselTrack = document.querySelector('.carousel-track');
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         carouselTrack.style.setProperty('--total-width', `${halfTotalWidth}px`);
 
-        const baseDuration = 40; // seconds | default = 40
+        const baseDuration = 60; // seconds | default = 40
         const baseWidth = 5000; // px | default = 5000
         const scrollDuration = (halfTotalWidth / baseWidth) * baseDuration;
 

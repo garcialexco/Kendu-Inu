@@ -28,6 +28,19 @@
   html {
     scroll-behavior: smooth;
     background-color: #272727;
+    scrollbar-width: thin;
+    scrollbar-color: #1d1c1c #272727;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #272727;
+    scrollbar-width: thin;
+  }
+  /* Change the color and rounded borders of the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #272727;
+    border-radius: 5px;
+    scrollbar-width: thin;
   }
   .cs-topper {
     display: block;
