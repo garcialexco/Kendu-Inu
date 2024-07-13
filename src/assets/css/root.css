@@ -216,6 +216,12 @@ html .cs-social-link {
   justify-content: center;
   align-items: center;
 }
+body .uniswap-logo,
+html .uniswap-logo {
+  width: 1.9rem !important;
+  margin-left: -0.25em;
+  margin-bottom: 0.3em;
+}
 body .cs-social-icon,
 html .cs-social-icon {
   width: 1.25rem;
@@ -238,6 +244,7 @@ html .cs-social-icon {
   }
   #cs-navigation {
     width: 100%;
+    height: 6.5em;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     border-bottom: 1px solid #272727;
@@ -671,6 +678,12 @@ html .cs-social-icon {
   }
   #cs-navigation .cs-nav-button {
     line-height: 2.875rem;
+  }
+}
+/* small desktop nav fix - 1100px */
+@media only screen and (max-width: 68.75rem) {
+  .cs-ul-wrapper {
+    margin-left: -4% !important;
   }
 }
 /* Large Desktop - 1300px */
