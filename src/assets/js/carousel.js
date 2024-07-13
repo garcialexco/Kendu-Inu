@@ -1,4 +1,3 @@
-// JS for carousel
 document.addEventListener('DOMContentLoaded', () => {
     const slidesData = [
         { src: '/assets/svgs/CEX-icons/uniswap-logo.svg', link: 'https://app.uniswap.org/swap?outputCurrency=0xaa95f26e30001251fb905d264aa7b00ee9df6c18&inputCurrency=ETH' },
@@ -65,6 +64,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
         carouselTrack.style.setProperty('--scroll-duration', `${scrollDuration}s`);
     };
+
+    // Touch event handlers
+    let startX;
+    let scrollLeft;
+
+    carouselTrack.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].pageX - carouselTrack.offsetLeft;
+        scrollLeft = carouselTrack.scrollLeft;
+        carouselTrack.style.scrollBehavior = 'auto'; // Disable smooth scrolling for touch
+    });
+
+    carouselTrack.addEventListener('touchmove', (e) => {
+        const x = e.touches[0].pageX - carouselTrack.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll-fast
+        carouselTrack.scrollLeft = scrollLeft - walk;
+    });
+
+    carouselTrack.addEventListener('touchend', () => {
+        carouselTrack.style.scrollBehavior = 'smooth'; // Re-enable smooth scrolling after touch
+    });
 
     populateCarouselTrack(slidesData);
 });
