@@ -15,6 +15,13 @@
     position: relative;
     z-index: 1;
   }
+  #buy-kendu .metamask-link {
+    color: var(--bodyTextColorWhite);
+    text-decoration: none;
+  }
+  #buy-kendu .metamask-link:hover {
+    color: #CE0909;
+  }
   #buy-kendu .cs-wrapper {
     display: flex;
     flex-direction: column;
@@ -326,6 +333,9 @@
     bottom: -5em;
     width: 115%;
     height: auto;
+  }
+  #buy-kendu .cs-item-text {
+    font-size: 1rem;
   }
 }
 /* Desktop - 1600px */
@@ -903,6 +913,9 @@
   }
   #about-kendu .cs-graphic {
     bottom: -10%;
+  }
+  #about-kendu .total {
+    width: 6.7em;
   }
 }
 /* Large Desktop - 2000px */

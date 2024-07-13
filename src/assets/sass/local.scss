@@ -17,6 +17,15 @@
         position: relative;
         z-index: 1;
 
+        .metamask-link {
+            color: var(--bodyTextColorWhite);
+            text-decoration: none;
+
+            &:hover {
+                color: #CE0909;
+            }
+        }
+
         .cs-wrapper {
             display: flex;
             flex-direction: column;
@@ -384,6 +393,10 @@
             bottom: -5em;
             width: 115%;
             height: auto;
+        }
+
+        .cs-item-text {
+            font-size: 1rem;
         }
     }
 }
@@ -1088,6 +1101,10 @@
 
         .cs-graphic {
             bottom: -10%;
+        }
+
+        .total {
+            width: 6.7em;
         }
     }
 }
