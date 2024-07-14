@@ -491,11 +491,13 @@
     position: absolute;
     display: inline-block;
     min-width: 231.5px;
+    font-weight: 700;
+    font-size: 1rem;
     width: 13em;
     max-width: 483px;
-    padding: 12px 0px 0px 0px;
+    padding: 0.85rem 0px;
     min-height: 44px;
-    background: #1d1c1c;
+    background-color: #CE0909;
     text-align: center;
     color: #fff;
     cursor: pointer;
@@ -536,7 +538,7 @@
   #exchanges .wrapper-dropdown .dropdown {
     transition: 0.3s;
     position: absolute;
-    top: 120%;
+    top: 101%;
     right: 0;
     left: 0;
     margin: 0;
@@ -570,9 +572,10 @@
   }
   #exchanges .dropdown {
     padding: 0.5rem !important;
+    background-color: #1d1c1c;
   }
   #exchanges .wrapper-dropdown .dropdown li:hover {
-    background-color: rgb(35, 40, 49);
+    background-color: #CE0909;
   }
   #exchanges .wrapper-dropdown .dropdown li:last-child {
     border-bottom: none;
@@ -580,6 +583,7 @@
   #exchanges .wrapper-dropdown.active .dropdown {
     opacity: 1;
     visibility: visible;
+    background-color: #1d1c1c;
   }
   #exchanges .cs-link {
     text-decoration: none;

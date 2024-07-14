@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         carouselTrack.style.setProperty('--total-width', `${halfTotalWidth}px`);
 
-        const baseDuration = 60; // seconds | default = 40
-        const baseWidth = 5000; // px | default = 5000
+        const baseDuration = 7000; // seconds | default = 40
+        const baseWidth = 500000; // px | default = 5000
         const scrollDuration = (halfTotalWidth / baseWidth) * baseDuration;
 
         carouselTrack.style.setProperty('--scroll-duration', `${scrollDuration}s`);
