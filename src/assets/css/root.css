@@ -31,19 +31,6 @@
     scrollbar-width: thin;
     scrollbar-color: #1d1c1c #272727;
   }
-  .custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 10px; /* Adjust size as needed */
-    height: 10px; /* Adjust size as needed */
-    pointer-events: none;
-    z-index: 9999;
-    cursor: none !important;
-    background-color: #ef0d33;
-    border-radius: 50%;
-    transition: width 0.5s, height 0.5s, background-color 0.5s;
-  }
   ::-webkit-scrollbar {
     width: 10px;
     background-color: #272727;

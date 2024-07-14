@@ -395,7 +395,6 @@
   }
   #exchanges .cs-content {
     width: 100%;
-    pointer-events: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,7 +499,6 @@
     background-color: #CE0909;
     text-align: center;
     color: #fff;
-    cursor: pointer;
     bottom: 19em;
     left: 50%;
     transform: translateX(-50%);
@@ -1168,9 +1166,6 @@
     display: block;
     position: relative;
     transition: background-color 0.3s, color 0.3s;
-  }
-  #faq .cs-button:hover {
-    cursor: pointer;
   }
   #faq .cs-button:before {
     /* left line */
