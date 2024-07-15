@@ -513,7 +513,7 @@
     transform: translateX(-50%);
     z-index: 4;
     cursor: pointer;
-    align-items: center;
+    border: solid 1px #272727;
   }
   #exchanges .scrollable-menu {
     height: auto;
@@ -930,6 +930,7 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    border: solid 1px #272727;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }

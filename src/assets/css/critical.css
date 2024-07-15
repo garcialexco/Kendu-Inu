@@ -72,6 +72,7 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    border: solid 1px #272727;
   }
   #hero-1856 .cs-button-solid:before {
     content: "";

@@ -89,6 +89,8 @@
             position: relative;
             z-index: 1;
 
+            border: solid 1px #272727;
+
             &:before {
                 content: "";
                 width: 0%;
