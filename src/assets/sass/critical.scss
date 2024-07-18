@@ -240,6 +240,7 @@
     #hero-1856 {
         /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get closer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
         padding-bottom: 14vw;
+        height: 84em;
 
         
         .cs-video-wrapper {
@@ -250,6 +251,14 @@
             height: 200%;
             right: -14em;
             margin-top: 0;
+        }
+
+        .cs-container {
+            margin-top: 15em;
+        }
+
+        .cs-content-graphic {
+            right: -10em;
         }
     }
 }
