@@ -114,61 +114,32 @@
   #hero-1856 .cs-graphic-dark {
     display: none;
   }
-  #hero-1856 .cs-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    /* Overlay on the background image that gets removed at tablet+, in favour of the svg graphic */
-  }
-  #hero-1856 .cs-background:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0);
-    /* prevents the cursor from interacting with it */
-    pointer-events: none;
-    opacity: 0.4;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #hero-1856 .cs-background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   #hero-1856 .cs-video-wrapper {
     width: 100%;
     /* changes to 90% at tablet, then back to 100% at desktop */
     height: 32%;
-    min-height: 43.5rem;
+    min-height: 32.5rem;
     display: block;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
   }
   #hero-1856 .cs-video-wrapper:hover {
     cursor: pointer;
   }
-  #hero-1856 .cs-video-wrapper video {
+  #hero-1856 .cs-video-wrapper video,
+  #hero-1856 .cs-video-wrapper .cs-picture {
     width: 100%;
-    height: 165%;
+    height: 100%;
     /* makes image act as a background image */
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
   }
-  #hero-1856 .cs-video-wrapper video img {
+  #hero-1856 .cs-video-wrapper video img,
+  #hero-1856 .cs-video-wrapper .cs-picture img {
     width: 100%;
     height: 100%;
     /* makes image act as a background image */

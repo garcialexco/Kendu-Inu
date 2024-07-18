@@ -139,58 +139,27 @@
             display: none;
         }
 
-        .cs-background {
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -2;
-
-            /* Overlay on the background image that gets removed at tablet+, in favour of the svg graphic */
-            &:before {
-                content: "";
-                width: 100%;
-                height: 100%;
-                background: #00000000;
-                /* prevents the cursor from interacting with it */
-                pointer-events: none;
-                opacity: 0.4;
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-        }
+        
 
         .cs-video-wrapper {
             width: 100%;
             /* changes to 90% at tablet, then back to 100% at desktop */
             height: 32%;
-            min-height: calc(696/16 * 1rem);
+            min-height: calc(520/16 * 1rem);
             display: block;
             position: absolute;
             top: 0;
             left: 0;
+            z-index: -1;
 
             &:hover {
                 cursor: pointer;
             }
 
-            video {
+            video,
+            .cs-picture {
                 width: 100%;
-                height: 165%;
+                height: 100%;
                 /* makes image act as a background image */
                 object-fit: cover;
                 position: absolute;
