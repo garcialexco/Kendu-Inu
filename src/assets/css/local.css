@@ -1146,6 +1146,7 @@
     height: 38em;
     position: relative;
     z-index: 1;
+    overflow: visible;
   }
   #kendu-chads .cs-picture {
     width: 100%;
@@ -1153,6 +1154,7 @@
     display: block;
     position: absolute;
     object-fit: cover;
+    overflow: visible;
   }
   #kendu-chads .cs-picture img {
     width: 29em;
@@ -1162,7 +1164,7 @@
     position: absolute;
     left: 6em;
     top: 8em;
-    overflow: visible;
+    overflow: visible !important;
   }
   #kendu-chads .cs-mask {
     width: 101%;
