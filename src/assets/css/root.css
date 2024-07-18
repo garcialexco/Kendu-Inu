@@ -393,7 +393,7 @@ html .cs-social-icon {
     transition: bottom 0.3s, opacity 0.3s;
   }
   #cs-navigation .cs-ul-wrapper {
-    width: 100%;
+    width: 110%;
     height: auto;
     padding-bottom: 3rem;
     opacity: 0;
