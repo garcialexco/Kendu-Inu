@@ -992,8 +992,9 @@ html .cs-social-icon {
     position: absolute;
     bottom: -16%;
     left: 50%;
-    z-index: -1;
+    z-index: 0;
     transform: translateX(-50%);
+    overflow: hidden;
   }
 }
 /* Mobile - 425px */
