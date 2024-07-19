@@ -1393,7 +1393,6 @@
             height: calc(608/16 * 1em);
             position: relative;
             z-index: 1;
-            overflow: visible;
         }
 
         .cs-picture {
@@ -1402,17 +1401,15 @@
             display: block;
             position: absolute;
             object-fit: cover;
-            overflow: visible;
 
             img {
-                width: 29em;
+                width: 36em;
                 height: 23em;
                 object-fit: cover;
                 rotate: 180deg;
                 position: absolute;
-                left: 6em;
+                left: 2em;
                 top: 8em;
-                overflow: visible !important;
             }
         }
 
