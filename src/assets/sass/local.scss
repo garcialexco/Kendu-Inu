@@ -468,7 +468,7 @@
         overflow-x: clip;
         position: relative;
         margin-top: -0.2em;
-        z-index: 3;
+        z-index: 5;
         height: 55em;
 
         .cs-container {
@@ -980,7 +980,7 @@
         /* clips anything overflowing */
         overflow: visible;
         position: relative;
-        z-index: 2;
+        z-index: 4;
         margin-top: -0.1em;
         padding-bottom: 0;
         
@@ -1294,7 +1294,7 @@
         /* clips anything overflowing */
         overflow: hidden;
         position: relative;
-        z-index: 1;
+        z-index: 2;
         
         .cs-container {
             width: 100%;
@@ -1494,6 +1494,10 @@
         .cs-li {
             flex-direction: row;
         }
+
+        .cs-container {
+            padding-bottom: 7em;
+        }
     }
 }
 
@@ -1519,7 +1523,7 @@
         padding-top: 3em;
         padding-bottom: 0;
         margin-top: -0.1em;
-        z-index: 1;
+        z-index: 2;
 
         .cs-container {
             width: 100%;
