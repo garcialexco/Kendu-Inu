@@ -1308,6 +1308,7 @@
             align-items: center;
             /* 48px - 64px */
             gap: clamp(3rem, 6vw, 4rem);
+            padding-bottom: 6em;
         }
 
         .cs-content {
@@ -1451,6 +1452,7 @@
             justify-content: space-between;
             align-items: center;
             width: 90%;
+            padding-bottom: 10em;
         }
 
         .cs-image-group {

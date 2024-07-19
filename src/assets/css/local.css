@@ -1074,6 +1074,7 @@
     align-items: center;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
+    padding-bottom: 6em;
   }
   #kendu-chads .cs-content {
     /* set text align to left if content needs to be left aligned */
@@ -1196,6 +1197,7 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
+    padding-bottom: 10em;
   }
   #kendu-chads .cs-image-group {
     /* set to inherit at Large Desktop */

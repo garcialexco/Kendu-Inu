@@ -807,7 +807,7 @@ html .cs-social-icon {
     padding-top: 7em;
     background-color: #1d1c1c;
     position: relative;
-    z-index: 0;
+    z-index: 1;
     overflow: hidden;
     font-family: "Teko", sans-serif;
   }
