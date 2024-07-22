@@ -145,13 +145,14 @@
         .cs-video-wrapper {
             width: 100%;
             height: 100vh; // Ensure it covers the full viewport height
-            position: fixed; // Fix the position so it stays in place while scrolling
+            position: absolute; // Fix the position so it stays in place while scrolling
             top: 0;
             left: 0;
             z-index: -1; // Make sure it's behind other content
-            overflow: visible; // Hide any overflow
+            overflow: hidden; // Hide any overflow
             pointer-events: none; // Prevent interaction with the video
             // Background video styling
+            
 
             video {
                 width: 100%;
