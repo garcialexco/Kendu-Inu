@@ -144,7 +144,7 @@
         /* Background video container */
         .cs-video-wrapper {
             width: 100%;
-            height: 100vh; // Ensure it covers the full viewport height
+            height: 100%; // Ensure it covers the full viewport height
             position: absolute; // Fix the position so it stays in place while scrolling
             top: 0;
             left: 0;

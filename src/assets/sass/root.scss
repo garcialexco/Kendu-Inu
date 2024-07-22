@@ -32,12 +32,11 @@
     }
 
     html {
-        scroll-behavior: smooth;
-        background-color: #000000;
+        scroll-behavior: none;
+        background-color: #272727;
         scrollbar-width: thin;
-        scrollbar-color: #1d1c1c #272727;
-        overflow-y: visible;
-        scroll-behavior: auto;
+        scrollbar-color: #1d1c1c #000000;
+        
     }
     
     ::-webkit-scrollbar {
@@ -165,6 +164,8 @@
         font-optical-sizing: auto;
         font-size: 100%;
         color: var(--bodyTextColor);
+        overflow-x: hidden;
+        
     }
 
     *,
@@ -177,7 +178,7 @@
 
     body {
         transition: background-color 0.3s;
-        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .container {
