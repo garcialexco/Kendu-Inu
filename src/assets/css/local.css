@@ -435,12 +435,10 @@
     display: flex;
     gap: var(--gap-width);
     animation: scroll var(--scroll-duration) linear infinite;
-    overflow: visible;
   }
   #exchanges .slide {
     flex: 0 0 var(--slide-width);
     position: relative;
-    overflow: visible;
   }
   #exchanges .slide img {
     width: 100%;
@@ -718,7 +716,6 @@
     left: 50%;
     z-index: 3;
     transform: translateX(-50%);
-    overflow: visible;
   }
   #exchanges .cs-dark {
     display: none;
@@ -1446,7 +1443,6 @@
   #faq .cs-graphic {
     width: 120%;
     min-width: 75rem;
-    overflow: visible;
     object-fit: cover;
     position: absolute;
     bottom: -5%;

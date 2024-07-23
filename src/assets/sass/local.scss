@@ -540,13 +540,13 @@
             display: flex;
             gap: var(--gap-width);
             animation: scroll var(--scroll-duration) linear infinite;
-            overflow: visible;
+            
         }
           
         .slide {
             flex: 0 0 var(--slide-width);
             position: relative;
-            overflow: visible;
+            
         }
           
         .slide img {
@@ -874,7 +874,7 @@
             left: 50%;
             z-index: 3;
             transform: translateX(-50%);
-            overflow: visible;
+            
         }
 
         .cs-dark {
@@ -1743,7 +1743,7 @@
         .cs-graphic {
             width: 120%;
             min-width: calc(1200/16 * 1rem);
-            overflow: visible;
+        
             object-fit: cover;
             position: absolute;
             bottom: -5%;
