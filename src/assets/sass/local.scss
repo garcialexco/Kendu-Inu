@@ -320,6 +320,10 @@
             z-index: -1 ;
             transform: translateX(-50%);
         }
+
+        .floozApp {
+            width: 320px;
+        }
     }
 }
 
@@ -334,6 +338,11 @@
             margin-bottom: 2em;
         }
 
+        .floozApp {
+            margin-left: 10%;
+            width: 600px;
+        }
+
         .cs-image-group {
             /* set to inherit at Large Desktop */
             font-size:min(1vw, 1rem);
@@ -346,11 +355,6 @@
             &:before {
                 display: block;
             }
-        }
-
-        .floozApp {
-            margin-left: 10%;
-            width: 600px;
         }
 
         .cs-card-group {
@@ -552,7 +556,7 @@
         .slide img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: fill;
         }
           
         .overlay {
@@ -1340,7 +1344,7 @@
             margin-bottom: calc(16/16 * 1rem);
             font-family: 'Orienta', sans-serif;
             font-size: 0.95rem;
-            width: 27em;
+            width: 80%;
 
             &:last-of-type {
                 margin-bottom: calc(32/16 * 1rem);
@@ -1453,6 +1457,7 @@
             align-items: center;
             width: 90%;
             padding-bottom: 10em;
+            padding-top: 2em;
         }
 
         .cs-image-group {
@@ -1473,7 +1478,7 @@
 
         .cs-text {
             text-align: left;
-            width: 33em;
+            width: 100%;
         }
 
         .cs-content {
@@ -1811,24 +1816,4 @@
             bottom: -7%;
         }
     }
-}
-
-/* Keyframes for on scroll fade in */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    animation: fadeIn 1s forwards;
 }

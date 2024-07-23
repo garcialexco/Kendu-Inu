@@ -270,6 +270,9 @@
     z-index: -1;
     transform: translateX(-50%);
   }
+  #buy-kendu .floozApp {
+    width: 320px;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -279,6 +282,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2em;
+  }
+  #buy-kendu .floozApp {
+    margin-left: 10%;
+    width: 600px;
   }
   #buy-kendu .cs-image-group {
     /* set to inherit at Large Desktop */
@@ -291,10 +298,6 @@
   }
   #buy-kendu .cs-image-group:before {
     display: block;
-  }
-  #buy-kendu .floozApp {
-    margin-left: 10%;
-    width: 600px;
   }
   #buy-kendu .cs-card-group {
     width: 80%;
@@ -443,7 +446,7 @@
   #exchanges .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
   }
   #exchanges .overlay {
     position: absolute;
@@ -1097,6 +1100,7 @@
     margin-bottom: 1rem;
     font-family: "Orienta", sans-serif;
     font-size: 0.95rem;
+    width: 80%;
   }
   #kendu-chads .cs-text:last-of-type {
     margin-bottom: 2rem;
@@ -1194,6 +1198,7 @@
     align-items: center;
     width: 90%;
     padding-bottom: 10em;
+    padding-top: 2em;
   }
   #kendu-chads .cs-image-group {
     /* set to inherit at Large Desktop */
@@ -1210,7 +1215,7 @@
   }
   #kendu-chads .cs-text {
     text-align: left;
-    width: 33em;
+    width: 100%;
   }
   #kendu-chads .cs-content {
     width: 51%;
@@ -1493,24 +1498,6 @@
   #faq .cs-graphic {
     bottom: -7%;
   }
-}
-/* Keyframes for on scroll fade in */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  animation: fadeIn 1s forwards;
 }
 
 /*# sourceMappingURL=local.css.map */
