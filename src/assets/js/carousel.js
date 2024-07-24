@@ -1,5 +1,5 @@
 // JS for carousel
-document.addEventListener('DOMContentLoaded', () => {
+
     const slidesData = [
         { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/uniswap-logo.svg', description: 'uniswap logo', link: 'https://app.uniswap.org/swap?outputCurrency=0xaa95f26e30001251fb905d264aa7b00ee9df6c18&inputCurrency=ETH' },
         { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/lbank-logo.svg', description: 'lbank logo', link: 'https://www.lbank.com/trade/kendu_usdt' },
@@ -66,5 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         carouselTrack.style.setProperty('--scroll-duration', `${scrollDuration}s`);
     };
 
-    populateCarouselTrack(slidesData);
-});
+    document.addEventListener('DOMContentLoaded', () => {
+        populateCarouselTrack(slidesData);
+    });
