@@ -832,12 +832,6 @@ html {
     }
 }
 
-/* small desktop nav fix - 1100px */
-@media only screen and (max-width: 68.75rem) {
-    .cs-ul-wrapper {
-        margin-left: -4% !important;
-    }
-}
 
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
@@ -972,33 +966,30 @@ html {
         .cs-container {
             width: 100%;
             max-width: calc(1280/16 * 1rem);
-            margin: auto;
-            margin-top: 2em;
+            margin: 0 auto;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: start;
             flex-wrap: wrap;
             text-align: center;
             column-gap: calc(68/16 * 1rem);
         }
 
         .cs-logo-group {
-            /* takes up all the space, lets the other ul's wrap below it */
             width: 100%;
-            /* 40px - 60px */
-            margin: 0 0 clamp(2.5rem, 7vw, 3.75rem);
             position: relative;
         }
 
         .cs-logomark {
             width: auto;
             height: calc(100/16 * 1rem);
+            margin-top: 2em;
         }
 
         .cs-title {
             /* 31px - 39px */
             font-size: 3rem;
-            max-width: 23ch;
+            max-width: 100%;
             color: var(--bodyTextColorWhite);
             text-transform: uppercase;
             margin: 0 auto;
@@ -1044,7 +1035,8 @@ html {
 
         .cs-logo-title .cs-title {
             font-size: 5em;
-            margin: 0.25em 0;
+            line-height: 100%;
+            margin: 0.25em 0 0.75em;
         }
 
         .cs-text {
@@ -1205,21 +1197,20 @@ html {
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #cs-footer-1781 {
+        padding-top: 8em;
+
         .cs-container {
             justify-content: space-evenly;
             flex-flow: row;
         }
 
+        .cs-logo-title .cs-title {
+            margin-bottom: 0.25em;
+        }
+
         .cs-logo-group {
             width: 200%;
             margin: 0 auto;
-        }
-
-        .cs-logo-title {
-            position: absolute;
-            width: 21em;
-            top: -20%;
-            left: 117%;
         }
 
         .cs-copy {
@@ -1228,8 +1219,12 @@ html {
 
         .cs-ul-wrapper {
             margin: 0;
-            margin-top: 8em;
+            padding: 0;
             text-align: left;
+
+            &.socials {
+               align-self: flex-end;
+            }
         }
 
         .cs-wrapper-text {
