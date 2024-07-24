@@ -810,30 +810,27 @@ html .cs-social-icon {
   #cs-footer-1781 .cs-container {
     width: 100%;
     max-width: 80rem;
-    margin: auto;
-    margin-top: 2em;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
     text-align: center;
     column-gap: 4.25rem;
   }
   #cs-footer-1781 .cs-logo-group {
-    /* takes up all the space, lets the other ul's wrap below it */
     width: 100%;
-    /* 40px - 60px */
-    margin: 0 0 clamp(2.5rem, 7vw, 3.75rem);
     position: relative;
   }
   #cs-footer-1781 .cs-logomark {
     width: auto;
     height: 6.25rem;
+    margin-top: 2em;
   }
   #cs-footer-1781 .cs-title {
     /* 31px - 39px */
     font-size: 3rem;
-    max-width: 23ch;
+    max-width: 100%;
     color: var(--bodyTextColorWhite);
     text-transform: uppercase;
     margin: 0 auto;
@@ -866,7 +863,8 @@ html .cs-social-icon {
   }
   #cs-footer-1781 .cs-logo-title .cs-title {
     font-size: 5em;
-    margin: 0.25em 0;
+    line-height: 100%;
+    margin: 0.25em 0 0.75em;
   }
   #cs-footer-1781 .cs-text {
     max-width: 25.75rem;
@@ -1000,27 +998,30 @@ html .cs-social-icon {
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  #cs-footer-1781 {
+    padding-top: 8em;
+  }
   #cs-footer-1781 .cs-container {
     justify-content: space-evenly;
     flex-flow: row;
   }
+  #cs-footer-1781 .cs-logo-title .cs-title {
+    margin-bottom: 0.25em;
+  }
   #cs-footer-1781 .cs-logo-group {
     width: 200%;
     margin: 0 auto;
-  }
-  #cs-footer-1781 .cs-logo-title {
-    position: absolute;
-    width: 21em;
-    top: -20%;
-    left: 117%;
   }
   #cs-footer-1781 .cs-copy {
     margin-right: 35em !important;
   }
   #cs-footer-1781 .cs-ul-wrapper {
     margin: 0;
-    margin-top: 8em;
+    padding: 0;
     text-align: left;
+  }
+  #cs-footer-1781 .cs-ul-wrapper.socials {
+    align-self: flex-end;
   }
   #cs-footer-1781 .cs-wrapper-text {
     width: 35%;
