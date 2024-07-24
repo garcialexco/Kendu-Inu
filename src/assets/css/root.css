@@ -694,12 +694,6 @@ html .cs-social-icon {
     line-height: 2.875rem;
   }
 }
-/* small desktop nav fix - 1100px */
-@media only screen and (max-width: 68.75rem) {
-  .cs-ul-wrapper {
-    margin-left: -4% !important;
-  }
-}
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #cs-navigation .cs-social {
