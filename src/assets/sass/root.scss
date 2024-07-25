@@ -1075,6 +1075,11 @@ html {
             text-decoration: none;
             color: var(--bodyTextColorWhite);
             font-family: 'Orienta', sans-serif;
+            transition: color 0.3s;
+
+            &:hover {
+                color: var(--primaryLight);
+            }
         }
 
         .cs-contract {

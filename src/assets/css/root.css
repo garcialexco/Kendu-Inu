@@ -898,6 +898,10 @@ html .cs-social-icon {
     text-decoration: none;
     color: var(--bodyTextColorWhite);
     font-family: "Orienta", sans-serif;
+    transition: color 0.3s;
+  }
+  #cs-footer-1781 .cs-contact:hover, #cs-footer-1781 .cs-contract:hover {
+    color: var(--primaryLight);
   }
   #cs-footer-1781 .cs-contract {
     font-size: 0.9rem;
