@@ -9,7 +9,6 @@
         { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/fameex-logo.svg', description: 'fame ex logo', link: 'https://www.fameex.com/en-US/grid/kendu-usdt' },
         { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/biconomy-logo.svg', description: 'biconomy logo', link: 'https://www.biconomy.com/exchange/KENDU_USDT' },
         { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/bigone-logo.svg', description: 'big one logo', link: 'https://big.one/en/trade/KENDU-USDT' },
-        { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/citex-logo.svg', description: 'citex logo', link: 'https://www.citex.io/spot/#/index/kendu_usdt' },
         { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/coinex-logo.svg', description: 'coinex logo', link: 'https://www.coinex.com/en/exchange/kendu-usdt' },
         { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/bilaxy-logo.svg', description: 'bilaxy logo', link: 'https://m.bilaxy.com/swap/ethereum/0xaa95f26e30001251fb905d264Aa7b00eE9dF6C18' },
         { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/bingx-logo.svg', description: 'bing x logo', link: 'https://bingx.com/ku-ku/spot/KENDUUSDT/' },
