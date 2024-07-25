@@ -26,7 +26,7 @@ module.exports = {
             bundle: true,
             minify: isProduction,
             sourcemap: !isProduction,
-            target: isProduction ? "es6" : "esnext",
+            target: "es6",
         });
 
         return async () => {
