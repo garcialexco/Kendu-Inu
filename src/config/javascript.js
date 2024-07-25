@@ -24,8 +24,8 @@ module.exports = {
             outdir: "public/assets/js",
             write: false,
             bundle: true,
-            minify: isProduction,
-            sourcemap: !isProduction,
+            minify: false,
+            sourcemap: false,
             target: "es6",
         });
 

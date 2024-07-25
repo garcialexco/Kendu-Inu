@@ -15,54 +15,54 @@ const slidesData = [
     { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/superex-logo.svg', description: 'super ex logo', link: 'https://www.superex.com/trade/KENDU_USDT' },
 ];
 
+const carouselTrack = document.querySelector('.carousel-track');
+
+const createSlide = ({ src, description, link }) => {
+    const slideElement = document.createElement('div');
+    slideElement.className = 'slide';
+
+    const linkElement = document.createElement('a');
+    linkElement.href = link;
+    linkElement.target = '_blank';
+
+    const imgElement = document.createElement('img');
+    imgElement.src = src;
+    imgElement.alt = description;
+
+    const overlayElement = document.createElement('div');
+    overlayElement.className = 'overlay';
+    overlayElement.textContent = description;
+
+    linkElement.append(imgElement, overlayElement);
+    slideElement.appendChild(linkElement);
+
+    return slideElement;  // Ensure return is within function scope
+};
+
+const populateCarouselTrack = (slides) => {
+    const fragment = document.createDocumentFragment();
+    slides.forEach(slide => fragment.appendChild(createSlide(slide)));
+
+    // Duplicate slides to create a seamless loop effect
+    slides.forEach(slide => fragment.appendChild(createSlide(slide)));
+
+    carouselTrack.appendChild(fragment);
+
+    const slideWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--slide-width'));
+    const gapWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--gap-width'));
+    const totalWidth = (slideWidth + gapWidth) * slides.length;
+    const duplicatedTotalWidth = totalWidth * 2;
+    const halfTotalWidth = duplicatedTotalWidth / 2;
+
+    carouselTrack.style.setProperty('--total-width', `${halfTotalWidth}px`);
+
+    const baseDuration = 10000; // seconds | default = 40
+    const baseWidth = 500000; // px | default = 5000
+    const scrollDuration = (halfTotalWidth / baseWidth) * baseDuration;
+
+    carouselTrack.style.setProperty('--scroll-duration', `${scrollDuration}s`);
+};
+
 document.addEventListener('DOMContentLoaded', () => {
-    const carouselTrack = document.querySelector('.carousel-track');
-
-    const createSlide = ({ src, description, link }) => {
-        const slideElement = document.createElement('div');
-        slideElement.className = 'slide';
-
-        const linkElement = document.createElement('a');
-        linkElement.href = link;
-        linkElement.target = '_blank';
-
-        const imgElement = document.createElement('img');
-        imgElement.src = src;
-        imgElement.alt = description;
-
-        const overlayElement = document.createElement('div');
-        overlayElement.className = 'overlay';
-        overlayElement.textContent = description;
-
-        linkElement.append(imgElement, overlayElement);
-        slideElement.appendChild(linkElement);
-
-        return slideElement;  // Ensure return is within function scope
-    };
-
-    const populateCarouselTrack = (slides) => {
-        const fragment = document.createDocumentFragment();
-        slides.forEach(slide => fragment.appendChild(createSlide(slide)));
-
-        // Duplicate slides to create a seamless loop effect
-        slides.forEach(slide => fragment.appendChild(createSlide(slide)));
-
-        carouselTrack.appendChild(fragment);
-
-        const slideWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--slide-width'));
-        const gapWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--gap-width'));
-        const totalWidth = (slideWidth + gapWidth) * slides.length;
-        const duplicatedTotalWidth = totalWidth * 2;
-        const halfTotalWidth = duplicatedTotalWidth / 2;
-
-        carouselTrack.style.setProperty('--total-width', `${halfTotalWidth}px`);
-
-        const baseDuration = 10000; // seconds | default = 40
-        const baseWidth = 500000; // px | default = 5000
-        const scrollDuration = (halfTotalWidth / baseWidth) * baseDuration;
-
-        carouselTrack.style.setProperty('--scroll-duration', `${scrollDuration}s`);
-    };
-
     populateCarouselTrack(slidesData);
 });
