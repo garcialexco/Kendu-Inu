@@ -458,7 +458,7 @@
         /* 200px - 300px - leaving extra space for the navigation */
         padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
         background-color: #272727;
-        overflow-x: clip;
+        overflow-x: visible;
         position: relative;
         margin-top: -0.2em;
         z-index: 5;
@@ -865,7 +865,7 @@
             position: absolute;
             top: 35.75em;
             left: 50%;
-            z-index: 3;
+            z-index: 1;
             transform: translateX(-50%);
             
         }
