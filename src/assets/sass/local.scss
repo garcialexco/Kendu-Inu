@@ -870,6 +870,7 @@
             top: 35.75em;
             left: 50%;
             z-index: 1;
+            overflow: visible;
             transform: translateX(-50%);
             
         }
@@ -1770,7 +1771,7 @@
         .cs-graphic {
             width: 120%;
             min-width: calc(1200/16 * 1rem);
-        
+            overflow: visible;
             object-fit: cover;
             position: absolute;
             bottom: -5%;
