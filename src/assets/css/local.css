@@ -705,10 +705,10 @@
   #exchanges .cs-cex-graphic {
     width: 120%;
     min-width: 80rem;
-    height: 20em;
+    height: 30em;
     object-fit: cover;
     position: absolute;
-    top: 35.75em;
+    top: 31.75em;
     left: 50%;
     z-index: 1;
     overflow: visible;
