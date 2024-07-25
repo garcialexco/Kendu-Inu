@@ -310,17 +310,6 @@
             transform: translate(-50%, -50%);
         }
 
-        .cs-graphic {
-            width: 100%;
-            min-width: calc(1200/16 * 1rem);
-            object-fit: cover;
-            position: absolute;
-            bottom: -5%;
-            left: 50%;
-            z-index: -1 ;
-            transform: translateX(-50%);
-        }
-
         .floozApp {
             width: 320px;
         }
@@ -879,6 +868,18 @@
             z-index: 3;
             transform: translateX(-50%);
             
+        }
+
+        .cs-graphic-top {
+            width: 120%;
+            min-width: calc(1200/16 * 1rem);
+            object-fit: cover;
+            position: absolute;
+            bottom: 51em;
+            left: 50%;
+            z-index: -1 ;
+            transform: translateX(-50%);
+            overflow: visible;
         }
 
         .cs-dark {

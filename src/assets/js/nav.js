@@ -2,6 +2,7 @@
 const CSbody = document.querySelector("body");
 const CSnavbarMenu = document.querySelector("#cs-navigation");
 const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
+const CSnavLinks = document.querySelectorAll(".cs-li-link"); // Select all navigation links
 
 CShamburgerMenu.addEventListener('click', () => {
     CShamburgerMenu.classList.toggle("cs-active");
@@ -18,6 +19,18 @@ function ariaExpanded() {
 
     csUL.setAttribute('aria-expanded', csExpanded === 'false' ? 'true' : 'false');
 }
+
+// Close the mobile menu when a link is clicked
+CSnavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (CSbody.classList.contains('cs-open')) {
+            CShamburgerMenu.classList.remove("cs-active");
+            CSnavbarMenu.classList.remove("cs-active");
+            CSbody.classList.remove("cs-open");
+            ariaExpanded();
+        }
+    });
+});
 
 // Throttle function to limit scroll event handler execution
 function throttle(fn, wait) {
@@ -46,4 +59,3 @@ document.querySelector('#cs-navigation').addEventListener('click', (event) => {
         event.target.closest('.cs-dropdown').classList.toggle('cs-active');
     }
 });
-

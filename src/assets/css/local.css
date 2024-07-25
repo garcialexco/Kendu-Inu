@@ -260,16 +260,6 @@
     z-index: 1;
     transform: translate(-50%, -50%);
   }
-  #buy-kendu .cs-graphic {
-    width: 100%;
-    min-width: 75rem;
-    object-fit: cover;
-    position: absolute;
-    bottom: -5%;
-    left: 50%;
-    z-index: -1;
-    transform: translateX(-50%);
-  }
   #buy-kendu .floozApp {
     width: 320px;
   }
@@ -719,6 +709,17 @@
     left: 50%;
     z-index: 3;
     transform: translateX(-50%);
+  }
+  #exchanges .cs-graphic-top {
+    width: 120%;
+    min-width: 75rem;
+    object-fit: cover;
+    position: absolute;
+    bottom: 51em;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    overflow: visible;
   }
   #exchanges .cs-dark {
     display: none;
