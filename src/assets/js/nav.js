@@ -1,3 +1,7 @@
+
+(()=>{
+    
+
 // add classes for mobile navigation toggling
 const CSbody = document.querySelector("body");
 const CSnavbarMenu = document.querySelector("#cs-navigation");
@@ -59,3 +63,5 @@ document.querySelector('#cs-navigation').addEventListener('click', (event) => {
         event.target.closest('.cs-dropdown').classList.toggle('cs-active');
     }
 });
+
+})();
