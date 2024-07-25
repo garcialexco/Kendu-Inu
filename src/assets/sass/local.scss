@@ -874,8 +874,8 @@
             width: 120%;
             min-width: calc(1200/16 * 1rem);
             object-fit: cover;
-            position: absolute;
-            bottom: 51em;
+            position: relative;
+            bottom: 17em;
             left: 50%;
             z-index: -1 ;
             transform: translateX(-50%);
@@ -884,6 +884,22 @@
 
         .cs-dark {
             display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 43.75rem) {
+    #exchanges {
+        .cs-graphic-top {
+            bottom: 19em;
+        }
+    }
+}
+
+@media only screen and (min-width: 50.5rem) {
+    #exchanges {
+        .cs-graphic-top {
+            bottom: 22em;
         }
     }
 }
