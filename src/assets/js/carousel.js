@@ -1,7 +1,4 @@
 
-(function () {
-
-
 
 const slidesData = [
     { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/uniswap-logo.svg', description: 'uniswap logo', link: 'https://app.uniswap.org/swap?outputCurrency=0xaa95f26e30001251fb905d264aa7b00ee9df6c18&inputCurrency=ETH' },
@@ -72,4 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
     populateCarouselTrack(slidesData);
 });
 
-});
