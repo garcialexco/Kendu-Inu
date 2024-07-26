@@ -68,3 +68,5 @@ const populateCarouselTrack = (slides) => {
 document.addEventListener('DOMContentLoaded', () => {
     populateCarouselTrack(slidesData);
 });
+
+console.log('carousel.js loaded');
