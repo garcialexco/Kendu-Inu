@@ -5,7 +5,7 @@ const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 // Configs
 const configCss = require("./src/config/css");
-const configJs = require("./src/config/javascript");
+// const configJs = require("./src/config/javascript");
 const configSitemap = require("./src/config/sitemap");
 const configServer = require("./src/config/server");
 
@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
      *  Sets up JS files as an eleventy template language, which are compiled by esbuild. Allows bundling and minification of JS
      */
     eleventyConfig.addTemplateFormats("js");
-    eleventyConfig.addExtension("js", configJs);
+    // eleventyConfig.addExtension("js", configJs);
     /**=====================================================================
                                 END EXTENSIONS
     =======================================================================*/
@@ -76,7 +76,9 @@ module.exports = function (eleventyConfig) {
     /** https://www.11ty.dev/docs/copy/ */
 
     eleventyConfig.addPassthroughCopy("./src/assets");
-    
+
+    console.log("eleventy config", isProduction);
+
     eleventyConfig.addPassthroughCopy("./src/_redirects");
     /**=====================================================================
                               END PASSTHROUGHS

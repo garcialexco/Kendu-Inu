@@ -19,26 +19,28 @@ module.exports = {
         }
 
         // Build JS with ESBuild. If production, minify, use sourcemaps, and target ES6
-        const result = await esbuild.build({
-            entryPoints: [inputPath],
-            outdir: "public/assets/js",
-            write: false,
-            bundle: true,
-            minify: false,
-            sourcemap: false,
-            target: "es6",
-        });
+        // const result = await esbuild.build({
+        //     entryPoints: [inputPath],
+        //     outdir: "public/assets/js",
+        //     write: false,
+        //     bundle: true,
+        //     minify: false,
+        //     sourcemap: false,
+        //     target: "es6",
+        // });
 
-        return async () => {
-            // Iterate over built files from ESBuild process
-            result.outputFiles.forEach(file => {
-                // Write the ESBuild files to this new directory
-                fs.writeFile(file.path, file.text, function (err) {
-                    if (err) throw err;
-                });
-            });
+        return ;
 
-            return undefined;
-        };
+        // return async () => {
+        //     // Iterate over built files from ESBuild process
+        //     result.outputFiles.forEach(file => {
+        //         // Write the ESBuild files to this new directory
+        //         fs.writeFile(file.path, file.text, function (err) {
+        //             if (err) throw err;
+        //         });
+        //     });
+
+        //     return undefined;
+        // };
     }
 }; 
