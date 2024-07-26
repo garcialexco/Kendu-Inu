@@ -1,20 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector("#hero-1856 video");
 
-    video.setAttribute("autoplay", true);
-    video.setAttribute("muted", true);
-    video.setAttribute("playsinline", true);
-
-    video.addEventListener("play", function() {
-        // Ensure the video is playing
-    });
-
-    video.addEventListener("error", function() {
-        // Handle the error
+    function playVideo() {
         video.muted = true;
-        video.play();
-    });
+        video.play().catch(() => {
+            // Handle play error
+        });
+    }
 
-    video.muted = true;
-    video.play();
+    document.body.addEventListener('touchstart', playVideo, { once: true });
+    document.body.addEventListener('click', playVideo, { once: true });
+
+    // Try to autoplay the video immediately
+    playVideo();
 });
