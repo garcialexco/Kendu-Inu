@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }).catch(error => {
                 console.error('Autoplay was prevented:', error);
                 // Retry after a slight delay
-                setTimeout(playVideo, 100);
+                setTimeout(playVideo, 1);
             });
         }
     }
