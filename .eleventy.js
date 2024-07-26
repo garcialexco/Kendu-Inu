@@ -1,6 +1,6 @@
 // Imports
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
-const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
+// const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 // Configs
@@ -63,7 +63,7 @@ module.exports = function (eleventyConfig) {
      *  https://github.com/benjaminrancourt/eleventy-plugin-files-minifier
      */
     if (isProduction) {
-        eleventyConfig.addPlugin(pluginMinifier);
+      //  eleventyConfig.addPlugin(pluginMinifier);
     }
     /**=====================================================================
                                 END PLUGINS
