@@ -1,16 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector("#hero-1856 video");
 
-    function playVideo() {
+    function attemptPlay() {
         video.muted = true;
-        video.play().catch(() => {
-            // Handle play error
-        });
+        video.playsInline = true;
+        video.autoplay = true;
+        video.loop = true;
+
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                // Handle the error
+                console.error('Autoplay was prevented:', error);
+            });
+        }
     }
 
-    document.body.addEventListener('touchstart', playVideo, { once: true });
-    document.body.addEventListener('click', playVideo, { once: true });
-
-    // Try to autoplay the video immediately
-    playVideo();
+    // Attempt to play the video after a slight delay
+    setTimeout(attemptPlay, 1);
 });
