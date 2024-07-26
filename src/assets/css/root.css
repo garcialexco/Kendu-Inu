@@ -405,6 +405,7 @@ html .cs-social-icon {
     top: 100%;
     left: 0;
     z-index: -1;
+    margin-left: -1em;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.4s, opacity 0.3s;
