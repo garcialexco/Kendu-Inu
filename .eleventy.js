@@ -1,11 +1,9 @@
 // Imports
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
-// const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 // Configs
 const configCss = require("./src/config/css");
-// const configJs = require("./src/config/javascript");
 const configSitemap = require("./src/config/sitemap");
 const configServer = require("./src/config/server");
 
