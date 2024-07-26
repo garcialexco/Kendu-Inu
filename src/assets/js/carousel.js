@@ -1,4 +1,6 @@
 
+(function () {
+
 
 
 const slidesData = [
@@ -68,4 +70,6 @@ const populateCarouselTrack = (slides) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     populateCarouselTrack(slidesData);
+});
+
 });
