@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector("#hero-1856 video");
+    video.classList.add('video-hidden'); // Hide the video initially
 
     function playVideo() {
         video.muted = true;
@@ -11,9 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (playPromise !== undefined) {
             playPromise.then(() => {
                 console.log('Autoplay started');
+                video.classList.remove('video-hidden');
+                video.classList.add('video-visible');
             }).catch(error => {
                 console.error('Autoplay was prevented:', error);
-                // Retry after a slight delay
+                // Retry after a very short delay
                 setTimeout(playVideo, 1);
             });
         }

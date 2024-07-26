@@ -12,10 +12,18 @@
     position: relative;
     z-index: 1;
     background-color: #272727;
+    /* Hide the video initially */
+    /* Show the video when it starts playing */
     /* Background video container */
   }
   #hero-1856 video::-webkit-media-controls {
     display: none !important;
+  }
+  #hero-1856 .video-hidden {
+    visibility: hidden;
+  }
+  #hero-1856 .video-visible {
+    visibility: visible;
   }
   #hero-1856 .cs-container {
     width: 100%;

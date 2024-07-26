@@ -19,6 +19,16 @@
             display: none !important;
         }
 
+        /* Hide the video initially */
+        .video-hidden {
+            visibility: hidden;
+        }
+
+        /* Show the video when it starts playing */
+        .video-visible {
+            visibility: visible;
+        }
+
         .cs-container {
             width: 100%;
             max-width: calc(1280/16 * 1rem);
