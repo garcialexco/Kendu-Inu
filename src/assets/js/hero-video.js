@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector("#hero-1856 video");
 
-    function attemptPlay() {
+    function playVideo() {
         video.muted = true;
         video.playsInline = true;
         video.autoplay = true;
@@ -9,13 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const playPromise = video.play();
         if (playPromise !== undefined) {
-            playPromise.catch(error => {
-                // Handle the error
+            playPromise.then(() => {
+                console.log('Autoplay started');
+            }).catch(error => {
                 console.error('Autoplay was prevented:', error);
+                // Retry after a slight delay
+                setTimeout(playVideo, 100);
             });
         }
     }
 
-    // Attempt to play the video after a slight delay
-    setTimeout(attemptPlay, 1);
+    // Try to autoplay the video immediately
+    playVideo();
 });
