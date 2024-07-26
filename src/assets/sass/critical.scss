@@ -163,6 +163,10 @@
                 left: 0;
             }
 
+            video::-webkit-media-controls {
+                display:none !important;
+            }
+
             // Optional fallback image styling
             .fallback-image {
                 width: 100%;
