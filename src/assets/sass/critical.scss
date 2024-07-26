@@ -15,6 +15,10 @@
         z-index: 1;
         background-color: #272727;
 
+        video::-webkit-media-controls {
+            display: none !important;
+        }
+
         .cs-container {
             width: 100%;
             max-width: calc(1280/16 * 1rem);

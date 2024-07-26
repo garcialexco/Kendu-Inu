@@ -14,6 +14,9 @@
     background-color: #272727;
     /* Background video container */
   }
+  #hero-1856 video::-webkit-media-controls {
+    display: none !important;
+  }
   #hero-1856 .cs-container {
     width: 100%;
     max-width: 80rem;
