@@ -5,6 +5,7 @@ const slidesData = [
     { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/lbank-logo.svg', description: 'lbank logo', link: 'https://www.lbank.com/trade/kendu_usdt' },
     { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/mexc-logo.svg', description: 'mexc logo', link: 'https://www.mexc.com/exchange/KENDU_USDT' },
     { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/simpleswap-logo.svg', description: 'simple swap logo', link: 'https://simpleswap.io/coins/kendu' },
+    { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/exchangio-logo.svg', description: 'exchang.io logo', link: 'https://t.co/IMWb5hsRd8' },
     { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/bitmart-logo.svg', description: 'bitmart logo', link: 'https://www.bitmart.com/trade/en-US?symbol=KENDU_USDT&layout=basic&%3Fr=Ppnxq3&type=null' },
     { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/poloniex-logo.svg', description: 'poloniex logo', link: 'https://poloniex.com/trade/KENDU_USDT/?type=spot' },
     { src: 'https://clickmortarlibrary.nyc3.cdn.digitaloceanspaces.com/Kendu/CEX-Icons/azbit-logo.svg', description: 'azbit logo', link: 'https://azbit.com/exchange/KENDU_USDT' },
