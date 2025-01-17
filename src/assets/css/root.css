@@ -893,6 +893,13 @@ html .cs-social-icon {
   #cs-footer-1781 .cs-li {
     list-style: none;
   }
+  #cs-footer-1781 .contract-title {
+    font-size: 1.15rem;
+    margin-top: 1em;
+  }
+  #cs-footer-1781 .cs-contract {
+    font-weight: 100;
+  }
   #cs-footer-1781 .cs-contact, #cs-footer-1781 .cs-contract {
     font-size: 1rem;
     line-height: 1.2em;
