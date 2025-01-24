@@ -1062,207 +1062,13 @@
   }
 }
 /*-- -------------------------- -->
-<---         Kendu Chads        -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #kendu-chads {
-    padding: var(--sectionPadding);
-    /* 100px - 200px */
-    padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
-    background-color: #1d1c1c;
-    /* clips anything overflowing */
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-  }
-  #kendu-chads .cs-container {
-    width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 34.375rem;
-    margin: auto;
-    margin-bottom: -5em;
-    padding-bottom: 3em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-    padding-bottom: 6em;
-  }
-  #kendu-chads .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    max-width: 33.875rem;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-    position: relative;
-    z-index: 3;
-  }
-  #kendu-chads .cs-topper {
-    font-size: 1.25rem;
-  }
-  #kendu-chads .cs-title {
-    font-size: 2.5rem;
-  }
-  #kendu-chads .cs-title, #kendu-chads .cs-text {
-    color: var(--bodyTextColorWhite);
-  }
-  #kendu-chads .cs-text {
-    margin-bottom: 1rem;
-    font-family: "Orienta", sans-serif;
-    font-size: 0.95rem;
-    width: 80%;
-  }
-  #kendu-chads .cs-text:last-of-type {
-    margin-bottom: 2rem;
-  }
-  #kendu-chads .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    border: solid 1px #000;
-    min-width: 9.375rem;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-  }
-  #kendu-chads .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #560101;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #kendu-chads .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  #kendu-chads .cs-image-group {
-    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
-    font-size: min(2.1vw, 0.7rem);
-    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
-    width: 40.1875em;
-    height: 38em;
-    position: relative;
-    z-index: 1;
-  }
-  #kendu-chads .cs-picture {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    object-fit: cover;
-  }
-  #kendu-chads .cs-picture img {
-    width: 36em;
-    height: 23em;
-    object-fit: cover;
-    rotate: 180deg;
-    position: absolute;
-    left: 2em;
-    top: 8em;
-  }
-  #kendu-chads .cs-mask {
-    width: 101%;
-    height: 101%;
-    object-fit: cover;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-  }
-  #kendu-chads .cs-graphic {
-    width: 100%;
-    min-width: 75rem;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50%);
-  }
-  #kendu-chads .cs-dark {
-    display: none;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #kendu-chads .cs-container {
-    max-width: 80rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    padding-bottom: 10em;
-    padding-top: 2em;
-  }
-  #kendu-chads .cs-image-group {
-    /* set to inherit at Large Desktop */
-    font-size: min(1.1vw, 1rem);
-    flex: none;
-    /* sends it to the right in the 2nd position */
-    order: 2;
-  }
-  #kendu-chads .cs-image-group:before {
-    display: block;
-  }
-  #kendu-chads .cs-content {
-    align-items: flex-start;
-  }
-  #kendu-chads .cs-text {
-    text-align: left;
-    width: 100%;
-  }
-  #kendu-chads .cs-content {
-    width: 51%;
-  }
-}
-/* Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #kendu-chads .cs-image-group {
-    font-size: inherit;
-  }
-  #kendu-chads .cs-li {
-    flex-direction: row;
-  }
-  #kendu-chads .cs-container {
-    padding-bottom: 7em;
-  }
-}
-/* Large Desktop - 2000px */
-@media only screen and (min-width: 125rem) {
-  #kendu-chads {
-    /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
-    padding-bottom: 9vw;
-  }
-}
-/*-- -------------------------- -->
 <---            FAQ             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #faq {
     padding: var(--sectionPadding);
-    background-color: #272727;
+    background-color: #1d1c1c;
     position: relative;
     padding-top: 3em;
     padding-bottom: 0;
@@ -1274,6 +1080,7 @@
     /* changes to 1280px at desktop */
     max-width: 36.5rem;
     margin: auto;
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
