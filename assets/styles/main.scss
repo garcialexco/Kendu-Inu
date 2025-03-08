@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./global/_mixins";
+@import "./global/_variables";
+@import "./global/_global";
+@import "./global/_typography";
+@import "./global/_buttons";

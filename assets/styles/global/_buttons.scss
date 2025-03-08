@@ -1,0 +1,68 @@
+.button {
+    @extend .button-label;
+    @apply cursor-pointer body-small font-semibold inline-flex items-center h-11 justify-center leading-[1] px-5 border-none transition ease-in-out duration-300 rounded-full;
+
+    &:hover {
+        @apply opacity-60;
+    }
+
+    &--black {
+        @apply bg-black text-orange;
+    }
+
+    &--orange {
+        @apply bg-orange text-black; 
+    }
+
+    &--small {
+        @apply body-small px-4 h-10;
+    }
+
+    &--large {
+        @apply body-base h-12 md:h-14 px-6;
+    }
+
+    &--outline {
+        @apply border border-solid border-orange text-orange;
+    }
+
+    &--outline-white {
+        @apply border border-solid border-white text-white;
+    }
+
+    &--outline-black {
+        @apply border border-solid border-black text-black;
+    }
+
+    &--outline-orange {
+        @apply border border-solid border-orange text-orange;
+
+        &:hover {
+            @apply bg-orange text-black;
+        }
+    }
+
+    &-icon {
+        @apply h-10 w-10 leading-[1] flex items-center justify-center transition ease-in-out duration-300 flex-shrink-0 border border-white/60 rounded-full cursor-pointer;
+
+        &--small {
+            @apply h-10 w-10;
+        }
+
+        &--large {
+            @apply h-12 w-12 md:h-20 md:w-20;
+        }
+
+        &--orange {
+            @apply bg-orange border-orange;
+
+            path {
+                @apply fill-black;
+            }
+        }
+
+        &--round {
+            @apply rounded-full;
+        }
+    }
+}
