@@ -27,7 +27,7 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        headings: ["Teko-Bold", "sans-serif"],
+        headings: ["Teko", "sans-serif"],
         body: ["Sora", "sans-serif"],
       },
 
