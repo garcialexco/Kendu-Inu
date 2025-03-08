@@ -1,6 +1,6 @@
 @use "./mixins" as mixins;
 
-@include mixins.font("Teko Light", "../fonts", "teko-bold", 700);
+@include mixins.font("Teko-Bold", "../fonts", "Teko-Bold", 700);
 @include mixins.font("Sora", "../fonts", "sora-semibold", 600);
 @include mixins.font("Sora", "../fonts", "sora-regular", 400);
 
