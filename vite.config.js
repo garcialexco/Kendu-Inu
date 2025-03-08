@@ -39,7 +39,7 @@ export default defineConfig({
           return "assets/[name].[ext]";
         },
       },
-      cache: true,
+      cache: false,
     },
     optimizeDeps: {
       include: ["assets/scripts/**/*.js"],
