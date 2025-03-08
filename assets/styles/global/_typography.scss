@@ -1,6 +1,8 @@
-@include font("Teko Bold", "../fonts", "teko-bold", 700);
-@include font("Sora", "../fonts", "sora-semibold", 600);
-@include font("Sora", "../fonts", "sora-regular", 400);
+@use "./mixins" as mixins;
+
+@include mixins.font("Teko Bold", "../fonts", "teko-bold", 700);
+@include mixins.font("Sora", "../fonts", "sora-semibold", 600);
+@include mixins.font("Sora", "../fonts", "sora-regular", 400);
 
 .heading-super,
 h1,
@@ -15,90 +17,89 @@ h5,
 .heading-five,
 h6,
 .heading-six {
-    @apply font-headings font-bold uppercase text-white/95;
+  @apply font-headings font-bold uppercase text-white/95;
 }
 
 .heading-super {
-    @include responsive-font(100px, 300px);
-    @apply leading-[.8];
+  @include mixins.responsive-font(100px, 300px);
+  @apply leading-[.8];
 }
 
 h1,
 .heading-one {
-    @include responsive-font(80px, 144px);
-    @apply leading-[.9];
+  @include mixins.responsive-font(80px, 144px);
+  @apply leading-[.9];
 }
 
 h2,
 .heading-two {
-    @include responsive-font(48px, 96px);
-    @apply leading-[.9];
+  @include mixins.responsive-font(48px, 96px);
+  @apply leading-[.9];
 }
 
 h3,
 .heading-three {
-    @include responsive-font(40px, 64px);
-    @apply leading-[.9] mb-[19px];
+  @include mixins.responsive-font(40px, 64px);
+  @apply leading-[.9] mb-[19px];
 }
 
 h4,
 .heading-four {
-    @include responsive-font(24px, 40px);
-    @apply leading-[1] mb-[22px];
-}x
-
-h5,
+  @include mixins.responsive-font(24px, 40px);
+  @apply leading-[1] mb-[22px];
+}
+x h5,
 .heading-five {
-    @include responsive-font(20px, 32px);
-    @apply leading-[1.1] mb-7;
+  @include mixins.responsive-font(20px, 32px);
+  @apply leading-[1.1] mb-7;
 }
 
 h6,
 .heading-six {
-    @include responsive-font(20px, 24px);
-    @apply leading-[1.1] mb-4 sm:mb-6;
+  @include mixins.responsive-font(20px, 24px);
+  @apply leading-[1.1] mb-4 sm:mb-6;
 }
 
 .heading-six-alt {
-    @include responsive-font(18px, 20px);
-    @apply leading-[1.1] mb-4 font-headings uppercase;
+  @include mixins.responsive-font(18px, 20px);
+  @apply leading-[1.1] mb-4 font-headings uppercase;
 }
 
 p {
-    @apply m-0;
+  @apply m-0;
 
-    &:not(:last-child) {
-        &:not(:only-child) {
-            @apply mb-5 sm:mb-[25px];
-        }
+  &:not(:last-child) {
+    &:not(:only-child) {
+      @apply mb-5 sm:mb-[25px];
     }
+  }
 }
 
 ul,
 ol {
-    @apply m-0 p-0 list-none;
+  @apply m-0 p-0 list-none;
 }
 
 .body-large {
-    @include responsive-font(16px, 24px);
+  @include mixins.responsive-font(16px, 24px);
 }
 
 .body-base {
-    @include responsive-font(14px, 18px);
+  @include mixins.responsive-font(14px, 18px);
 }
 
 .body-small {
-    @include responsive-font(14px, 15px);
+  @include mixins.responsive-font(14px, 15px);
 }
 
 .body-smallest {
-    @include responsive-font(11px, 12px);
+  @include mixins.responsive-font(11px, 12px);
 }
 
 .button-label {
-    @apply font-normal font-body no-underline text-[15px];
+  @apply font-normal font-body no-underline text-[15px];
 }
 
 .label {
-    @apply uppercase body-small;
+  @apply uppercase body-small;
 }
