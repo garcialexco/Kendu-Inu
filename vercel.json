@@ -4,7 +4,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "null",
+      "use": null,
       "config": {
         "distDir": "dist",
         "buildCommand": "npm run build"
