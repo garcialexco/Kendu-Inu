@@ -1,0 +1,230 @@
+{
+  "apple-touch-icon.png": {
+    "file": "assets/images/apple-touch-icon.png",
+    "src": "apple-touch-icon.png"
+  },
+  "assets/fonts/Teko-Bold.woff": {
+    "file": "assets/fonts/Teko-Bold.woff",
+    "src": "assets/fonts/Teko-Bold.woff"
+  },
+  "assets/fonts/Teko-Bold.woff2": {
+    "file": "assets/fonts/Teko-Bold.woff2",
+    "src": "assets/fonts/Teko-Bold.woff2"
+  },
+  "assets/fonts/sora-regular.woff": {
+    "file": "assets/fonts/sora-regular.woff",
+    "src": "assets/fonts/sora-regular.woff"
+  },
+  "assets/fonts/sora-regular.woff2": {
+    "file": "assets/fonts/sora-regular.woff2",
+    "src": "assets/fonts/sora-regular.woff2"
+  },
+  "assets/fonts/sora-semibold.woff": {
+    "file": "assets/fonts/sora-semibold.woff",
+    "src": "assets/fonts/sora-semibold.woff"
+  },
+  "assets/fonts/sora-semibold.woff2": {
+    "file": "assets/fonts/sora-semibold.woff2",
+    "src": "assets/fonts/sora-semibold.woff2"
+  },
+  "assets/images/competition.jpg": {
+    "file": "assets/images/competition.jpg",
+    "src": "assets/images/competition.jpg"
+  },
+  "assets/images/competition.webp": {
+    "file": "assets/images/competition.webp",
+    "src": "assets/images/competition.webp"
+  },
+  "assets/images/grove-x.png": {
+    "file": "assets/images/grove-x.png",
+    "src": "assets/images/grove-x.png"
+  },
+  "assets/images/grove-x.webp": {
+    "file": "assets/images/grove-x.webp",
+    "src": "assets/images/grove-x.webp"
+  },
+  "assets/images/kendu-2.jpg": {
+    "file": "assets/images/kendu-2.jpg",
+    "src": "assets/images/kendu-2.jpg"
+  },
+  "assets/images/kendu-2.webp": {
+    "file": "assets/images/kendu-2.webp",
+    "src": "assets/images/kendu-2.webp"
+  },
+  "assets/images/kendu-3.jpg": {
+    "file": "assets/images/kendu-3.jpg",
+    "src": "assets/images/kendu-3.jpg"
+  },
+  "assets/images/kendu-3.webp": {
+    "file": "assets/images/kendu-3.webp",
+    "src": "assets/images/kendu-3.webp"
+  },
+  "assets/images/kendu-4.jpg": {
+    "file": "assets/images/kendu-4.jpg",
+    "src": "assets/images/kendu-4.jpg"
+  },
+  "assets/images/kendu-4.webp": {
+    "file": "assets/images/kendu-4.webp",
+    "src": "assets/images/kendu-4.webp"
+  },
+  "assets/images/kendu-certik-audit.jpg": {
+    "file": "assets/images/kendu-certik-audit.jpg",
+    "src": "assets/images/kendu-certik-audit.jpg"
+  },
+  "assets/images/kendu-certik-audit.webp": {
+    "file": "assets/images/kendu-certik-audit.webp",
+    "src": "assets/images/kendu-certik-audit.webp"
+  },
+  "assets/images/kendu-coffee.jpg": {
+    "file": "assets/images/kendu-coffee.jpg",
+    "src": "assets/images/kendu-coffee.jpg"
+  },
+  "assets/images/kendu-coffee.webp": {
+    "file": "assets/images/kendu-coffee.webp",
+    "src": "assets/images/kendu-coffee.webp"
+  },
+  "assets/images/kendu-creatine.jpg": {
+    "file": "assets/images/kendu-creatine.jpg",
+    "src": "assets/images/kendu-creatine.jpg"
+  },
+  "assets/images/kendu-creatine.webp": {
+    "file": "assets/images/kendu-creatine.webp",
+    "src": "assets/images/kendu-creatine.webp"
+  },
+  "assets/images/kendu-energy-drink.jpg": {
+    "file": "assets/images/kendu-energy-drink.jpg",
+    "src": "assets/images/kendu-energy-drink.jpg"
+  },
+  "assets/images/kendu-energy-drink.webp": {
+    "file": "assets/images/kendu-energy-drink.webp",
+    "src": "assets/images/kendu-energy-drink.webp"
+  },
+  "assets/images/kendu-fine-jewelry.jpg": {
+    "file": "assets/images/kendu-fine-jewelry.jpg",
+    "src": "assets/images/kendu-fine-jewelry.jpg"
+  },
+  "assets/images/kendu-fine-jewelry.webp": {
+    "file": "assets/images/kendu-fine-jewelry.webp",
+    "src": "assets/images/kendu-fine-jewelry.webp"
+  },
+  "assets/images/kendu-gum.jpg": {
+    "file": "assets/images/kendu-gum.jpg",
+    "src": "assets/images/kendu-gum.jpg"
+  },
+  "assets/images/kendu-gum.webp": {
+    "file": "assets/images/kendu-gum.webp",
+    "src": "assets/images/kendu-gum.webp"
+  },
+  "assets/images/kendu-inu-logo.png": {
+    "file": "assets/images/kendu-inu-logo.png",
+    "src": "assets/images/kendu-inu-logo.png"
+  },
+  "assets/images/kendu-inu-logo.webp": {
+    "file": "assets/images/kendu-inu-logo.webp",
+    "src": "assets/images/kendu-inu-logo.webp"
+  },
+  "assets/images/kendu-whey-protein.jpg": {
+    "file": "assets/images/kendu-whey-protein.jpg",
+    "src": "assets/images/kendu-whey-protein.jpg"
+  },
+  "assets/images/kendu-whey-protein.webp": {
+    "file": "assets/images/kendu-whey-protein.webp",
+    "src": "assets/images/kendu-whey-protein.webp"
+  },
+  "assets/images/kendu.jpg": {
+    "file": "assets/images/kendu.jpg",
+    "src": "assets/images/kendu.jpg"
+  },
+  "assets/images/kendu.webp": {
+    "file": "assets/images/kendu.webp",
+    "src": "assets/images/kendu.webp"
+  },
+  "assets/scripts/main.js": {
+    "file": "assets/scripts/BNZlCupW.js",
+    "name": "scripts",
+    "src": "assets/scripts/main.js",
+    "isEntry": true,
+    "css": [
+      "assets/styles/DWTo6nDC.css"
+    ]
+  },
+  "assets/styles/main.scss": {
+    "file": "assets/styles/DSGPhHcE.css",
+    "src": "assets/styles/main.scss",
+    "isEntry": true
+  },
+  "favicon-16x16.png": {
+    "file": "assets/images/favicon-16x16.png",
+    "src": "favicon-16x16.png"
+  },
+  "favicon-32x32.png": {
+    "file": "assets/images/favicon-32x32.png",
+    "src": "favicon-32x32.png"
+  },
+  "favicon.ico": {
+    "file": "assets/favicon.ico",
+    "src": "favicon.ico"
+  },
+  "index.html": {
+    "file": "assets/scripts/D_35N9jN.js",
+    "name": "main",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "assets/scripts/main.js"
+    ],
+    "css": [
+      "assets/styles/DSGPhHcE.css"
+    ],
+    "assets": [
+      "assets/fonts/Teko-Bold.woff2",
+      "assets/fonts/Teko-Bold.woff",
+      "assets/fonts/sora-semibold.woff2",
+      "assets/fonts/sora-semibold.woff",
+      "assets/fonts/sora-regular.woff2",
+      "assets/fonts/sora-regular.woff",
+      "assets/images/apple-touch-icon.png",
+      "assets/images/favicon-32x32.png",
+      "assets/images/favicon-16x16.png",
+      "assets/site.webmanifest",
+      "assets/images/safari-pinned-tab.svg",
+      "assets/favicon.ico",
+      "assets/images/kendu-inu-logo.png",
+      "assets/images/kendu-inu-logo.webp",
+      "assets/images/kendu.webp",
+      "assets/images/kendu.jpg",
+      "assets/images/kendu-3.webp",
+      "assets/images/kendu-3.jpg",
+      "assets/images/competition.webp",
+      "assets/images/competition.jpg",
+      "assets/images/kendu-energy-drink.webp",
+      "assets/images/kendu-energy-drink.jpg",
+      "assets/images/kendu-coffee.webp",
+      "assets/images/kendu-coffee.jpg",
+      "assets/images/kendu-fine-jewelry.webp",
+      "assets/images/kendu-fine-jewelry.jpg",
+      "assets/images/kendu-whey-protein.webp",
+      "assets/images/kendu-whey-protein.jpg",
+      "assets/images/kendu-creatine.webp",
+      "assets/images/kendu-creatine.jpg",
+      "assets/images/kendu-gum.webp",
+      "assets/images/kendu-gum.jpg",
+      "assets/images/grove-x.webp",
+      "assets/images/grove-x.png",
+      "assets/images/kendu-certik-audit.webp",
+      "assets/images/kendu-certik-audit.jpg",
+      "assets/images/kendu-4.webp",
+      "assets/images/kendu-4.jpg",
+      "assets/images/kendu-2.webp",
+      "assets/images/kendu-2.jpg"
+    ]
+  },
+  "safari-pinned-tab.svg": {
+    "file": "assets/images/safari-pinned-tab.svg",
+    "src": "safari-pinned-tab.svg"
+  },
+  "site.webmanifest": {
+    "file": "assets/site.webmanifest",
+    "src": "site.webmanifest"
+  }
+}

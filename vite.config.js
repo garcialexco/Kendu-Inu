@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    outDir: "public",
+    outDir: "dist",
     minify: "terser",
     manifest: "manifest.json",
     assetDir: ".",
