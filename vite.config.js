@@ -6,7 +6,7 @@ export default defineConfig({
     outDir: "dist",
     minify: "terser",
     manifest: "manifest.json",
-    assetDir: ".",
+    assetDir: "./assets",
     emptyOutDir: true,
     sourcemap: true,
     terserOptions: {
