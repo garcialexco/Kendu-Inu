@@ -1,9 +1,7 @@
+@use "./tailwind.scss";
+
 @use "./global/_mixins";
 @use "./global/_variables";
 @use "./global/_global";
 @use "./global/_typography";
 @use "./global/_buttons";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
