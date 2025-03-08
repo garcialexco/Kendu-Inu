@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "framework": "vite",
+  "framework": null,
   "builds": [
     {
       "src": "package.json",
-      "use": null,
+      "use": "@vercel/static-build",
       "config": {
         "distDir": "dist",
         "buildCommand": "npm run build"
