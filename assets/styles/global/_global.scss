@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  outline: none;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+html {
+  @apply text-base h-auto bg-black antialiased font-normal scroll-smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply h-full text-white font-body font-normal leading-[1.6] body-base;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.padding-top {
+  &-sm {
+    @apply pt-10 sm:pt-12 md:pt-16 xl:pt-20;
+  }
+
+  &-lg {
+    @apply pt-20 sm:pt-32 md:pt-36 xl:pt-40;
+  }
+}
+
+.padding-bottom {
+  &-sm {
+    @apply pb-10 sm:pb-12 md:pb-16 xl:pb-20;
+  }
+
+  &-lg {
+    @apply pb-20 sm:pb-32 md:pb-36 xl:pb-40;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-60%, 0);
+  }
+  50% {
+    transform: translate(-60%, -10px); /* Moves up */
+  }
+  100% {
+    transform: translate(-60%, 0); /* Moves back down */
+  }
+}
+
+.Hero {
+  &__button {
+    animation: bounce 1s infinite ease-in-out;
+  }
+}
+
+.tag {
+  @apply body-smallest font-semibold tracking-[0.01rem] rounded-full border px-2.5 md:px-3 pt-[3px] pb-[1px] md:pt-1 md:pb-0.5 inline-flex mb-[18px] uppercase;
+
+  &--orange {
+    @apply border-orange50 text-orange50;
+  }
+
+  &--orange {
+    @apply border-orange50 text-orange50;
+  }
+
+  &--orange {
+    @apply border-orange50 text-orange50;
+  }
+}
+
+.logo-slider {
+  white-space: nowrap;
+  a {
+    svg {
+      @apply max-h-16;
+    }
+  }
+}
+
+// bridge overrides
+.MuiTypography-root {
+  margin-bottom: 0 !important;
+}

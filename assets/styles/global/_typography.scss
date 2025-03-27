@@ -1,0 +1,105 @@
+@use "./mixins" as mixins;
+
+@include mixins.font("Teko", "../fonts", "teko-bold", 700);
+@include mixins.font("Sora", "../fonts", "sora-semibold", 600);
+@include mixins.font("Sora", "../fonts", "sora-regular", 400);
+
+.heading-super,
+h1,
+.heading-one,
+h2,
+.heading-two,
+h3,
+.heading-three,
+h4,
+.heading-four,
+h5,
+.heading-five,
+h6,
+.heading-six {
+  @apply font-headings font-bold uppercase text-white/95;
+}
+
+.heading-super {
+  @include mixins.responsive-font(100px, 300px);
+  @apply leading-[.8];
+}
+
+h1,
+.heading-one {
+  @include mixins.responsive-font(80px, 144px);
+  @apply leading-[.9];
+}
+
+h2,
+.heading-two {
+  @include mixins.responsive-font(48px, 96px);
+  @apply leading-[.9];
+}
+
+h3,
+.heading-three {
+  @include mixins.responsive-font(40px, 64px);
+  @apply leading-[.9] mb-[19px];
+}
+
+h4,
+.heading-four {
+  @include mixins.responsive-font(24px, 40px);
+  @apply leading-[1] mb-[22px];
+}
+x h5,
+.heading-five {
+  @include mixins.responsive-font(20px, 32px);
+  @apply leading-[1.1] mb-7;
+}
+
+h6,
+.heading-six {
+  @include mixins.responsive-font(20px, 24px);
+  @apply leading-[1.1] mb-4 sm:mb-6;
+}
+
+.heading-six-alt {
+  @include mixins.responsive-font(18px, 20px);
+  @apply leading-[1.1] mb-4 font-headings uppercase;
+}
+
+p {
+  @apply m-0;
+
+  &:not(:last-child) {
+    &:not(:only-child) {
+      @apply mb-5 sm:mb-[25px];
+    }
+  }
+}
+
+ul,
+ol {
+  @apply m-0 p-0 list-none;
+}
+
+.body-large {
+  @include mixins.responsive-font(16px, 24px);
+}
+
+.body-base {
+  @include mixins.responsive-font(14px, 18px);
+}
+
+.body-small {
+  @include mixins.responsive-font(14px, 15px);
+}
+
+.body-smallest {
+  @include mixins.responsive-font(11px, 12px);
+}
+
+.button-label {
+  @apply font-normal font-body no-underline text-[15px];
+}
+
+.label {
+  @apply uppercase body-small;
+}
