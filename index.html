@@ -44,6 +44,7 @@
 
         <link href="/assets/styles/main.scss" rel="stylesheet">
         <title>Kendu - Kendu Ecosystem</title>
+
     </head>
     <body x-data="{ headerScrolled: false, menuOpen: false }" @scroll.window="headerScrolled = window.scrollY > (window.innerHeight - 1)" :class="{ 'overflow-hidden': menuOpen }">
         <header class="Header fixed top-0 inset-x-0 w-full z-[100] transition ease-in-out duration-300" :class="{ 'bg-transparent': !headerScrolled, 'bg-black': headerScrolled }"  x-cloak>
@@ -1075,7 +1076,7 @@
                                                         <div class="bg-orange text-black h-6 w-6 rounded-[4px] inline-flex flex-shrink-0 items-center justify-center">
                                                             <span class="font-semibold -mb-[3px]">2</span>
                                                         </div>
-                                                        <p class="text-white/60">Send Ethereum to your wallet to swap for $KENDU. You can buy Ethereum on an exchange such as Coinbase and withdraw it to your wallet. Alternatively, you can purchase Eth directly in the widget's 'Buy' tab.</p>
+                                                        <p class="text-white/60">Send Ethereum to your wallet to swap for $KENDU. You can buy Ethereum on an exchange such as Coinbase and send it to your wallet. Alternatively, you can purchase Eth directly in the widget's 'Buy' tab.</p>
                                                     </div>
 
                                                     <div class="flex gap-4 sm:mb-8">
@@ -1169,14 +1170,14 @@
                                                         <div class="bg-orange text-black h-6 w-6 rounded-[4px] inline-flex flex-shrink-0 items-center justify-center">
                                                             <span class="font-semibold -mb-[3px]">2</span>
                                                         </div>
-                                                        <p class="text-white/60">Send SOL to your Solana wallet address to swap for $KENDU. You can buy Sol on an exchange and withdraw it to your Solana wallet address or buy it directly in your wallet by clicking the 'Buy' tab on the homepage of your wallet.</p>
+                                                        <p class="text-white/60">Send SOL to your Solana wallet address to swap for $KENDU. You can buy Sol on an exchange and send it to your Solana wallet address or buy it directly in your wallet by clicking the 'Buy' tab on the homepage of your wallet.</p>
                                                     </div>
 
                                                     <div class="flex gap-4">
                                                         <div class="bg-orange text-black h-6 w-6 rounded-[4px] inline-flex flex-shrink-0 items-center justify-center">
                                                             <span class="font-semibold -mb-[3px]">3</span>
                                                         </div>
-                                                        <p class="text-white/60">3. Visit <a class="text-orange" href="https://raydium.io/swap/?inputMint=sol&outputMint=2nnrviYJRLcf2bXAxpKTRXzccoDbwaP4vzuGUG75Jo45" target="_blank">Raydium using this link</a> and connect your wallet. Enter the amount of Sol you'd like to swap for Kendu and approve all transactions. Congratulations! You have just bought Kendu on Solana.</p>
+                                                        <p class="text-white/60">Visit <a class="text-orange" href="https://raydium.io/swap/?inputMint=sol&outputMint=2nnrviYJRLcf2bXAxpKTRXzccoDbwaP4vzuGUG75Jo45" target="_blank">Raydium using this link</a> and connect your wallet. Enter the amount of Sol you'd like to swap for Kendu and approve all transactions. Congratulations! You have just bought Kendu on Solana.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1249,21 +1250,21 @@
                                                         <div class="bg-orange text-black h-6 w-6 rounded-[4px] inline-flex flex-shrink-0 items-center justify-center">
                                                             <span class="font-semibold -mb-[3px]">1</span>
                                                         </div>
-                                                        <p class="text-white/60">Get MetaMask or your favorite wallet for free from the App Store or Google Play. For desktop users, visit metamask.io to download the extension.</p>
+                                                        <p class="text-white/60">Get <a class="text-orange" href="https://metamask.io" target="_blank">MetaMask</a> or your favorite wallet for free from the App Store or Google Play. For desktop users, visit metamask.io to download the extension.</p>
                                                     </div>
 
                                                     <div class="flex gap-4 mb-6 sm:mb-8">
                                                         <div class="bg-orange text-black h-6 w-6 rounded-[4px] inline-flex flex-shrink-0 items-center justify-center">
                                                             <span class="font-semibold -mb-[3px]">2</span>
                                                         </div>
-                                                        <p class="text-white/60">Have Solana in your wallet to swap for $KENDU. If not, Solana in the widget's 'Buy' tab, transfer from another wallet, or purchase on another exchange and send it to your wallet.</p>
+                                                        <p class="text-white/60">Have Base in your wallet to swap for $KENDU. If not, Base in the widget's 'Buy' tab, transfer from another wallet, or purchase on another exchange and send it to your wallet.</p>
                                                     </div>
 
                                                     <div class="flex gap-4">
                                                         <div class="bg-orange text-black h-6 w-6 rounded-[4px] inline-flex flex-shrink-0 items-center justify-center">
                                                             <span class="font-semibold -mb-[3px]">3</span>
                                                         </div>
-                                                        <p class="text-white/60">3. Visit <a class="text-orange" href="https://aerodrome.finance/swap?from=eth&to=0xef73611f98da6e57e0776317957af61b59e09ed7&chain0=8453&chain1=8453" target="_blank">Aerodrome Finance using this link</a> and connect your wallet. Enter the amount of Base Eth you'd like to swap for Kendu and approve all transactions. Congratulations! You have just bought Kendu on Base.</p>
+                                                        <p class="text-white/60">Visit <a class="text-orange" href="https://aerodrome.finance/swap?from=eth&to=0xef73611f98da6e57e0776317957af61b59e09ed7&chain0=8453&chain1=8453" target="_blank">Aerodrome Finance using this link</a> and connect your wallet. Enter the amount of Base you'd like to swap for Kendu and approve all transactions. Congratulations! You have just bought Kendu on Base.</p>
                                                       </div>
                                                 </div>
                                             </div>
@@ -1378,7 +1379,7 @@
                                 <h1>An ethos of work</h1>
                             </div>  
 
-                            <p class="text-white/80">At Kendu, the motto is "We don't gamble, we work," a sharp contrast to the prevailing culture in much of DeFi. While many meme coin traders rely on influencer-driven pump-and-dump schemes, and gambling away their investments on live pairs, the Kendu community takes a different approach. We believe in "working for your bags."</p>
+                            <p class="text-white/80">At Kendu, the motto is "We don't gamble, We work," a sharp contrast to the prevailing culture in much of DeFi. While many memecoin traders rely on influencer-driven pump-and-dump schemes, and gambling away their investments on live pairs, the Kendu community takes a different approach. We believe in "working for your bags."</p>
                             <p class="text-white/80">Whether it's engaging with social media posts across platforms, promoting in real life, creating content, or bringing in new members, the Kendu community is relentless and stands as the hardest-working group in all of crypto. Put a helmet on and join the ranks today.</p>
                             <a href="" class="button button--orange button--large">Join our Telegram</a>
                         </div>
@@ -1554,7 +1555,7 @@
                                 <div x-show="activeAccordion==id" x-cloak>
                                     <div class="flex flex-col gap-x-8 p-4 sm:p-6 py-8 sm:py-11 mx-auto border-t border-white/15">
                                         <p class="text-white/50">It's crucial to understand that your Kendu tokens are stored on the blockchain, not within your wallet app. Wallet apps simply hold the keys that allow you to access your tokens. This underscores the importance of choosing a wallet app that you trust, as you do not need to move your tokens between different apps. </p>
-                                        <p class="text-white/50">To keep your tokens safe, it's vital to never enter your seed phrase anywhere and store it securely offline, never digitally. Be extremely cautious about direct messages (DMs) and always verify the identity of anyone you're communicating with in public forums, to be extra safe, you should . Remember, there are no Kendu airdrops or similar giveaways; you will never be asked to connect your wallet to any external services or sites. Scammers use various tactics to steal tokens, so always exercise caution.
+                                        <p class="text-white/50">To keep your tokens safe, it's vital to never enter your seed phrase anywhere and store it securely offline, never digitally. Be extremely cautious about direct messages (DMs) and always verify the identity of anyone you're communicating with in public forums, to be extra safe, you should. Remember, there are no Kendu airdrops or similar giveaways; you will never be asked to connect your wallet to any external services or sites. Scammers use various tactics to steal tokens, so always exercise caution.
 </p>
                                         <p class="text-white/50">If you have any doubts or questions, rest assured that help is readily available in the official Telegram group, which can be accessed via the links on this site.</p>
                                     </div>
@@ -1665,7 +1666,7 @@
                                 <span class="body-small">Etherscan</span>
                             </a>
 
-                            <a class="inline-flex gap-4 items-center body-small opacity-60 hover:opacity-95 transition ease-in-out duration-300" href="https://solscan.io/token/2nnrviYJRLcf2bXAxpKTRXzccoDbwaP4vzuGUG75Jo45" target="_blank">
+                            <a class="inline-flex gap-4 items-center body-small opacity-60 hover:opacity-95 transition ease-in-out duration-300" href="https://basescan.org/token/0xef73611f98da6e57e0776317957af61b59e09ed7" target="_blank">
                                 <div class="button-icon button-icon--small button--outline">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.63998 7.89787C3.63999 7.8113 3.65711 7.72559 3.69034 7.64565C3.72357 7.56572 3.77227 7.49314 3.83363 7.43207C3.89499 7.37101 3.96781 7.32266 4.0479 7.28982C4.128 7.25697 4.21379 7.24027 4.30036 7.24067L5.39526 7.24424C5.56983 7.24424 5.73725 7.31359 5.86069 7.43703C5.98412 7.56047 6.05347 7.72789 6.05347 7.90246V12.0424C6.17673 12.0058 6.33504 11.9668 6.50826 11.9261C6.62858 11.8978 6.73582 11.8297 6.81257 11.7328C6.88932 11.6359 6.93107 11.516 6.93105 11.3924V6.25679C6.93105 6.08221 7.00039 5.91478 7.12383 5.79132C7.24726 5.66786 7.41468 5.59849 7.58926 5.59845H8.68633C8.86091 5.59849 9.02833 5.66786 9.15177 5.79132C9.2752 5.91478 9.34455 6.08221 9.34455 6.25679V11.023C9.34455 11.023 9.61923 10.9118 9.88677 10.7989C9.98616 10.7569 10.071 10.6865 10.1306 10.5966C10.1903 10.5067 10.2222 10.4012 10.2223 10.2933V4.61126C10.2223 4.43671 10.2916 4.26931 10.415 4.14587C10.5384 4.02244 10.7058 3.95308 10.8803 3.95304H11.9773C12.1518 3.95304 12.3193 4.02239 12.4427 4.14583C12.5661 4.26927 12.6355 4.43669 12.6355 4.61126V9.29039C13.5866 8.60108 14.5505 7.77207 15.3154 6.77518C15.4264 6.63052 15.4999 6.4606 15.5292 6.28062C15.5585 6.10064 15.5428 5.91619 15.4835 5.74376C14.95 4.20877 13.9474 2.88037 12.6175 1.94646C11.2875 1.01255 9.69768 0.520391 8.07273 0.539604C6.72193 0.555593 5.39878 0.924473 4.23454 1.60965C3.0703 2.29483 2.10543 3.27249 1.43565 4.44566C0.765873 5.61882 0.414457 6.94672 0.416267 8.29761C0.418076 9.64851 0.773048 10.9755 1.44597 12.1468C1.53954 12.3081 1.67721 12.4394 1.8428 12.5252C2.00839 12.611 2.19502 12.6478 2.38078 12.6312C2.58828 12.613 2.84665 12.5871 3.15383 12.5509C3.28753 12.5357 3.41098 12.4719 3.50065 12.3716C3.59032 12.2712 3.63996 12.1414 3.6401 12.0069L3.63998 7.89787Z" fill="#FFF"/><path d="M3.61523 14.5377C4.77165 15.3789 6.13823 15.8838 7.5638 15.9966C8.98937 16.1094 10.4183 15.8256 11.6926 15.1766C12.9669 14.5276 14.0367 13.5387 14.7838 12.3194C15.531 11.1 15.9262 9.69781 15.9259 8.2678C15.9259 8.08936 15.9176 7.91282 15.9058 7.7373C13.0737 11.9611 7.84456 13.9358 3.61549 14.537" fill="#FFF"/></svg>
                                 </div>
@@ -1812,7 +1813,16 @@
             </div>
         </footer>
         <script type="module" src="/assets/scripts/main.js" defer></script>
-        <script type="module" src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@2.3.0/dist/main.js" defer></script>
-        <link rel="stylesheet" href="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@2.3.0/dist/main.css" />
+
+
+<!-- Dependencies -->
+<script
+    type="module"
+    src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@2.3/dist/main.js"
+    defer
+></script>
+<link
+    rel="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@2.3/dist/main.css"
+/>
     </body>
 </html>
