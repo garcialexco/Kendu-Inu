@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import path from 'path';
 import { defineConfig } from 'vite';
 import globImporter from 'node-sass-glob-importer';
@@ -8,6 +9,17 @@ export default defineConfig({
     minify: 'terser',
     manifest: 'manifest.json',
     assetDir: './assets',
+=======
+import path from "path";
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  build: {
+    outDir: "dist",
+    minify: "terser",
+    manifest: "manifest.json",
+    assetDir: "./assets",
+>>>>>>> main
     emptyOutDir: true,
     sourcemap: true,
     terserOptions: {
@@ -17,34 +29,33 @@ export default defineConfig({
     },
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, 'index.html'),
-        styles: path.resolve(__dirname, 'assets/styles/main.scss'),
-        scripts: path.resolve(__dirname, 'assets/scripts/main.js'),
-        // wormhole: path.resolve(__dirname, 'assets/plugin/wormhole-connect.js'),
+        main: path.resolve(__dirname, "index.html"),
+        styles: path.resolve(__dirname, "assets/styles/main.scss"),
+        scripts: path.resolve(__dirname, "assets/scripts/main.js"),
       },
       output: {
-        entryFileNames: 'assets/scripts/[hash].js',
-        chunkFileNames: 'assets/scripts/[hash].js',
+        entryFileNames: "assets/scripts/[hash].js",
+        chunkFileNames: "assets/scripts/[hash].js",
         assetFileNames: ({ name }) => {
-          if (/\.css$/.test(name ?? '')) {
-            return 'assets/styles/[hash].[ext]';
+          if (/\.css$/.test(name ?? "")) {
+            return "assets/styles/[hash].[ext]";
           }
 
-          if (/\.(gif|jpe?g|png|svg|webp)$/.test(name ?? '')) {
-            return 'assets/images/[name].[ext]';
+          if (/\.(gif|jpe?g|png|svg|webp)$/.test(name ?? "")) {
+            return "assets/images/[name].[ext]";
           }
 
-          if (/\.(woff2|woff|ttf|otf)$/.test(name ?? '')) {
-            return 'assets/fonts/[name].[ext]';
+          if (/\.(woff2|woff|ttf|otf)$/.test(name ?? "")) {
+            return "assets/fonts/[name].[ext]";
           }
 
-          return 'assets/[name].[ext]';
+          return "assets/[name].[ext]";
         },
       },
       cache: false,
     },
     optimizeDeps: {
-      include: ['assets/scripts/**/*.js'],
+      include: ["assets/scripts/**/*.js"],
     },
   },
   css: {
