@@ -12,7 +12,6 @@ export default defineConfig({
     sourcemap: true,
     terserOptions: {
       mangle: {
-        reserved: ["_"],
         reserved: ['_'],
       },
     },
