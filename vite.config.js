@@ -1,5 +1,6 @@
 import path from 'path';
 import { defineConfig } from 'vite';
+import globImporter from 'node-sass-glob-importer';
 
 export default defineConfig({
   build: {
