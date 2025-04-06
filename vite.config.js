@@ -20,6 +20,7 @@ export default defineConfig({
         main: path.resolve(__dirname, 'index.html'),
         styles: path.resolve(__dirname, 'assets/styles/main.scss'),
         scripts: path.resolve(__dirname, 'assets/scripts/main.js'),
+        // wormhole: path.resolve(__dirname, 'assets/plugin/wormhole-connect.js'),
       },
       output: {
         entryFileNames: 'assets/scripts/[hash].js',
