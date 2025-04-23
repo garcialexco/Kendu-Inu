@@ -40,10 +40,12 @@ export default defineConfig({
           return 'assets/[name].[ext]';
         },
       },
+      external: ['@wormhole-foundation/wormhole-connect'],
       cache: false,
     },
     optimizeDeps: {
       include: ['assets/scripts/**/*.js'],
+      exclude: ['@wormhole-foundation/wormhole-connect']
     },
   },
   css: {
