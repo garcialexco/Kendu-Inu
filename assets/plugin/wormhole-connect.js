@@ -1,6 +1,4 @@
-import { wormholeConnectHosted } from '@wormhole-foundation/wormhole-connect';
-
-addEventListener('DOMContentLoaded', (event) => {
+addEventListener('DOMContentLoaded', async (event) => {
   const container = document.getElementById('wormhole-connect');
   const config = {
     chains: ['Ethereum', 'Solana'],
@@ -12,6 +10,7 @@ addEventListener('DOMContentLoaded', (event) => {
     },
   };
 
+  const { wormholeConnectHosted } = await import('@wormhole-foundation/wormhole-connect');
   wormholeConnectHosted(container, {
     config,
   });
