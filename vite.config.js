@@ -7,12 +7,6 @@ export default defineConfig({
       plugins: [autoprefixer({}), tailwindcss({})],
     },
   },
-  build: {
-    optimizeDeps: {
-      exclude: ['@wormhole-foundation/wormhole-connect'],
-    },
-  },
-
   server: {
     watch: {
       include: ['index.html', 'assets/**/*'], // Watch the HTML file and asset directories
