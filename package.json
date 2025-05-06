@@ -9,19 +9,18 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
     "concurrently": "^9.1.2",
-    "postcss": "^8.5.1",
     "tailwindcss": "^3.4.1",
     "terser": "^5.38.1",
-    "vite": "^5.4.14"
-  },
-  "dependencies": {
-    "@alpinejs/intersect": "^3.14.8",
-    "@tailwindcss/container-queries": "^0.1.1",
+    "vite": "^6.3.5",
     "alpinejs": "^3.13.5",
     "flickity": "^3.0.0",
-    "node-sass-glob-importer": "^5.3.3",
-    "sass": "^1.84.0"
+    "@alpinejs/intersect": "^3.14.8"
+  },
+  "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@vituum/vite-plugin-postcss": "^1.1.0",
+    "@wormhole-foundation/wormhole-connect": "^2.4.0",
+    "autoprefixer": "^10.4.21"
   }
 }
