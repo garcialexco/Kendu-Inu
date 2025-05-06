@@ -5,7 +5,6 @@ import './media-slider';
 import './text-scroller';
 import './logo-slider';
 import './slider';
-import '../plugin/wormhole-connect';
 
 window.Alpine = Alpine;
 Alpine.plugin(intersect);
